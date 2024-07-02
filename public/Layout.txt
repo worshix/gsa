@@ -1,0 +1,34 @@
+(1) Home page
+#Navbar
+    A part with the abbreviations "GSA", href = "/"
+    Other Links to:
+    About Us: Same page
+    Media: to Media page
+    Programs: Programs page
+    toolit page: to the AMR toolit page
+    Join Us:
+    Contact Us: same page
+#Sidebar has the same links with the logo of GSA on top
+# Hero Section
+# Who we
+# Our Mission
+# Core Values
+# Partners
+# Join Us
+# Contact Us
+# Slide with Gallery Images
+# Latest Posts
+# Footer
+
+(2) Programs page
+# A navbar on top to navigate to each Programs
+# All Programs in detail
+
+(3) Media page
+A page sidebar with links to Events, Articles, Newsletter, Gallery,   
+
+(4) toolit page
+
+
+
+
