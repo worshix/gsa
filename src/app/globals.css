@@ -4,6 +4,11 @@
 @tailwind utilities;
 
 /* Global Styles here */
+
+* {
+    scroll-behavior: smooth;
+}
+
 .display-animate {
     animation: display-animation ease-in-out 1.5s forwards;
 }

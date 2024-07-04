@@ -28,10 +28,9 @@ const Footer = () => {
             <div className=''>
                 <h1 className='text-main2 font-bold text-center'>Follow Us</h1>
                 <div className='flex flex-row gap-2 justify-center'>
-                    <Link href=''className='block p-1'><span className='block bi bi-linkedin'></span></Link>
-                    <Link href=''className='block p-1'><span className='block bi bi-twitter'></span></Link>
-                    <Link href=''className='block p-1'><span className='block bi bi-youtube'></span></Link>
-                    <Link href="https://www.instagram.com/dwt_webandgraphic" className='block p-1'><span  className='block bi bi-instagram'></span></Link>
+                    <Link href='https://www.linkedin.com/company/generational-stewards-for-antimicrobials-gsa/'className='block p-1'><span className='block bi bi-linkedin'></span></Link>
+                    <Link href='https://twitter.com/Preservefutures'className='block p-1'><span className='block bi bi-twitter'></span></Link>
+                    <Link href='https://www.facebook.com/profile.php?id=1000093674206378&mibextid=LQQJ4d'className='block p-1'><span className='block bi bi-facebook'></span></Link>                    
                 </div>   
             </div>
             <div className='p-2'>

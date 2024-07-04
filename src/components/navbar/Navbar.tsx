@@ -9,15 +9,15 @@ const links = [
     },
     {
         name:"Media",
-        link:'/Media'
+        link:'/media'
     },
     {
         name:"Programs",
-        link:'/Programs'
+        link:'/programs'
     },
     {
-        name:"Toolit",
-        link:'/Toolit'
+        name:"Toolkit",
+        link:'/toolkit'
     },
     {
         name:"Join US",

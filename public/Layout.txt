@@ -11,11 +11,12 @@
 #Sidebar has the same links with the logo of GSA on top
 # Hero Section
 # Who we
-# Our Mission
-# Core Values
 # Partners
-# Join Us
+# Our Mission
+# Our Vision
+# Core Values
 # Contact Us
+# Join Us
 # Slide with Gallery Images
 # Latest Posts
 # Footer
@@ -27,7 +28,7 @@
 (3) Media page
 A page sidebar with links to Events, Articles, Newsletter, Gallery,   
 
-(4) toolit page
+(4) toolkit page
 
 
 
