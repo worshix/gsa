@@ -36,7 +36,7 @@ const Navbar = () => {
     let n:number = 0;
   return (
     <header>
-        <nav className="flex px-2 bg-main-500 text-white font-bold navbar">
+        <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full fixed">
             <Link 
                     href="/"
                     className="block mr-auto p-1 selected Home"
@@ -93,6 +93,9 @@ const Navbar = () => {
                 <Link href={item.link} className="side-item-link">{item.name}</Link>
                 </li>)}
             </ul>
+        </nav>
+        <nav className="placeholder w-full h-[60px] bg-main-500">
+
         </nav>
     </header>
   )

@@ -12,9 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="overflow-x-hidden">
         <Navbar />
-        <main>
           {children}
-        </main>
         <Footer />
       </body>
     </html>
