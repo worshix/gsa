@@ -6,9 +6,9 @@ import React from 'react'
 
 const HomePageAnime = () => {
 
-    document.addEventListener('load', ()=>{
-    })
-  useEffect(()=>{},[])
+  useEffect(()=>{
+    let heroTimeLine = gsap.timeline({})
+  },[])
   return (
     <> 
     </>

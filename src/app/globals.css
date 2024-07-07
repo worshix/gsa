@@ -170,7 +170,7 @@
         }
     }
 }
-.call-btn-left{
+.call-btn-left {
     @apply
     bg-white
     text-main-500
@@ -180,7 +180,7 @@
         color: white;
     }
 }
-.call-btn-right{
+.call-btn-right {
     @apply
     bg-transparent
     text-white
@@ -189,7 +189,4 @@
         background-color: white;
         @apply text-main-500;
     }
-}
-.hero{
-    
 }
