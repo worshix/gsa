@@ -4,6 +4,8 @@ import About from "@/components/About";
 import Partner from "@/components/Partner";
 import LatestPosts from '@/components/latestPosts/LatestPosts';
 import HomePageAnime from '@/app/HomePageAnime';
+import { createClient } from '@/prismicio';
+import { PrismicNextImage } from '@prismicio/next';
 
 // parners props
 const partners = [
@@ -68,7 +70,10 @@ export const metadata = {
   //keywords:'woisawo mashoko esumbunuro pano'
 }
 
-export default function Home() {
+export default async function Home() {
+  const client = createClient();
+  const images = await client.getAllByType("image_gallery");
+
   return (
     <main className="bg-main-400">
       {/* hero section */}
@@ -122,7 +127,7 @@ export default function Home() {
           <img className="block" src="/assets/images/banner.png" alt="" />
           <img className="block" src="/assets/images/billboard.png" alt="" />
           <img className="block" src="/assets/images/brochure.jpg" alt="" />
-          <img className="block" src="/assets/images/banner.png" alt="" />
+	  <PrismicNextImage field={images[0].data.image} className="block" />
         </div>
       </section>
       {/* latest posts */}
