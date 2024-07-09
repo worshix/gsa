@@ -68,7 +68,7 @@ export const metadata = {
   //keywords:'woisawo mashoko esumbunuro pano'
 }
 
-export default function Home()  {
+export default function Home() {
   return (
     <main className="bg-main-400">
       {/* hero section */}
