@@ -74,9 +74,9 @@ export default function Home() {
       {/* hero section */}
       <section className="hero h-screen flex items-center flex-col text-white" id="hero">
         <div className="text-center hero-text-container">
-          <h1 className="text-2xl font-bold hero-text-1 opacity-0 hero-text">Generational Stewarts</h1>
-          <h1 className="text-2xl font-bold hero-text-2 hero-text opacity-0">for</h1>
-          <h1 className="uppercase text-3xl font-extrabold text-main2 hero-text-3 hero-text opacity-0">Antimicrobials</h1>
+          <h1 className="text-2xl font-bold hero-text-1 hero-text">Generational Stewarts</h1>
+          <h1 className="text-2xl font-bold hero-text-2 hero-text">for</h1>
+          <h1 className="uppercase text-3xl font-extrabold text-main2 hero-text-3 hero-text">Antimicrobials</h1>
         </div>
         <div className="action-btn-group flex justify-around">
           <Link className="call-btn call-btn-left opacity-0" href="/#join-us">join Us <span className="bi bi-hand-thumbs-up opacity-0"></span></Link>
@@ -127,7 +127,7 @@ export default function Home() {
       </section>
       {/* latest posts */}
       <LatestPosts />
-      <HomePageAnime />
+      {/* <HomePageAnime /> */}
     </main>
 );
 }
