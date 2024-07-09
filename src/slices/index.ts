@@ -2,6 +2,4 @@
 
 import dynamic from "next/dynamic";
 
-export const components = {
-  stories: dynamic(() => import("./Stories")),
-};
+export const components = {};

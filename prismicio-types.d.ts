@@ -11,6 +11,50 @@ type ArticleDocumentDataSlicesSlice = never;
  */
 interface ArticleDocumentData {
   /**
+   * Title field in *Article*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: article.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Story Image field in *Article*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: article.story_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  story_image: prismic.ImageField<never>;
+
+  /**
+   * Publishing time field in *Article*
+   *
+   * - **Field Type**: Timestamp
+   * - **Placeholder**: *None*
+   * - **API ID Path**: article.publishing_time
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#timestamp
+   */
+  publishing_time: prismic.TimestampField;
+
+  /**
+   * Story field in *Article*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: article.story
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  story: prismic.RichTextField;
+
+  /**
    * Slice Zone field in *Article*
    *
    * - **Field Type**: Slice Zone
@@ -69,79 +113,39 @@ export type ArticleDocument<Lang extends string = string> =
     Lang
   >;
 
-export type AllDocumentTypes = ArticleDocument;
-
 /**
- * Item in *Stories → Default → Primary → Articles*
+ * Content for Image Gallery documents
  */
-export interface StoriesSliceDefaultPrimaryArticlesItem {
+interface ImageGalleryDocumentData {
   /**
-   * story image field in *Stories → Default → Primary → Articles*
+   * image field in *Image Gallery*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: stories.default.primary.articles[].story_image
+   * - **API ID Path**: image_gallery.image
+   * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  story_image: prismic.ImageField<never>;
-
-  /**
-   * Title field in *Stories → Default → Primary → Articles*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: stories.default.primary.articles[].title
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  title: prismic.KeyTextField;
+  image: prismic.ImageField<never>;
 }
 
 /**
- * Primary content in *Stories → Default → Primary*
+ * Image Gallery document from Prismic
+ *
+ * - **API ID**: `image_gallery`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
  */
-export interface StoriesSliceDefaultPrimary {
-  /**
-   * Articles field in *Stories → Default → Primary*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: stories.default.primary.articles[]
-   * - **Documentation**: https://prismic.io/docs/field#group
-   */
-  articles: prismic.GroupField<
-    Simplify<StoriesSliceDefaultPrimaryArticlesItem>
+export type ImageGalleryDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ImageGalleryDocumentData>,
+    "image_gallery",
+    Lang
   >;
-}
 
-/**
- * Default variation for Stories Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type StoriesSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<StoriesSliceDefaultPrimary>,
-  never
->;
-
-/**
- * Slice variation for *Stories*
- */
-type StoriesSliceVariation = StoriesSliceDefault;
-
-/**
- * Stories Shared Slice
- *
- * - **API ID**: `stories`
- * - **Description**: Stories
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type StoriesSlice = prismic.SharedSlice<
-  "stories",
-  StoriesSliceVariation
->;
+export type AllDocumentTypes = ArticleDocument | ImageGalleryDocument;
 
 declare module "@prismicio/client" {
   interface CreateClient {
@@ -156,12 +160,9 @@ declare module "@prismicio/client" {
       ArticleDocument,
       ArticleDocumentData,
       ArticleDocumentDataSlicesSlice,
+      ImageGalleryDocument,
+      ImageGalleryDocumentData,
       AllDocumentTypes,
-      StoriesSlice,
-      StoriesSliceDefaultPrimaryArticlesItem,
-      StoriesSliceDefaultPrimary,
-      StoriesSliceVariation,
-      StoriesSliceDefault,
     };
   }
 }
