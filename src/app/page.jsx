@@ -128,6 +128,7 @@ export default function Home() {
       {/* latest posts */}
       <LatestPosts />
       {/* <HomePageAnime /> */}
+      <img src="https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/370210813_159913190474487_5261871668922269286_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=en8hmURkWBAQ7kNvgFqHW9K&_nc_ht=scontent-jnb2-1.xx&oh=00_AYB6JlDWL_uMyn2gcgKvgR40jjhA3QTccEKJDvnmOq9bXw&oe=66924CD7" width="400" alt="" />
     </main>
 );
 }
