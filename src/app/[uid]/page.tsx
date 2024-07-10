@@ -22,9 +22,7 @@ export default async function Page({ params }: { params: Params }) {
 		<h1>{page.data.title}</h1>
 		<PrismicNextImage field={page.data.story_image} />
 		<PrismicRichText field={page.data.story} />
-		<p> Published on 
-			<time>{date}</time>
-		</p>
+		<p> Published on <time>{date}</time></p>
 	</main>
   );
 }
