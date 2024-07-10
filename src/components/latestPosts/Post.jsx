@@ -32,6 +32,6 @@ const Post = ({image, title, content, author, date, link}) => {
       </div>
     </div>
   )
-}
+};
 
 export default Post
