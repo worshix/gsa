@@ -1,8 +1,8 @@
 /* For each post in summary */
 import Link from "next/link";
-import PrismicNextImage from '@prismicio/next';
-import PrismicRichText from '@prismicio/react';
-import * as prismic from '@/prismicio/client';
+import { PrismicNextImage } from '@prismicio/next';
+import { PrismicRichText } from '@prismicio/react';
+import * as prismic from '@prismicio/client';
 
 const Post = ({image, title, content, author, date, link}) => {
 

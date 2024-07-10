@@ -24,16 +24,15 @@ export default async function LatestPosts () {
 		<h1>Latest Posts</h1>
 		<article className='flex overflow-x-scroll'>
 	  	{articles_arr.map((el) => (
-		    <Post {
+		    <Post 
 			    title={el.data.title}
             		    content={el.data.story}
             		    author={el.data.author}
             	 	    date={el.data.publishing_time}
             	 	    link={el.url}
-		    } />
+		     />
 		))}
 		</article>
 	    </section>
-  	)
-  )
+  	);
 }
