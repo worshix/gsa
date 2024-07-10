@@ -25,7 +25,7 @@ export default async function LatestPosts () {
 		<article className='flex overflow-x-scroll'>
 	  	{articles_arr.map((el) => (
 		    <Post
-			    image={el.data.image}
+			    image={el.data.story_image}
 			    title={el.data.title}
             		    content={el.data.story}
             		    author={el.data.author}
