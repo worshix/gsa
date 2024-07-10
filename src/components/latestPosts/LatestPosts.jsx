@@ -17,7 +17,16 @@ const fakePost = {
 
 export default async function LatestPosts () {
   const client = createClient();
-  const articles_arr = await client.getAllByType("article");
+  const articles_arr = await client.getAllByType("article", {
+	  limit: 10,
+  	  orderings: [
+    	  {
+      	    field: 'my.article.publishing_time',
+      	    direction: 'desc',
+    	  },
+  	],
+  });
+  console.log(articles_arr[0]);
 
   return ( 
 	   <section>
