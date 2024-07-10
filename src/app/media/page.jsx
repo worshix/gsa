@@ -1,11 +1,43 @@
+import Media from "./Media";
+import Gallery from "./Gallery";
+
+const articleList = [
+  {
+      id:'',
+      title:'',
+      link:'' //link to page with the actual article
+  },
+  {
+      id:'',
+      title:'',
+      link:'' //link to page with the actual article
+  },
+]
+
+const newsletterList = [
+  {
+      id:'',
+      title:'',
+      link:'' //link to page with the actual newsletter
+  },
+  {
+      id:'',
+      title:'',
+      link:'' //link to page with the actual newsletter
+  },
+]
+
 export const metadata = {
   title:'Media'
 }
+
 const Media = () => {
 return (
   <main>
-    <h1 className="text-5xl font-bold my-10 text-center text-main-400">Media</h1>
-  </main>
+    <Media props = {articleList} />
+    <Media props = {newsletterList} />
+    <Gallery />
+    </main>
 )
 }
 
