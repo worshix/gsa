@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens:{
+        'xs':'400px',
+        'fold':'360px'
+      },
       colors:{
         main: {
           100: "#13d4f7",

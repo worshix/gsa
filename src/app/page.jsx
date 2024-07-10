@@ -70,25 +70,23 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-main-400">
+    <main className="">
       {/* hero section */}
-      <section className="hero h-screen flex items-center flex-col text-white" id="hero">
-        <div className="text-center hero-text-container">
-          <h1 className="text-2xl font-bold hero-text-1 hero-text">Generational Stewarts</h1>
-          <h1 className="text-2xl font-bold hero-text-2 hero-text">for</h1>
-          <h1 className="uppercase text-3xl font-extrabold text-main2 hero-text-3 hero-text">Antimicrobials</h1>
+      <section className="hero flex items-center flex-col text-main-500 gap-y-8 h-screen" id="hero">
+        <div className="text-center hero-text-container mt-8">
+          <h1 className="mx-auto text-2xl font-bold hero-text-1 hero-text w-fit">Generational Stewarts</h1>
+          <h1 className="mx-auto text-2xl font-bold hero-text-2 hero-text w-fit">for</h1>
+          <h1 className="mx-auto uppercase text-3xl font-extrabold text-main2 hero-text-3 hero-text w-fit">Antimicrobials</h1>
         </div>
         <div className="action-btn-group flex justify-around">
-          <Link className="call-btn call-btn-left opacity-0" href="/#join-us">join Us <span className="bi bi-hand-thumbs-up opacity-0"></span></Link>
-          <Link className="call-btn call-btn-right opacity-0" href="#">donate <span className="bi bi-emoji-sunglasses opacity-0"></span></Link>
+          <Link className="call-btn call-btn-left" href="/#join-us">join Us <span className="bi bi-hand-thumbs-up opacity-0"></span></Link>
+          <Link className="call-btn call-btn-right" href="#">donate <span className="bi bi-emoji-sunglasses opacity-0"></span></Link>
         </div>
-      </section>
       {/* who we are */}
-      <section className="" id="about-us">
         <About {...WhoWeAre}/>
       </section>
       {/* partners */}
-      <section className="partners" id="partners">
+      <section className="partners h-screen overflow-scroll" id="partners">
         <h1>Our Partners</h1>
         <div className="partners-container">
             {partners.map((item) => <Partner {...item}/>)}
