@@ -1,4 +1,5 @@
 import Post from '@/components/latestPosts/Post';
+import { createClient } from '@/prismicio';
 
 const fakePost = {
     image:'/assets/images/banner.png',
@@ -13,19 +14,26 @@ const fakePost = {
     link:'#'
   }
 
-const LatestPosts = () => {
-  return (
-    <section>
-        <h1>Latest Nonsense</h1>
-        <article className='flex overflow-x-scroll'>
-            <Post {...fakePost} />
-            <Post {...fakePost} />
-            <Post {...fakePost} />
-            <Post {...fakePost} />
-            <Post {...fakePost} />
-        </article>
-    </section>
+
+export default async function LatestPosts () {
+  const client = createClient();
+  const articles_arr = await client.getAllByType("article");
+
+  return ( 
+	   <section>
+		<h1>Latest Posts</h1>
+		<article className='flex overflow-x-scroll'>
+	  	{articles_arr.map((el) => (
+		    <Post {
+			    title={el.data.title}
+            		    content={el.data.story}
+            		    author={el.data.author}
+            	 	    date={el.data.publishing_time}
+            	 	    link={el.url}
+		    } />
+		))}
+		</article>
+	    </section>
+  	)
   )
 }
-
-export default LatestPosts
