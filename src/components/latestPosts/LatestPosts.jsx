@@ -26,7 +26,6 @@ export default async function LatestPosts () {
     	  },
   	],
   });
-  console.log(articles_arr[0]);
 
   return ( 
 	   <section>

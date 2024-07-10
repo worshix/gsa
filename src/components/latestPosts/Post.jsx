@@ -22,7 +22,6 @@ const Post = ({image, title, content, author, date, link}) => {
       </div>
       <div className="post-card-details">
         <span>{author}</span>
-        <span>{date}</span>
 	<time
   	  datetime={prismic
           .asDate(date)
