@@ -1,6 +1,6 @@
 import Gallery from "./Gallery";
 import MediaItems from "./MediaItems";
-import { createClient } from '@prismicio'
+import { createClient } from '@/prismicio'
 
 const articleList = [
   {
@@ -32,7 +32,7 @@ export const metadata = {
   title:'Media'
 }
 
-export default async function AllPosts () {
+export async function AllPosts () {
   const client = createClient();
   const articles_arr = await client.getAllByType("article");
 
@@ -58,9 +58,9 @@ export default async function AllPosts () {
 const Media = () => {
 return (
   <main>
-    /*The component above generates articles like on the home page but queries all of them.
-      You can just call it here.
-    */
+    //The component above generates articles like on the home page but queries all of them.
+    //You can just call it here.
+    
     <MediaItems props = {articleList} />
     <MediaItems props = {newsletterList} />
     <Gallery />
