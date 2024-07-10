@@ -17,7 +17,7 @@ const Post = ({image, alt, title, content, author, date, link}) => {
         <Link href={link}>read more</Link>
       </div>
       <div className="post-card-details">
-        <span>{author} </span>
+        <span>{author}</span>
         <span>{date}</span>
       </div>
     </div>
