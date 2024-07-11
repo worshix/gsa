@@ -8,6 +8,7 @@ const Post = ({image, title, content, author, date, link}) => {
 
     const contentArray = prismic.asText(content).split(/\s+/)
     const summary = contentArray.slice(0,25)
+    console.log(image);
 
   return (
     <div className="post-card w-[350px]  shrink-0">
@@ -32,6 +33,6 @@ const Post = ({image, title, content, author, date, link}) => {
       </div>
     </div>
   )
-}
+};
 
 export default Post
