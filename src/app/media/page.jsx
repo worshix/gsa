@@ -1,5 +1,5 @@
-import Media from "./Media";
 import Gallery from "./Gallery";
+import MediaItems from "./MediaItems";
 
 const articleList = [
   {
@@ -34,8 +34,8 @@ export const metadata = {
 const Media = () => {
 return (
   <main>
-    <Media props = {articleList} />
-    <Media props = {newsletterList} />
+    <MediaItems props = {articleList} />
+    <MediaItems props = {newsletterList} />
     <Gallery />
     </main>
 )
