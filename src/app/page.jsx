@@ -87,7 +87,7 @@ export default async function Home() {
           <Link className="call-btn call-btn-left" href="/#join-us">join Us <span className="bi bi-hand-thumbs-up opacity-0"></span></Link>
           <Link className="call-btn call-btn-right" href="#">donate <span className="bi bi-emoji-sunglasses opacity-0"></span></Link>
         </div>
-        <p className="z-20 relative top-[22%] md:top-[35%] text-xs font-sans p-2">
+        <p className="z-20 relative top-[22%] md:top-[35%] text-xs font-sans p-2 martin">
           “If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.”
           <b className="block ml-auto p-1 w-fit mr-3">Martin Luther King Jr.</b>
         </p>
@@ -128,12 +128,12 @@ export default async function Home() {
           <img className="block" src="/assets/images/banner.png" alt="" />
           <img className="block" src="/assets/images/billboard.png" alt="" />
           <img className="block" src="/assets/images/brochure.jpg" alt="" />
-	        <PrismicNextImage field={images[0].data.image} className="block" />
+	        {/* <PrismicNextImage field={images[0].data.image} className="block" /> */}
         </div>
       </section>
       {/* latest posts */}
       <LatestPosts />
-      {/* <HomePageAnime /> */}
+      <HomePageAnime />
     </main>
 );
 }

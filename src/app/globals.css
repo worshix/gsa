@@ -172,6 +172,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 1;
     &::before{
         content: '';
         @apply absolute h-screen bg-black bg-opacity-30 w-full z-10;
