@@ -77,19 +77,22 @@ export default async function Home() {
   return (
     <main className="">
       {/* hero section */}
-      <section className="hero flex items-center flex-col text-main-500 gap-y-8 h-screen" id="hero">
-        <div className="text-center hero-text-container mt-8">
-          <h1 className="mx-auto text-2xl font-bold hero-text-1 hero-text w-fit">Generational Stewarts</h1>
+      <section className="hero flex items-center flex-col text-white gap-y-8 h-screen lilita tracking-wide leading-relaxed isolate" id="hero">
+        <div className="text-center hero-text-container mt-8 relative top-[17%] space-y-4 z-20">
+          <h1 className="mx-auto text-3xl md:text-4xl font-bold hero-text-1 hero-text w-fit">Generational Stewarts</h1>
           <h1 className="mx-auto text-2xl font-bold hero-text-2 hero-text w-fit">for</h1>
-          <h1 className="mx-auto uppercase text-3xl font-extrabold text-main2 hero-text-3 hero-text w-fit">Antimicrobials</h1>
+          <h1 className="mx-auto uppercase text-4xl md:text-5xl font-extrabold text-main2 hero-text-3 hero-text w-fit">Antimicrobials</h1>
         </div>
-        <div className="action-btn-group flex justify-around">
+        <div className="z-20 action-btn-group flex gap-4 md:gap-6 relative top-[22%] md:top-[25%]">
           <Link className="call-btn call-btn-left" href="/#join-us">join Us <span className="bi bi-hand-thumbs-up opacity-0"></span></Link>
           <Link className="call-btn call-btn-right" href="#">donate <span className="bi bi-emoji-sunglasses opacity-0"></span></Link>
         </div>
-      {/* who we are */}
-        <About {...WhoWeAre}/>
+        <p className="z-20 relative top-[22%] md:top-[35%] text-xs font-sans p-2">
+          “If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.”
+          <b className="block ml-auto p-1 w-fit mr-3">Martin Luther King Jr.</b>
+        </p>
       </section>
+      <About {...WhoWeAre}/>
       {/* partners */}
       <section className="partners h-screen overflow-scroll" id="partners">
         <h1>Our Partners</h1>

@@ -35,7 +35,7 @@ const links = [
 const Navbar = () => {
     let n:number = 0;
   return (
-    <header>
+    <header className="z-40">
         <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full fixed">
             <Link 
                     href="/"

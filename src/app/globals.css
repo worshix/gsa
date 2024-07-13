@@ -1,9 +1,11 @@
 /* @import url('./../../../bootstrap-icons/font/bootstrap-icons.css'); */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-/* Importing Roboto */
+/* Importing Roboto and Lilita */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+/* setting up the fonts */
 
 @tailwind base;
 @tailwind components;
@@ -13,14 +15,20 @@
 
 * {
     scroll-behavior: smooth;
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
+}
+
+.roboto {
+    font-family: 'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.lilita {
+  font-family: 'Lilita One', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
 }
 
 .responsive-text{
     @apply text-sm;
 }
-
-/* Roboto Classes */
 
 .display-animate {
     animation: display-animation ease-in-out 1.5s forwards;
@@ -159,6 +167,22 @@
 }
 
 /* hero section */
+.hero {
+    background-image: url('/assets/images/pcBg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::before{
+        content: '';
+        @apply absolute h-screen bg-black bg-opacity-30 w-full z-10;
+    }
+}
+
+@media (max-width: 640px) {
+.hero {
+    background-image: url('/assets/images/mbBg.jpeg');
+    }
+}
 
 .call-btn {
     @apply 
@@ -168,9 +192,12 @@
     font-bold
     text-center
     border-2
-    border-main-700
+    border-white
+    roboto
+    w-[150px]
+    md:w-[200px]
+    md:text-xl
     ;
-    width: 150px;
     height: 40px;
     border-radius: 100px 0;
     line-height: 40px;
@@ -189,16 +216,28 @@
     ;
     &:hover{
         @apply text-white
-        bg-main-500;
+        bg-transparent;
         ;
     }
 }
 .call-btn-right {
     @apply
-    bg-main-500
+    bg-transparent
     text-white
     ;
     &:hover{
         @apply text-main-500 bg-white;
+    }
+}
+
+/* about */
+.about{
+    .about-header {
+        clip-path: polygon(
+            0 0,
+            80% 0,
+            100% 100%,
+            0% 100%
+        );
     }
 }
