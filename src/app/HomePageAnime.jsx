@@ -2,8 +2,6 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
-import React from 'react'
-
 const HomePageAnime = () => {
   useGSAP(()=>{
     const tl = gsap.timeline()

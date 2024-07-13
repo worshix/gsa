@@ -1,6 +1,6 @@
 /* home page */
 import Link from "next/link";
-import About from "@/components/About";
+import About from "@/components/about/About";
 import Partner from "@/components/Partner";
 import LatestPosts from '@/components/latestPosts/LatestPosts';
 import HomePageAnime from '@/app/HomePageAnime';
@@ -92,25 +92,28 @@ export default async function Home() {
           <b className="block ml-auto p-1 w-fit mr-3">Martin Luther King Jr.</b>
         </p>
       </section>
-      <About {...WhoWeAre}/>
-      {/* partners */}
-      <section className="partners h-screen overflow-scroll" id="partners">
-        <h1>Our Partners</h1>
-        <div className="partners-container">
-            {partners.map((item) => <Partner {...item}/>)}
-        </div>
+
+      {/* About Section */}
+      <section className="about flex flex-col justify-center items-center p-2 pt-8 gap-10">
+        <About {...WhoWeAre} />
+        <About {...mission} />
+        <About {...vision} />
       </section>
-      {/* mission and vision */}
-      <section className="mission vision">
-      <About {...mission} />
-      <About {...vision} />
-      </section>
+
       {/* values */}
       <section className="values">
         <h1>Our Core Values</h1>
         <ul>
           {values.map((item) => <li>{item}</li>)}
         </ul>
+      </section>
+
+      {/* partners */}
+      <section className="partners h-screen overflow-scroll" id="partners">
+        <h1>Our Partners</h1>
+        <div className="partners-container">
+            {partners.map((item) => <Partner {...item}/>)}
+        </div>
       </section>
       {/* join us and contact us*/}
       <section className="">

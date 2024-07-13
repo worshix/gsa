@@ -198,6 +198,11 @@
     w-[150px]
     md:w-[200px]
     md:text-xl
+    text-white
+    backdrop-blur-sm
+    drop-shadow-md
+    shadow-black
+    shadow-md
     ;
     height: 40px;
     border-radius: 100px 0;
@@ -213,32 +218,28 @@
 .call-btn-left {
     @apply
     bg-white
-    text-main-500
+    bg-opacity-25
     ;
     &:hover{
         @apply text-white
-        bg-transparent;
+        bg-transparent
         ;
     }
 }
 .call-btn-right {
     @apply
     bg-transparent
-    text-white
     ;
     &:hover{
-        @apply text-main-500 bg-white;
+        @apply
+        bg-white
+        bg-opacity-25
+        ;
     }
 }
 
 /* about */
-.about{
-    .about-header {
-        clip-path: polygon(
-            0 0,
-            80% 0,
-            100% 100%,
-            0% 100%
-        );
-    }
+
+.about-hide {
+    @apply scale-y-0;
 }
