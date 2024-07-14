@@ -36,7 +36,7 @@ const Navbar = () => {
     let n:number = 0;
   return (
     <header className="z-40">
-        <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full fixed">
+        <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full sticky">
             <Link 
                     href="/"
                     className="block mr-auto p-1 selected Home"

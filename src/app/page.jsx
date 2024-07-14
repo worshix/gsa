@@ -76,13 +76,13 @@ export const metadata = {
 export default async function Home() {
   const client = createClient();
   const images = await client.getAllByType("image_gallery");
-
+  let valueTransform = -45;
   return (
     <main className="">
       {/* hero section */}
-      <section className="hero flex items-center flex-col text-white gap-y-8 h-screen roboto tracking-wide leading-relaxed isolate" id="hero">
+      <section className="hero flex items-center flex-col text-white gap-y-8 h-screen roboto tracking-wide leading-relaxed isolate w-full" id="hero">
         <div className="text-center hero-text-container mt-8 relative top-[17%] space-y-4 z-20">
-          <h1 className="mx-auto text-3xl md:text-4xl font-bold hero-text-1 hero-text w-fit">Generational Stewarts</h1>
+          <h1 className="mx-auto text-3xl md:text-4xl font-bold hero-text-1 hero-text w-fit">Generational Stewards</h1>
           <h1 className="mx-auto text-2xl font-bold hero-text-2 hero-text w-fit">for</h1>
           <h1 className="mx-auto uppercase text-4xl md:text-5xl font-extrabold text-main2 hero-text-3 hero-text w-fit">Antimicrobials</h1>
         </div>
@@ -104,13 +104,12 @@ export default async function Home() {
       </section>
 
       {/* values */}
-      <section className="values">
-        <h1>Our Core Values</h1>
-        <ul>
-          {values.map((item) => <li>{item}</li>)}
+      <section className="values p-2">
+        <h1 className="text-main-500">Our Core Values</h1>
+        <ul className="space-y-2">
+          {values.map((item) => <li className="flex gap-2 bg-slate-100 h-12"><span className="block bi bi-capsule text-main2 bg-white w-fit p-2 px-3 rounded-lg m-2"></span><b className="block p-2">{item}</b></li>)}
         </ul>
       </section>
-
       {/* partners */}
       <section className="partners h-screen overflow-scroll" id="partners">
         <h1>Our Partners</h1>
