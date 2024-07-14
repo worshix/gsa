@@ -97,7 +97,7 @@ export default async function Home() {
       </section>
 
       {/* About Section */}
-      <section className="flex flex-col justify-center items-center p-2 pt-8 gap-10">
+      <section className="flex flex-col sm:flex-row flex-wrap justify-center p-2 pt-8 gap-10">
         <About {...WhoWeAre} />
         <About {...mission} />
         <About {...vision} />
