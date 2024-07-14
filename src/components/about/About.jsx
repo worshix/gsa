@@ -1,23 +1,19 @@
 //for all the abouts i.e. mission, vision and who we are
 import AboutButton from './AboutButton';
 
-const About = ({title,about}) => {
+const About = ({title,about,id}) => {
   const contentArray = about.split(/\s+/)
   const summary = contentArray.slice(0,20)
   return (
-    <article className="w-80 rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto roboto">
-      <div className="mx-4 -mt-6 h-50 overflow-hidden rounded-xl text-white shadow-md shadow-black bg-gradient-to-r from-main-300 to-main-500">
-        <h1 className='text-center font-bold w-full p-2'>{title}</h1>
-        <p className='about-summary text-xs font-normal p-2 transition-all'>{summary.join(" ") + "..."}</p>
-        <div className="p-6 pt-0">
-          <AboutButton />
-        </div>
-      </div>
-      <div className="p-6 transition-transform duration-300">
-        <p className="about-full block font-sans text-base font-light leading-relaxed text-inherit">
-          {about}
+    <article className='about p-2 w-80 text-xs shadow-md shadow-black rounded-md overflow-y-hidden compressed' id={id}>
+      <div className="bg-gradient-to-r from-main-300 to-main-500 text-white font-bold p-2 rounded-md -mt-4">
+        <h1 className='text-center uppercase text-sm'>{title}</h1>
+        <p className='transition-all duration-300'>
+          {summary.join(" ") + "..."}
         </p>
       </div>
+      <AboutButton id={id}/>
+      <p className='compressed-about font-light leading-relaxed transition-all duration-300 ease-linear overflow-y-hidden'>{about}</p>
     </article>
   )
 }
