@@ -8,7 +8,7 @@ const About = ({title,about,id}) => {
   return (
     <article className='about p-2 w-80 text-xs shadow-sm shadow-black rounded-md compressed' id={id}>
       <div className="bg-gradient-to-r from-main-300 to-main-500 text-white font-bold p-2 rounded-md -mt-4 shadow-sm shadow-black">
-        <h1 className='text-center uppercase text-sm'>{title}</h1>
+        <h1 className='text-center uppercase text-sm font-bold roboto'>{title}</h1>
         <p className='transition-all duration-300'>
           {summary.join(" ") + "..."}
         </p>

@@ -11,34 +11,19 @@ import { PrismicNextImage } from '@prismicio/next';
 const partners = [
   {
     name:"Zimbabwe Youth Council",
-    logo:'/assets/images/partner.JPG',
-    link:"#"
+    icon:'linkedin',
+    link:"https://www.linkedin.com/company/zim-youth-council/"
   },
   {
     name:"African Youth Antimicrobial Resistance Alliance Taskforce",
-    logo:'/assets/images/partner.jpg',
-    link:"#"
+    icon:'linkedin',
+    link:"https://www.linkedin.com/company/ayara-tf/"
   },
   {
     name:"Stop superbugs Network",
-    logo:'/assets/images/partner.jpg',
-    link:"#"
-  },  
-  {
-    name:"Stop superbugs Network",
-    logo:'/assets/images/partner.jpg',
-    link:"#"
-  },  
-  {
-    name:"Stop superbugs Network",
-    logo:'/assets/images/partner.jpg',
-    link:"#"
-  },  
-  {
-    name:"Stop superbugs Network",
-    logo:'/assets/images/partner.jpg',
-    link:"#"
-  },  
+    icon:'twitter-x',
+    link:"https://x.com/theurgentneed?s=11"
+  }
 ]
 
 //
@@ -79,6 +64,7 @@ export default async function Home() {
   let valueTransform = -45;
   return (
     <main className="">
+
       {/* hero section */}
       <section className="hero flex items-center flex-col text-white gap-y-8 h-screen roboto tracking-wide leading-relaxed isolate w-full" id="hero">
         <div className="text-center hero-text-container mt-8 relative top-[17%] space-y-4 z-20">
@@ -104,19 +90,21 @@ export default async function Home() {
       </section>
 
       {/* values */}
-      <section className="values p-2">
-        <h1 className="text-main-500">Our Core Values</h1>
-        <ul className="space-y-2">
+      <section className="values p-2 my-6">
+        <h1 className="text-main-500 roboto uppercase text-center font-bold p-2 bg-green-200">Our Core Values</h1>
+        <ul className="divide-y-2 di">
           {values.map((item) => <li className="flex gap-2 bg-slate-100 h-12"><span className="block bi bi-capsule text-main2 bg-white w-fit p-2 px-3 rounded-lg m-2"></span><b className="block p-2">{item}</b></li>)}
         </ul>
       </section>
+
       {/* partners */}
-      <section className="partners h-screen overflow-scroll" id="partners">
+      <section className="partners" id="partners">
         <h1>Our Partners</h1>
-        <div className="partners-container">
+        <div className="partners-container flex flex-col gap-2">
             {partners.map((item) => <Partner {...item}/>)}
         </div>
       </section>
+
       {/* join us and contact us*/}
       <section className="">
         <article className="contact-us" id="contact-us">
