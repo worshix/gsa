@@ -5,6 +5,7 @@ import Partner from "@/components/Partner";
 import LatestPosts from '@/components/latestPosts/LatestPosts';
 import HomePageAnime from '@/app/HomePageAnime';
 import { createClient } from '@/prismicio';
+import Contact from '@/components/Contact';
 import { PrismicNextImage } from '@prismicio/next';
 
 // partners props
@@ -52,6 +53,40 @@ const values = [
   "Empowerment",
   ]
 
+//
+const contactDetails = [
+  {
+    name:'linkedIn',
+    link:'https://www.linkedin.com/company/generational-stewards-for-antimicrobials-gsa/',
+    icon:'linkedin',  
+  },
+  {
+    name:'whatsApp',
+    link:'https://wa.me/263778473160',
+    icon:'whatsapp'
+  },
+  {
+    name:'phone',
+    link:'tel:+263772916923',
+    icon:'telephone'
+  },
+  {
+    name:'mail',
+    link:"mailto:gsateamglobal@gmail.com",
+    icon:'envelope'
+  },
+  {
+  name:'facebook',
+  link:'https://www.facebook.com/profile.php?id=100093674206378&mibextid=LQQJ4d',
+  icon:'facebook'
+  },
+  {
+    name:'twitter',
+    link:'https://twitter.com/Preservefutures',
+    icon:'twitter-x'
+  }
+]
+
 export const metadata = {
   title:'generational',
   description:'focus on this and that and what what',
@@ -61,7 +96,6 @@ export const metadata = {
 export default async function Home() {
   const client = createClient();
   const images = await client.getAllByType("image_gallery");
-  let valueTransform = -45;
   return (
     <main className="">
 
@@ -105,15 +139,31 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* join us and contact us*/}
-      <section className="">
+      {/* join us and contact-us*/}
+      <section className="my-4 contacts-section">
         <article className="contact-us" id="contact-us">
-          contact us
+          <h1>Connect With Us</h1>
+  <p>
+We are always glad to engage both professionals and students in all our activities. We highly value individual and collective contributions that each one of us can have in Antimicrobial Resistance. At SAS Africa, we believe that it is the small efforts that each one of us undertakes which matter most.
+We welcome you to our family!
+  </p>          
+          <h1>contact us</h1>
+          <div className="contacts flex flex-wrap gap-3 justify-center p-2 mt-3">
+            { contactDetails.map((item) => <Contact {...item}/>)}
+          </div>
         </article>
         <article className="join-us" id="join-us">
-          join us
+          <h1>Join Us</h1>
+          <p>
+            Donate,Your support can save lives.
+            We welcome any gifts and donations, and sponsorships to support our work. We are sure that you will find interesting and important purposes to support your involvement and generosity in the work that we are doing.
+            For inquiries and conversations about gifts, donations and sponsorships, please contact us at:
+            <span>Info@gsa.co.zw</span>
+            <Link href="mailto:Info@gsa.co.zw">Donate</Link>
+          </p>
         </article>
       </section>
+
       {/* gallery */}
       <section className="gallery-slide">
         <h1>A pique at the gallery</h1>
@@ -121,7 +171,7 @@ export default async function Home() {
           <img className="block" src="/assets/images/banner.png" alt="" />
           <img className="block" src="/assets/images/billboard.png" alt="" />
           <img className="block" src="/assets/images/brochure.jpg" alt="" />
-	        {/* <PrismicNextImage field={images[0].data.image} className="block" /> */}
+	        <PrismicNextImage field={images[0].data.image} className="block" />
         </div>
       </section>
       {/* latest posts */}
@@ -130,3 +180,11 @@ export default async function Home() {
     </main>
 );
 }
+
+/*
+var film = this.props.data.slice(0, 5).map((item) => {
+  return <FilmItem key={item.id} film={item} />;
+});
+return film;
+
+*/

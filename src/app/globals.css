@@ -261,3 +261,24 @@
 .compressed .compressed-about {
     @apply h-0;
 }
+
+/* contact us */
+.linkedin{
+    @apply bg-[#41c0ff];
+}
+.whatsapp{
+    @apply bg-[#46C756];
+}
+
+.telephone{
+    @apply bg-[blue];
+}
+.envelope{
+    @apply bg-[orangered]
+}
+.facebook{
+    @apply bg-[#0866FF];
+}
+.twitter-x{
+    @apply bg-black;
+}
