@@ -97,7 +97,7 @@ export default async function Home() {
   const client = createClient();
   const images = await client.getAllByType("image_gallery");
   return (
-    <main className="">
+    <main className="overflow-x-hidden">
 
       {/* hero section */}
       <section className="hero flex items-center flex-col text-white gap-y-8 h-screen roboto tracking-wide leading-relaxed isolate w-full" id="hero">
@@ -140,20 +140,25 @@ export default async function Home() {
       </section>
 
       {/* join us and contact-us*/}
-      <section className="my-4 contacts-section">
-        <article className="contact-us" id="contact-us">
-          <h1>Connect With Us</h1>
-  <p>
-We are always glad to engage both professionals and students in all our activities. We highly value individual and collective contributions that each one of us can have in Antimicrobial Resistance. At SAS Africa, we believe that it is the small efforts that each one of us undertakes which matter most.
-We welcome you to our family!
-  </p>          
-          <h1>contact us</h1>
-          <div className="contacts flex flex-wrap gap-3 justify-center p-2 mt-3">
+      <section className="my-4 contacts-section text-white p-2 space-y-2">
+        <article className="contact-us bg-white bg-opacity-15 backdrop-blur-sm p-2 rounded-lg" id="contact-us">
+          <h1 className="bg-transparent text-center text-white font-bold bg-white bg-opacity-25">Connect With Us</h1>
+          <p className="">
+            We are always glad to engage both professionals and students in all our activities.
+            We highly value individual and collective contributions that each one of us can have
+            in Antimicrobial Resistance. At SAS Africa, we believe that it is the small efforts that
+            each one of us undertakes which matter most.
+            We welcome you to our family!
+          </p>          
+        </article>
+        <article className="bg-black bg-opacity-25 backdrop-blur-sm p-2 rounded-lg">
+        <h1 className="bg-transparent text-center text-white font-bold">Contact Us</h1>
+          <div className="flex flex-wrap gap-3 justify-center p-2 mt-3">
             { contactDetails.map((item) => <Contact {...item}/>)}
           </div>
         </article>
-        <article className="join-us" id="join-us">
-          <h1>Join Us</h1>
+        <article className="join-us bg-white bg-opacity-15 backdrop-blur-sm p-2 rounded-lg" id="join-us">
+          <h1 className="bg-transparent text-center text-white font-bold bg-white bg-opacity-25">Join Us</h1>
           <p>
             Donate,Your support can save lives.
             We welcome any gifts and donations, and sponsorships to support our work. We are sure that you will find interesting and important purposes to support your involvement and generosity in the work that we are doing.
