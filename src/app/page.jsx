@@ -141,8 +141,8 @@ export default async function Home() {
 
       {/* join us and contact-us*/}
       <section className="my-4 contacts-section text-white p-2 space-y-2">
-        <article className="contact-us bg-white bg-opacity-15 backdrop-blur-sm p-2 rounded-lg" id="contact-us">
-          <h1 className="bg-transparent text-center text-white font-bold bg-white bg-opacity-25">Connect With Us</h1>
+        <article className="contact-us bg-main-300 bg-opacity-15 backdrop-blur-sm p-2 rounded-lg" id="contact-us">
+          <h1 className="bg-transparent text-center text-main2 font-bold text-xl">Connect With Us</h1>
           <p className="">
             We are always glad to engage both professionals and students in all our activities.
             We highly value individual and collective contributions that each one of us can have
@@ -151,34 +151,34 @@ export default async function Home() {
             We welcome you to our family!
           </p>          
         </article>
-        <article className="bg-black bg-opacity-25 backdrop-blur-sm p-2 rounded-lg">
-        <h1 className="bg-transparent text-center text-white font-bold">Contact Us</h1>
+        <article className="bg-main-300 bg-opacity-25 backdrop-blur-sm p-2 rounded-lg">
+        <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Contact Us</h1>
           <div className="flex flex-wrap gap-3 justify-center p-2 mt-3">
             { contactDetails.map((item) => <Contact {...item}/>)}
           </div>
         </article>
-        <article className="join-us bg-white bg-opacity-15 backdrop-blur-sm p-2 rounded-lg" id="join-us">
-          <h1 className="bg-transparent text-center text-white font-bold bg-white bg-opacity-25">Join Us</h1>
-          <p>
+        <article className="join-us bg-main-300 bg-opacity-25 backdrop-blur-sm p-2 rounded-lg" id="join-us">
+          <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Join Us</h1>
+          <p className="p-2">
             Donate,Your support can save lives.
             We welcome any gifts and donations, and sponsorships to support our work. We are sure that you will find interesting and important purposes to support your involvement and generosity in the work that we are doing.
             For inquiries and conversations about gifts, donations and sponsorships, please contact us at:
-            <span>Info@gsa.co.zw</span>
-            <Link href="mailto:Info@gsa.co.zw">Donate</Link>
+            <br />
+            <span className="font-bold text-main2">Info@gsa.co.zw</span>
+            <Link href="mailto:Info@gsa.co.zw" className="btn-main">Donate</Link>
           </p>
         </article>
       </section>
 
       {/* gallery */}
-      <section className="gallery-slide">
-        <h1>A pique at the gallery</h1>
-        <div className="couresel flex overflow-x-scroll">
-          <img className="block" src="/assets/images/banner.png" alt="" />
-          <img className="block" src="/assets/images/billboard.png" alt="" />
-          <img className="block" src="/assets/images/brochure.jpg" alt="" />
-	        <PrismicNextImage field={images[0].data.image} className="block" />
+      <section className="gallery-slide h-screen">
+        <div className="absolute space-y-3 isolation-auto z-10 text-white translate-x-5 translate-y-6">
+          <h1 className="font-bold w-fit text-3xl">Check out our gallery</h1>
+          <Link href='/media' className="btn-main">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
         </div>
+        <img src="/assets/images/bg-2.jpeg" alt="" className="w-[95%] rounded-lg mx-auto hue-rotate-15 brightness-75"/>     
       </section>
+      {/* <PrismicNextImage field={images[0].data.image} className="block" /> */}
       {/* latest posts */}
       <LatestPosts />
       <HomePageAnime />

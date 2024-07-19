@@ -23,6 +23,48 @@
 .responsive-text{
     font-size: clamp(12px, 3vw, 18px);
 }
+.btn-main{
+    @apply 
+    relative 
+    px-8
+    py-2
+    rounded-md
+    isolation-auto
+    z-10
+    border-2
+    before:absolute
+    before:w-full
+    before:transition-all
+    before:duration-700
+    before:hover:w-full
+    hover:text-white
+    before:-right-full
+    before:hover:right-0
+    before:rounded-full
+    before:bg-main-500
+    before:-z-10
+    before:aspect-square
+    before:hover:scale-150
+    overflow-hidden
+    before:hover:duration-700
+    block text-center
+    items-center
+    justify-center
+    text-sm
+    font-semibold
+    bg-white
+    bg-opacity-15
+    backdrop-blur-sm
+    border-gray-200
+    shadow-sm gap-x-2
+    hover:bg-gray-50
+    disabled:opacity-50
+    disabled:pointer-events-none
+    text-main2
+    w-fit
+    flex-shrink-0
+    ;
+  }
 
 .display-animate {
     animation: display-animation ease-in-out 1.5s forwards;
