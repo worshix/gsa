@@ -10,7 +10,7 @@
     Contact Us: same page
 #Sidebar has the same links with the logo of GSA on top
 # Hero Section
-# Who we
+# Who we are
 # Partners
 # Our Mission
 # Our Vision
@@ -22,11 +22,11 @@
 # Footer
 
 (2) Programs page
-# A navbar on top to navigate to each Programs
-# All Programs in detail
+# A sidebar to navigate to each program
+# All Programs in detail with lazy loading
 
 (3) Media page
-A page sidebar with links to Events, Articles, Newsletter, Gallery,   
+A page sidebar with links to Events, Articles, News, Gallery   
 
 (4) toolkit page
 
