@@ -8,6 +8,7 @@ import { createClient } from '@/prismicio';
 import Contact from '@/components/Contact';
 import { PrismicNextImage } from '@prismicio/next';
 
+
 // partners props
 const partners = [
   {
@@ -96,6 +97,7 @@ export const metadata = {
 export default async function Home() {
   const client = createClient();
   const images = await client.getAllByType("image_gallery");
+  
   return (
     <main className="overflow-x-hidden">
 
@@ -171,14 +173,10 @@ export default async function Home() {
       </section>
 
       {/* gallery */}
-      <section className="gallery-slide h-screen">
-        <div className="absolute space-y-3 isolation-auto z-10 text-white translate-x-5 translate-y-6">
-          <h1 className="font-bold w-fit text-3xl">Check out our gallery</h1>
-          <Link href='/media' className="btn-main">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
-        </div>
-        <img src="/assets/images/bg-2.jpeg" alt="" className="w-[95%] rounded-lg mx-auto hue-rotate-15 brightness-75"/>     
+      <section className="gallery-slide h-screen bg-blue-400">
+        <PrismicNextImage field={images[0].data.image} alt={images[0].data.image.alt} className='' />
+      <Link href='/media' className="btn-main">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
       </section>
-      {/* <PrismicNextImage field={images[0].data.image} className="block" /> */}
       {/* latest posts */}
       <LatestPosts />
       <HomePageAnime />

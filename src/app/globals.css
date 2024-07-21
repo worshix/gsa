@@ -63,6 +63,7 @@
     text-main2
     w-fit
     flex-shrink-0
+    active:scale-95
     ;
   }
 
@@ -331,3 +332,5 @@
 .twitter-x{
     @apply bg-black bg-opacity-35;
 }
+
+/* gallery */
