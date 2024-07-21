@@ -7,6 +7,7 @@ import HomePageAnime from '@/app/HomePageAnime';
 import { createClient } from '@/prismicio';
 import Contact from '@/components/Contact';
 import { PrismicNextImage } from '@prismicio/next';
+import LandingGallery from '@/components/LandingGallery';
 
 
 // partners props
@@ -173,9 +174,12 @@ export default async function Home() {
       </section>
 
       {/* gallery */}
-      <section className="gallery-slide h-screen bg-blue-400">
-        <PrismicNextImage field={images[0].data.image} alt={images[0].data.image.alt} className='' />
-      <Link href='/media' className="btn-main">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
+      <section className="gallery-slide h-screen bg-main-500">
+        <LandingGallery />
+        <article className="mt-auto relative top-[80vh] w-fit p-2">
+          <h1 className="font-extrabold text-white text-2xl">Check out our gallery</h1>
+          <Link href='/media' className="btn-main">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
+        </article>
       </section>
       {/* latest posts */}
       <LatestPosts />

@@ -334,3 +334,18 @@
 }
 
 /* gallery */
+.gallery-image-1 {
+    @apply translate-y-0 translate-x-0;
+}
+.gallery-image-2 {
+    @apply translate-y-[25px] translate-x-[25px];
+}
+.gallery-image-3 {
+    @apply translate-y-[45px] translate-x-[50px];
+}
+.gallery-image-4 {
+    @apply translate-y-[65px] translate-x-[75px];
+}
+.gallery-image-5 {
+    @apply translate-y-[100px] translate-x-[100px];
+}

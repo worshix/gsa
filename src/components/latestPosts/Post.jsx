@@ -11,7 +11,7 @@ const Post = ({image, title, content, author, date, link}) => {
     console.log(image);
 
   return (
-    <div className="post-card w-[350px] shrink-0 rounded-md shadow-md shadow-black mx-auto overflow-hidden">
+    <div className="post-card w-[320px] shrink-0 rounded-md shadow-md shadow-black mx-auto overflow-hidden">
       <div className="h-[200px] overflow-hidden bg-main-500">
         <div className="w-[30px] h-[30px] p-1 text-white ml-auto bg-main2 rounded-md text-center font-bold absolute">
             N
