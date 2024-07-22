@@ -25,7 +25,7 @@ const LandingGallery = async () => {
             count++
             return(
                 <div className='slide duration-200 mx-auto w-[60%] absolute h-fit'>
-                            <PrismicNextImage field={images[index].data.image} alt={images[index].data.image.alt} className={`rounded-md shadow-md shadow-black gallery-image-${count-1}`} />               
+                    <PrismicNextImage field={images[index].data.image} alt={images[index].data.image.alt} className={`rounded-md shadow-md shadow-black gallery-image-${count-1}`} />               
                 </div>      
             )}
     )}
