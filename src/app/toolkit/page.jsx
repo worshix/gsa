@@ -1,5 +1,6 @@
 import { createClient } from '@/prismicio'
 import { PrismicNextLink } from '@prismicio/next'
+import * as prismic from '@prismicio/client'
 
 
 export const metadata = {
@@ -17,13 +18,20 @@ async function Toolkit() {
       
 	  {toolkits.map((el) =>
 	      <article>
-	      	<h1>el.data.title</h1>
+	      	<h1>{el.data.title}</h1>
 	        <PrismicNextLink field={el.data.pdf_link}>
   			Click here to view/download the pdf
 		</PrismicNextLink>
 	        <p>{el.data.description}</p>
 	        <aside> 
-	          Published by {el.data.author} on {el.data.publishing_time}
+	          Published by {el.data.author} on  
+			<time
+              		  datetime={
+				(prismic.asDate(el.data.publishing_time)).toISOString()
+          		  }
+              		  >
+             			{prismic.asDate(el.data.publishing_time).toLocaleString()}
+              		</time>
 	        </aside>
 	      </article>
 	   )}
