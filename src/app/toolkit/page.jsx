@@ -15,7 +15,6 @@ async function Toolkit() {
   return (
     <main>
       <h1 className="text-5xl font-bold my-10 text-center text-main-400">Toolkit</h1>
-      
 	  {toolkits.map((el) =>
 	      <article>
 	      	<h1>{el.data.title}</h1>
@@ -26,7 +25,7 @@ async function Toolkit() {
 	        <aside> 
 	          Published by {el.data.author} on  
 			<time
-              		  datetime={
+              		  datetime= {
 				(prismic.asDate(el.data.publishing_time)).toISOString()
           		  }
               		  >
