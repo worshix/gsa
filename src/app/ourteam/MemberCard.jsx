@@ -9,7 +9,7 @@ const MemberCard = ({name, surname, title, imageExtention, id, socials}) => {
   <section class="block border-l border-gray-300 m-3">
     <div class="pl-3">
       <h3 class="text-gray-600 font-semibold text-sm">{name+" "+surname}</h3>
-      <h3 class="bg-clip-text text-transparent bg-gradient-to-l from-main-500 to-[#27272A] text-lg font-bold">{title}</h3>
+      <h3 class="bg-clip-text text-transparent bg-gradient-to-l from-main-500 to-[#27272A] text-md font-bold">{title}</h3>
     </div>
     <div class="flex gap-2 pt-2 pl-3">
       {socials.twitter && (<Link href={socials.twitter} className="bi-twitter-x transition-transform duration-100 hover:scale-110"></Link>)}
