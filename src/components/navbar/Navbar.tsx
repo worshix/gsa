@@ -27,6 +27,10 @@ const links = [
         name:"Contact Us",
         link:'/#contact-us'
     },
+    {
+        name:"Our Team",
+        link:'/ourteam'
+    },
 ]
 
 //to handle click of item

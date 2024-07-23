@@ -29,11 +29,11 @@ export default async function Page({ params }: { params: Params }) {
         <span className="bi-linkedin block p-2 bg-[#24a3e2] rounded-r-md"></span>
       </Link>
     </article>
-    <div className="w-[320px] h-[320px] overflow-hidden mx-auto my-2">
+    <div className="w-[50vw] h-[320px] overflow-hidden mx-auto my-2">
      <PrismicNextImage field={page.data.story_image} className="transition-transform duration-300 hover:scale-110 ease-linear"/>
     </div>
     <article className="flex justify-center flex-col p-2 gap-2">
-      <h1 className="text-bold text-main-500 text-lg">{page.data.title}</h1>
+      <h1 className="text-bold text-main-500 text-lg font-bold">{page.data.title}</h1>
       <p className="font-light text-slate-500 text-sm"><span className="font-bold">Published on:</span> <time>{date}</time></p>
     </article>
     <article className="article-body">
@@ -62,7 +62,6 @@ export async function generateMetadata({
 export async function generateStaticParams() {
   const client = createClient();
   const pages = await client.getAllByType("article");
-
   return pages.map((page) => {
     return { uid: page.uid };
   });
