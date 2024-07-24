@@ -98,9 +98,6 @@ const Navbar = () => {
                 </li>)}
             </ul>
         </nav>
-        <nav className="placeholder w-full h-[60px] bg-main-500">
-
-        </nav>
     </header>
   )
 }

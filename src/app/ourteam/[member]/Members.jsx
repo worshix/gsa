@@ -109,4 +109,99 @@ export default {
                 'well-being.',
             ]
         },
+        tafadzwachirisa:{
+            id:'tafadzwachirisa',
+            name:'Tafadzwa',
+            surname:'Chirisa',
+            title:'Treasurer',
+            imageExtention:'jpg',
+            socials:{
+                twitter:'https://x.com/taffychirisa?s=09null',
+                email:'chirisatafadzwa2019@gmail.com',
+                phone:null,
+                linkedin:'https://www.linkedin.com/in/tafadzwa-chirisa-b06b32212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                facebook:'https://www.facebook.com/tafadzwachirisa.t?mibextid=ZbWKwL',
+                instagram:null,
+            },
+            bio: [
+                'I\'m a young Pharmacist who is passionate about AMR Stewardship'
+            ]
+        },
+        munyaradziinnocent:{
+            id:'munyaradzitagara',
+            name:'Munyaradzi',
+            surname:'tagara',
+            title:'Unknown',
+            imageExtention:'jpg',
+            socials:{
+                twitter:'https://x.com/innocent_2802?t=emNu7Nnik2OWIZnrcYB9lg&s=09',
+                email:'tagaramunyaradzi2802@gmail.com',
+                phone:null,
+                linkedin:'https://www.linkedin.com/in/munyaradzi-innocent-4b4752254',
+                facebook:'https://www.facebook.com/munyaradzi.tagara.58?mibextid=ZbWKwL',
+                instagram:null,
+            },
+            bio: [
+                'Munyaradzi Innocent is a dedicated and passionate individual pursuing a Bachelor of Technology Honours Degree'+
+                'in Biotechnology at Harare Institute of Technology, where he is currently in his final year. His love for science and'+
+                'mathematics has been evident from a young age, and he is particularly interested in the field of bioinformatics.'+
+                'Munyaradzi&#39;s commitment to his work and his ability to collaborate effectively have been instrumental in his'+
+                'success. He has demonstrated strong leadership skills and has obtained numerous certifications in leadership.',
+                
+                'During his internship period, Munyaradzi worked as a QA &amp; QC laboratory technician at Zimgold Pure Oil'+
+                'Industries for 12 months, gaining valuable practical experience. He is currently serving as the clubs coordinator '+
+                'the Generational Stewards for Antimicrobials (GSA) clubs. Prior to this role, he was a member of Ndinewe Mental'+
+                'Health Club. His involvement in these organizations showcases his dedication to making a positive impact on his'+
+                'community and his commitment to promoting mental health awareness and antimicrobial stewardship.',
+
+                'As an aspiring biotechnologist, he is passionate about conducting research in various scientific aspects. His humble'+
+                'nature and strong work ethic make him a valuable asset to any organization he is a part of.'
+            ]
+        },
+        innocentnjazi:{
+            id:'innocentnjazi',
+            name:'Innocent',
+            surname:'Njazi',
+            title:'Unknown',
+            imageExtention:'jpg',
+            socials:{
+                twitter:'https://x.com/innocent_2802?t=emNu7Nnik2OWIZnrcYB9lg&s=09',
+                email:'plnnonjazi@gmail.com',
+                phone:null,
+                linkedin:'https://www.linkedin.com/in/munyaradzi-innocent-4b4752254',
+                facebook:null,
+                instagram:null,
+            },
+            bio:[
+                'Paradzai Innocent Njazi holds a BSc in Nursing Science from the University of Zimbabwe. He currently works at Karanda Mission Hospital. He aspires to become a global health figure, with a particular focus on antimicrobial resistance (AMR).',
+                'To bolster his expertise in this area, Mr. Njazi has acquired various AMR-related certificates from prestigious institutions such as the Foundation to Antibiotics Resistance (UK) and ReAct Africa. He also holds a foundation-to-leadership certificate from Harvard University.',
+                'Mr. Njazi has been actively involved in efforts to mitigate AMR through awareness campaigns in secondary schools and by publishing articles on the topic. His dedication to this cause was recognized when he was awarded second place in an international AMR student essay competition.',
+                'Recognizing the knowledge gaps and paucity of data surrounding AMR, Mr. Njazi is spearheading a research team at GSA organization. Through this initiative, he aims to deepen understanding and generate valuable insights that can inform more effective strategies to combat antimicrobial resistance.'
+            ]
+        },
+        olivethomas: {
+            id:'olivethomas',
+            name:'Olive',
+            surname:'Thomas',
+            title:'Communications Director',
+            imageExtention:'jpeg',
+            socials:{
+                twitter:null,
+                email:'thomasolive195@gmail.com',
+                phone:null,
+                linkedin:'http://linkedin.com/in/olive-thomas',
+                facebook:null,
+                instagram:null,
+            },
+            bio:[
+                'Olive Thomas is a medical laboratory scientist who currently serves as the Communications'+
+                'Director at Generational Stewards for Antimicrobials. In this role, she orchestrates the'+ 
+                'flow of information between the organization and the public, including championing a smooth'+
+                'moderation of GSA\'s fortnight webinars of global conversations.'+ 
+                'Olive is a global public health enthusiast who aspires to make meaningful contributions in global health'+
+                'initiatives aiming to promote wellness in communities through research, education and advocacy.'+ 
+                'Olive\'s commitment to personal and professional development is evident through her participation in the'+
+                'YALI RLC SA programme, further equipping herself to drive positive change and contribute to GSA\'s success.'
+            ]
+        },                
 }

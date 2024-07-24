@@ -22,8 +22,8 @@
 # Footer
 
 (2) Programs page
-# A sidebar to navigate to each program
-# All Programs in detail with lazy loading
+# page with all the programs in brief
+# nested pages with each program
 
 (3) Media page
 A page sidebar with links to Events, Articles, News, Gallery   
