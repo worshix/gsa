@@ -14,7 +14,7 @@ const page = () => {
             <h1 className="font-bold text-main-500 text-2xl sm:text-3xl text-center w-full m-4">Our Team</h1>
             {keys.map((item)=>{
               let person = Members[item]
-              return(
+              return (
                 <MemberCard {...person}/>
               )
             })}

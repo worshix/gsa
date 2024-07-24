@@ -127,7 +127,7 @@ export default {
                 'I\'m a young Pharmacist who is passionate about AMR Stewardship'
             ]
         },
-        munyaradziinnocent:{
+        munyaradzitagara:{
             id:'munyaradzitagara',
             name:'Munyaradzi',
             surname:'tagara',
