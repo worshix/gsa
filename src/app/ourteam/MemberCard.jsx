@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const MemberCard = ({name, surname, title, imageExtention, id, socials}) => {
   return (
-<div class="flex items-center p-3 w-72 h-28 bg-white rounded-md shadow-lg">
+<div class="flex items-center p-3 w-72 h-28 bg-white rounded-md shadow-lg slide-in-left">
   <Link class="flex justify-center items-center w-14 h-14 rounded-full hover:cursor-pointer hover:scale-110 duration-300 overflow-hidden flex-shrink-0" href={`/ourteam/${id}`}>
     <img src={`/assets/images/ourteam/${id}.${imageExtention}`} alt={name+" "+surname} className='rounded-full block flex-shrink-0'/>
   </Link>

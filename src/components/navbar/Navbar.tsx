@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+//for navbar routes and on page links
 const links = [
     {
         name:"About Us",
@@ -33,24 +34,25 @@ const links = [
     },
 ]
 
-//to handle click of item
-
-
 const Navbar = () => {
     let n:number = 0;
   return (
     <header className="z-40">
-        <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full sticky">
+        <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full fixed z-10 top=[0%]">
             <Link 
                     href="/"
-                    className="block mr-auto p-1 selected Home"
+                    className="block mr-auto p-1 selected Home text-xs sm:text-sm"
                     onClick={ () =>{
+                    //to hide sidebar
+                    const sidebar = document.getElementById('sidebar');
+                    sidebar?.classList.remove('sidebar-active');
+                    //changing color of selected navlinks 
                     document.getElementsByClassName('selected')[0].classList.remove('selected')
                     const button = document.getElementsByClassName('Home');
                     button[0].classList.add('selected');
                 }}><div className="flex gap-1 w-fit rounded-xl bg-white p-3 shadow-md shadow-black"><span className="text-main3 block">G</span><span className="text-main2 block">S</span><span className="text-main-600 block">A</span></div>
             </Link>
-            <ul className="sm:flex m-0 p-0 hidden nav-ul">
+            <ul className="sm:flex m-0 p-0 hidden nav-ul text-xs sm:text-sm">
                 {links.map((item) => <li 
                 key={`item.name-${n++}`}
                 onClick={ () => {
@@ -81,7 +83,7 @@ const Navbar = () => {
                 <span className="bi bi-menu-button-wide-fill"></span>
                 </button>
         </nav>
-        <nav id="sidebar" className="sidebar w-[250px] origin-top bg-main-400 fixed right-4 top-16 z-50 py-6 px-10 transition-all ease duration-500 scale-y-0 shadow-md shadow-black">
+        <nav id="sidebar" className="sidebar w-[250px] origin-top bg-main-400 fixed right-4 top-20 z-50 py-6 px-10 transition-all ease duration-500 scale-y-0 shadow-md shadow-black">
             <ul>
                 {links.map((item) => <li 
                 className="side-item" 

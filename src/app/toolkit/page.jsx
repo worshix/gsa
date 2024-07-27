@@ -1,6 +1,7 @@
 import { createClient } from '@/prismicio';
 import { PrismicNextLink } from '@prismicio/next';
 import * as prismic from '@prismicio/client';
+import BasicAnimations from '@/components/BasicAnimations';
 
 export const metadata = {
   title: 'Toolkit'
@@ -9,13 +10,12 @@ export const metadata = {
 async function Toolkit() {
   const client = createClient();
   const toolkits = await client.getAllByType('toolkit');
-
   return (
 	<>
 	<h1 className="text-5xl font-bold my-10 text-center text-main-400 w-full flex-shrink-0">Toolkit</h1>
     <section className="bg-white p-4 flex flex-col items-center sm:flex-row flex-wrap sm:justify-center sm:items-start">
       {toolkits.map((el, index) => (
-        <article key={index} className="mb-8 w-[320px] border-2 border-main-500 rounded-md p-2 flex-shrink-0">
+        <article key={index} className="mb-8 w-[320px] border-2 border-main-500 rounded-md p-2 flex-shrink-0 group">
 			<div className='flex gap-2'>
           	<h1 className="text-2xl font-bold">{el.data.title}</h1>
 			<span className='text-red-600 text-xl block'><i className="bi bi-file-earmark-pdf"></i></span>
@@ -48,10 +48,17 @@ async function Toolkit() {
       ></path>
     </svg>
 	</div>
-          </PrismicNextLink>
+        </PrismicNextLink>
         </article>
       ))}
     </section>
+    <div className='bg-main-500 text-white p-2 rounded-full w-fit slide-in-left opacity-100'>
+      wassup
+    </div>
+    <div className='bg-main-500 text-white p-2 rounded-full w-fit slide-in-left'>
+      wassup
+    </div>
+	<BasicAnimations />
 	</>
   );
 }

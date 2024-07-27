@@ -12,16 +12,21 @@
 
 /* Global Styles here */
 
-* {
-    scroll-behavior: smooth;
-    /* font-family: "Roboto"; */
-}
-
 .roboto {
     font-family: 'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+* {
+    scroll-behavior: smooth;
+    @apply roboto;
+}
+
 .responsive-text{
     font-size: clamp(12px, 3vw, 18px);
+}
+
+.section-heading{
+ @apply text-main2 font-bold text-xl;
 }
 .btn-main{
     @apply 
@@ -82,7 +87,6 @@
         right: 0;
     }
 }
-
 /* loader */
 .loader-svg {
     @apply text-[10em] font-bold;
@@ -94,7 +98,7 @@
     fill: transparent;
 }
 .loader-body-g {
-    animation: 2s infinite alternate loader-body-g;
+    animation: 5s forwards loader-body-g;
 }
 @keyframes loader-body-g {
     0% {
@@ -116,7 +120,7 @@
 }
 
 .loader-body-s {
-    animation: 2s infinite alternate loader-body-s;
+    animation: 5s forwards loader-body-s;
 }
 @keyframes loader-body-s {
     0% {
@@ -137,7 +141,7 @@
     }
 }
 .loader-body-a {
-    animation: 2s infinite alternate loader-body-a;
+    animation: 5s forwards loader-body-a;
 }
 
 @keyframes loader-body-a {

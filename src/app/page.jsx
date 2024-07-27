@@ -92,7 +92,7 @@ const contactDetails = [
 export const metadata = {
   title:'generational',
   description:'focus on this and that and what what',
-  //keywords:'woisawo mashoko esumbunuro pano'
+  //keywords:'woisawo mashoko esumbunuro pano',
 }
 
 export default async function Home() {
@@ -101,7 +101,21 @@ export default async function Home() {
   
   return (
     <main className="overflow-x-hidden">
-
+      {/* to allow page loading */}
+      <setion className='h-screen bg-main-300 absolute z-10 w-screen loading-cover'>
+      <svg viewBox='0 0 600 160' className="loader-svg pt-[25vh]">
+        <text x="30%" y="50%" dy=".32em" textAnchor='middle' className='loader-body-g'>
+          G
+        </text>
+        <text x="50%" y="50%" dy=".32em" textAnchor='middle' className='loader-body-s'>
+          S
+        </text>
+        <text x="70%" y="50%" dy=".32em" textAnchor='middle' className='loader-body-a'>
+          A
+        </text>
+      </svg>
+      <h1 className='font-extrabold text-white w-fit mx-auto mt-[5vh] animate-pulse'>Loading...</h1>
+    </setion>
       {/* hero section */}
       <section className="hero flex items-center flex-col text-white gap-y-8 h-screen roboto tracking-wide leading-relaxed isolate w-full" id="hero">
         <div className="text-center hero-text-container mt-8 relative top-[17%] space-y-4 z-20">
@@ -120,16 +134,17 @@ export default async function Home() {
       </section>
 
       {/* About Section */}
-      <section className="flex flex-col sm:flex-row flex-wrap justify-center p-2 pt-8 gap-10">
+      <section className="flex flex-col sm:flex-row flex-wrap justify-center items-center sm:items-start p-2 pt-8 gap-10 sm:gap-5 lg:h-[70vh]">
         <About {...WhoWeAre} />
+        <a href="#" className="" id="about-us"></a>
         <About {...mission} />
         <About {...vision} />
       </section>
 
       {/* values */}
       <section className="values p-2 my-6">
-        <h1 className="text-main-500 roboto uppercase text-center font-bold p-2 bg-green-200">Our Core Values</h1>
-        <ul className="divide-y-2 di">
+        <h1 className="section-heading">Our Core Values</h1>
+        <ul className="divide-y-2 di mt-3">
           {values.map((item) => <li className="flex gap-2 bg-slate-100 h-12"><span className="block bi bi-capsule text-main2 bg-white w-fit p-2 px-3 rounded-lg m-2"></span><b className="block p-2">{item}</b></li>)}
         </ul>
       </section>
