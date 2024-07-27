@@ -10,7 +10,7 @@ const page = () => {
     keys.push(key)
   }
   return (
-    <section className="flex flex-col justify-center items-center gap-2 md:gap-3 p-2 sm:flex-row flex-wrap sm:items-start md:h-screen">
+    <section className="flex flex-col justify-center items-center gap-2 p-2 sm:flex-row flex-wrap sm:items-start md:h-screen">
             <h1 className="font-bold text-main-500 text-2xl sm:text-3xl text-center w-full m-4">Our Team</h1>
             {keys.map((item)=>{
               let person = Members[item]

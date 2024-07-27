@@ -102,7 +102,7 @@ export default async function Home() {
   return (
     <main className="overflow-x-hidden">
       {/* to allow page loading */}
-      <setion className='h-screen bg-main-300 absolute z-10 w-screen loading-cover'>
+      <section className='h-screen bg-main-300 absolute z-10 w-screen loading-cover overflow-x-hidden'>
       <svg viewBox='0 0 600 160' className="loader-svg pt-[25vh]">
         <text x="30%" y="50%" dy=".32em" textAnchor='middle' className='loader-body-g'>
           G
@@ -115,7 +115,7 @@ export default async function Home() {
         </text>
       </svg>
       <h1 className='font-extrabold text-white w-fit mx-auto mt-[5vh] animate-pulse'>Loading...</h1>
-    </setion>
+    </section>
       {/* hero section */}
       <section className="hero flex items-center flex-col text-white gap-y-8 h-screen roboto tracking-wide leading-relaxed isolate w-full" id="hero">
         <div className="text-center hero-text-container mt-8 relative top-[17%] space-y-4 z-20">

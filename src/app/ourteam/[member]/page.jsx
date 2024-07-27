@@ -2,6 +2,7 @@ import Members from './Members';
 import Link from 'next/link';
 import '@/components/latestPosts/LatestPosts';
 import LatestPosts from '@/components/latestPosts/LatestPosts';
+import MemberAnime from './MemberAnime'
 
 const page = ({params}) => {
 
@@ -9,18 +10,18 @@ const page = ({params}) => {
     const {id, imageExtention, name, surname, title, bio, socials} = Members[params.member]
     return (
           <div className="bg-white min-h-screen">
-            <section className="flex flex-col items-center gap-2 p-4">
-              <article className="w-[60%] rounded-lg overflow-hidden">
-                <img src={`/assets/images/ourteam/${id}.${imageExtention}`} alt={`${name} ${surname}`} className="rounded-lg block w-full" />
+            <section className="flex flex-col items-center gap-2 p-4 md:flex-row md:justify-center">
+              <article className="w-[60%] md:w-[40%] rounded-lg overflow-hidden">
+                <img src={`/assets/images/ourteam/${id}.${imageExtention}`} alt={`${name} ${surname}`} className="rounded-lg block w-full member-image" />
               </article>
               <article className='flex flex-col items-start justify-start'>
-                <h1 className="text-2xl font-bold">{name} {surname}</h1>
-                <h1 className="text-lg font-semibold text-gray-600">{title}</h1>
+                <h1 className="text-2xl font-bold hero-text-1">{name} {surname}</h1>
+                <h1 className="text-lg font-semibold text-gray-600 hero-text-2">{title}</h1>
               </article>
             </section>
       
-            <h1 className="text-3xl font-bold mt-6 mb-2 ml-4 text-main-500">About {name}</h1>
-            <section className="p-4">
+            <h1 className="text-3xl font-bold mt-6 mb-2 ml-4 text-main-500 md:w-[70%] md:mx-auto hero-text-3">About {name}</h1>
+            <section className="p-4 md:w-[70%] md:mx-auto">
               {bio.map((item, index) => (
                 <p key={index} className="mb-2">{item}</p>
               ))}
@@ -54,6 +55,7 @@ const page = ({params}) => {
             </section>
             <h1 className="text-3xl font-bold mt-6 mb-4 ml-4 text-main-500">My Posts</h1>
             <LatestPosts /> {/* Assuming this component renders your latest posts */}
+            <MemberAnime />
           </div>
           )
   }
