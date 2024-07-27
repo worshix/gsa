@@ -12,10 +12,10 @@ async function Toolkit() {
   const toolkits = await client.getAllByType('toolkit');
   return (
 	<>
-	<h1 className="text-5xl font-bold my-10 text-center text-main-400 w-full flex-shrink-0">Toolkit</h1>
-    <section className="bg-white p-4 flex flex-col items-center sm:flex-row flex-wrap sm:justify-center sm:items-start">
+	<h1 className="text-4xl font-bold my-4 text-center text-main-400 w-full flex-shrink-0">Toolkit</h1>
+    <section className="bg-white flex flex-col items-center sm:flex-row flex-wrap sm:justify-center sm:items-start gap-2 py-2">
       {toolkits.map((el, index) => (
-        <article key={index} className="mb-8 w-[320px] border-2 border-main-500 rounded-md p-2 flex-shrink-0 group">
+        <article key={index} className="w-[320px] border-2 border-main-500 rounded-md p-2 flex-shrink-0 group anime">
 			<div className='flex gap-2'>
           	<h1 className="text-2xl font-bold">{el.data.title}</h1>
 			<span className='text-red-600 text-xl block'><i className="bi bi-file-earmark-pdf"></i></span>
@@ -52,13 +52,7 @@ async function Toolkit() {
         </article>
       ))}
     </section>
-    <div className='bg-main-500 text-white p-2 rounded-full w-fit slide-in-left opacity-100'>
-      wassup
-    </div>
-    <div className='bg-main-500 text-white p-2 rounded-full w-fit slide-in-left'>
-      wassup
-    </div>
-	<BasicAnimations />
+	{/* <BasicAnimations /> */}
 	</>
   );
 }

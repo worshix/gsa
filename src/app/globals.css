@@ -27,25 +27,23 @@
 
 
 /* scroll animation */
-.slide-in-top {
-    @apply 
-    -translate-y-3
-    opacity-0
-    ;
-    animation: anime linear forwards;
+
+.anime {
+    animation: scroll-watcher linear forwards;
     animation-timeline: view();
-    animation-range-start: 500px;
-    animation-range-end: 700px;
+    animation-range: end;
 }
-@keyframes anime {
-    to {
+@keyframes scroll-watcher{
+    40%, 100%{
         scale: 1;
-        transform: translate(0);
         opacity: 1;
+        transform: translate(0)
     }
+
 }
+
 .section-heading {
-    @apply text-main2 font-bold text-xl slide-in-top;
+    @apply text-main2 font-bold text-xl;
    }
 
 .btn-main{

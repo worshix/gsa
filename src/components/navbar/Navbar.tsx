@@ -38,7 +38,9 @@ const Navbar = () => {
     let n:number = 0;
   return (
     <header className="z-40">
-        <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full fixed z-10 top=[0%]">
+        {/* for making sure items don't fall under the navbar onload */}
+        <div className='w-full h-[50px]'>.</div>
+        <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full fixed z-10 top-0">
             <Link 
                     href="/"
                     className="block mr-auto p-1 selected Home text-xs sm:text-sm"
