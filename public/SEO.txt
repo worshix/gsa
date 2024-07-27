@@ -1,3 +1,5 @@
+// editing this file will result in devastating conflicts
+
 pages ready for SEO
 
 1. toolkit
@@ -8,4 +10,4 @@ pages ready for SEO
 - SEO ready
 - 5 members are missing for now but you don't have SEO oladem
 
-3.
+3. 
