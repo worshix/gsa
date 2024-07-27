@@ -15,21 +15,6 @@ const HomePageAnime = () => {
   })
 
 // Create a GSAP animation for the heading
-gsap.registerPlugin('scrollTrigger')
-gsap.from(".section-heading", {
-    y: 100, // Start position
-    opacity: 0, // Start opacity
-    duration: 1.5, // Duration of the animation
-    ease: "power2.out", // Easing function
-    scrollTrigger: {
-        trigger: ".section-heading", // Element that triggers the animation
-        start: "top 75%", // Animation starts when the top of the element hits 75% of the viewport height
-        end: "top 25%", // Animation ends when the top of the element hits 25% of the viewport height
-        scrub: true, // Links the animation progress with the scroll position
-        markers: true, // Optional: Show start and end markers for debugging
-    }
-});
-
 }
 
 export default HomePageAnime
