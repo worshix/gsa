@@ -1,8 +1,9 @@
 import Members from './Members';
 import Link from 'next/link';
 import '@/components/latestPosts/LatestPosts';
-import LatestPosts from '@/components/latestPosts/LatestPosts';
-import MemberAnime from './MemberAnime'
+import MemberAnime from './MemberAnime';
+import Post from '@/components/latestPosts/Post';
+
 
 const page = ({params}) => {
 
@@ -54,7 +55,10 @@ const page = ({params}) => {
               </div>
             </section>
             <h1 className="text-3xl font-bold mt-6 mb-4 ml-4 text-main-500">My Posts</h1>
-            <LatestPosts /> {/* Assuming this component renders your latest posts */}
+            
+            <section className='flex overflow-x-scroll p-3 flex-col gap-2 sm:flex-row flex-wrap sm:justify-center'>
+            { /* For their posts mujaya. use the Post component*/}
+            </section>
             <MemberAnime />
           </div>
           )
@@ -63,7 +67,7 @@ const page = ({params}) => {
     return (
       <section className='h-screen flex items-center justify-center flex-col'>
         <i class="bi bi-exclamation-triangle text-orange-500 text-5xl block w-fit"></i>
-        <h1 className="text-4xl font-bold my-10 w-fit text-red-600 title">{params.member} not found</h1>
+        <h1 className="text-4xl font-bold my-10 w-fit text-red-600 title">What organism is{params.member}?</h1>
       </section>
     )
 

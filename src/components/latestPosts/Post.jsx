@@ -1,7 +1,6 @@
 /* For each post in summary */
 import Link from "next/link";
 import { PrismicNextImage } from '@prismicio/next';
-import { PrismicRichText } from '@prismicio/react';
 import * as prismic from '@prismicio/client';
 
 const Post = ({image, title, content, author, date, link}) => {
@@ -11,8 +10,9 @@ const Post = ({image, title, content, author, date, link}) => {
     console.log(image);
 
   return (
-    <div className="post-card w-[320px] shrink-0 rounded-md shadow-md shadow-black mx-auto overflow-hidden">
+    <div className="post-card w-[320px] flex-shrink-0 rounded-md shadow-md shadow-black mx-auto sm:mx-0 overflow-hidden">
       <div className="h-[200px] overflow-hidden bg-main-500">
+        {/* this div will be used to show whether it is a newsletter/artce or whatever */}
         <div className="w-[30px] h-[30px] p-1 text-white ml-auto bg-main2 rounded-md text-center font-bold absolute">
             N
         </div>

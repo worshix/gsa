@@ -41,7 +41,7 @@
 }
 
 .section-heading {
-    @apply text-main2 font-bold text-xl;
+    @apply text-main2 font-bold text-xl p-2 my-4;
    }
 
 .btn-main{
