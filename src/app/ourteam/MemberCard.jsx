@@ -13,7 +13,7 @@ const MemberCard = ({name, surname, title, imageExtention, id, socials}) => {
     </div>
     <div class="flex gap-2 pt-2 pl-3">
       {socials.twitter && (<Link href={socials.twitter} className="bi-twitter-x transition-transform duration-100 hover:scale-110"></Link>)}
-      {socials.email && (<Link href={socials.email} className="bi-envelope transition-transform duration-100 hover:scale-110"></Link>)}
+      {socials.email && (<Link href={`mailto:${socials.email}`} className="bi-envelope transition-transform duration-100 hover:scale-110"></Link>)}
       {socials.phone && (<Link href={`https://wa.me/${socials.phone.substring(1)}`} className="bi-whatsapp transition-transform duration-100 hover:scale-110"></Link>)}
       {socials.phone && (<Link href={`tel:${socials.phone}`} className="bi-telephone transition-transform duration-100 hover:scale-110"></Link>)}
       {socials.linkedin && (<Link href={socials.linkedin} className="bi-linkedin transition-transform duration-100 hover:scale-110"></Link>)}

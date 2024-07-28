@@ -35,10 +35,10 @@ const page = ({params}) => {
                   <Link href={socials.twitter} className="bi-twitter-x transition-transform duration-100 hover:scale-110"></Link>
                 )}
                 {socials.email && (
-                  <Link href={socials.email} className="bi-envelope transition-transform duration-100 hover:scale-110"></Link>
+                  <Link href={`mailto:${socials.email}`} className="bi-envelope transition-transform duration-100 hover:scale-110"></Link>
                 )}
                 {socials.phone && (
-                  <Link href={socials.phone} className="bi-whatsapp transition-transform duration-100 hover:scale-110"></Link>
+                  <Link href={`https://wa.me/${socials.phone.substring(1)}`} className="bi-whatsapp transition-transform duration-100 hover:scale-110"></Link>
                 )}
                 {socials.phone && (
                   <Link href={`tel:${socials.phone}`} className="bi-telephone transition-transform duration-100 hover:scale-110"></Link>
