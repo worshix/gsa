@@ -10,7 +10,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global Styles here */
+/*** Global Styles here ***/
 
 .roboto {
     font-family: 'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,13 +21,29 @@
     @apply roboto;
 }
 
-.responsive-text{
+.responsive-text {
     font-size: clamp(12px, 3vw, 18px);
 }
 
-.section-heading{
- @apply text-main2 font-bold text-xl;
+
+/* scroll animation */
+
+.anime {
+    animation: scroll-watcher linear forwards;
+    animation-timeline: view();
+    animation-range: end;
 }
+@keyframes scroll-watcher{
+    30%, 100%{
+        @apply scale-100 opacity-100 translate-x-0 translate-y-0;
+        }
+
+}
+
+.section-heading {
+    @apply text-main2 font-bold text-xl p-2 my-4;
+   }
+
 .btn-main{
     @apply 
     relative 

@@ -44,7 +44,7 @@ export default {
             socials:{
                 twitter:null,
                 email:'munya.sachis@gmail.com',
-                phone:null,
+                phone:'+263772916923',
                 linkedin:'https://www.linkedin.com/in/munyaradzi-chisora-281340181?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
                 facebook:'https://www.facebook.com/munyaradzi.chisora?mibextid=LQQJ4d',
                 instagram:null,
@@ -93,7 +93,7 @@ export default {
             socials:{
                 twitter:null,
                 email:'brandonjaka3@gmail.com',
-                phone:null,
+                phone:'+263783178976',
                 linkedin:'https://www.linkedin.com/in/brandon-anotidashe-jaka-a33b60181?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
                 facebook:'https://www.facebook.com/bee.jakah?mibextid=kFxxJD',
                 instagram:'https://www.instagram.com/jb_eulacx?igsh=d210b3c4MGlxYmth',
@@ -118,7 +118,7 @@ export default {
             socials:{
                 twitter:'https://x.com/taffychirisa?s=09null',
                 email:'chirisatafadzwa2019@gmail.com',
-                phone:null,
+                phone:'+263774311932',
                 linkedin:'https://www.linkedin.com/in/tafadzwa-chirisa-b06b32212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
                 facebook:'https://www.facebook.com/tafadzwachirisa.t?mibextid=ZbWKwL',
                 instagram:null,
@@ -131,12 +131,12 @@ export default {
             id:'munyaradzitagara',
             name:'Munyaradzi',
             surname:'tagara',
-            title:'Unknown',
+            title:'Someone',
             imageExtention:'jpg',
             socials:{
                 twitter:'https://x.com/innocent_2802?t=emNu7Nnik2OWIZnrcYB9lg&s=09',
                 email:'tagaramunyaradzi2802@gmail.com',
-                phone:null,
+                phone:'+263783006921',
                 linkedin:'https://www.linkedin.com/in/munyaradzi-innocent-4b4752254',
                 facebook:'https://www.facebook.com/munyaradzi.tagara.58?mibextid=ZbWKwL',
                 instagram:null,
@@ -167,7 +167,7 @@ export default {
             socials:{
                 twitter:'https://x.com/innocent_2802?t=emNu7Nnik2OWIZnrcYB9lg&s=09',
                 email:'plnnonjazi@gmail.com',
-                phone:null,
+                phone:'+263778443301',
                 linkedin:'https://www.linkedin.com/in/munyaradzi-innocent-4b4752254',
                 facebook:null,
                 instagram:null,
@@ -188,7 +188,7 @@ export default {
             socials:{
                 twitter:null,
                 email:'thomasolive195@gmail.com',
-                phone:null,
+                phone:'+263782232149',
                 linkedin:'http://linkedin.com/in/olive-thomas',
                 facebook:null,
                 instagram:null,
@@ -203,5 +203,42 @@ export default {
                 'Olive\'s commitment to personal and professional development is evident through her participation in the'+
                 'YALI RLC SA programme, further equipping herself to drive positive change and contribute to GSA\'s success.'
             ]
-        },                
+        },
+        oscarmano: {
+            id:'oscarmano',
+            name:'Oscar',
+            surname:'Mano',
+            title:'Education and Scientific Officer',
+            imageExtention:'jpg',
+            socials:{
+                twitter:'https://twitter.com/docmano',
+                email:'oscarmano98@gmail.com',
+                phone:'+263779678500',
+                linkedin:'https://www.linkedin.com/in/oscar-mano?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+                facebook:'https://www.facebook.com/profile.php?id=100075459552278&mibextid=LQQJ4d',
+                instagram:'https://www.instagram.com/mano_oscar?igsh=MWg5bXVjOW9xbzI1cA%3D%3D&utm_source=qr',
+            },
+            bio:[
+                'A highly motivated and dedicated medical laboratory scientist; driven by a profound thirst for knowledge, a relentless pursuit of excellence, and a steadfast commitment to continuous personal and professional growth. Oscar is a team player, mentorship advocate, celebrator of diversity and lifelong learner.', 
+                'His key personal attributes include strong critical thinking abilities, a collaborative mindset, an unwavering work ethic, conscientiousness towards time management, and exceptional communication skills. His fields of interest are Public Health Research, Epidemiology, Healthcare Management and Health Policy and Advocacy. He enjoys traveling, novel experiences and cricket!',
+            ]
+        },
+        nokkanymabhena: {
+            id:'nokkanymabhena',
+            name:'Nokkhany',
+            surname:'Mabhena',
+            title:'Vice Secretary General',
+            imageExtention:'jpg',
+            socials:{
+                twitter:'https://x.com/KhanyaMabhena?t=D88S2thBHaCboF2wrESagg&s=08',
+                email:'nokkhanymabhena@gmail.com',
+                phone:'+263786569243',
+                linkedin:'https://www.linkedin.com/in/nokukhanya00',
+                facebook:'https://www.facebook.com/profile.php?id=100070312136402&mibextid=ZbWKwL',
+                instagram:null,
+            },
+            bio:[
+                'Nokukhanya Mabhena is the Vice Secretary General at Generational Stewards for Antimicrobials and is a final-year student in Digital Disease Surveillance and Environmental Health at the University of Zimbabwe. As a dedicated climate advocate, she brings a strong background in environmental activism and research, with a passion for the climate-health nexus. Certified as a Climate Researcher through the Climate Catalyst Research Program, she volunteers with the Oath For Sustainability Network\'s Teach Climate for Health Africa program. For her third-year she interned at the Scientific & Industrial Research and Development Center under the Environmental Science Institute and Food & Biomedical Technology Institute. Her internship research project was a study on water quality and health threats from water from  informal water vendors.',
+            ]
+        },
 }

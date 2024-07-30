@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const MemberCard = ({name, surname, title, imageExtention, id, socials}) => {
   return (
-<div class="flex items-center p-3 w-72 h-28 bg-white rounded-md shadow-lg slide-in-left">
+<div class="flex items-center p-3 w-72 h-28 bg-white rounded-md shadow-lg anime translate-y-8 translate-x-full opacity-0">
   <Link class="flex justify-center items-center w-14 h-14 rounded-full hover:cursor-pointer hover:scale-110 duration-300 overflow-hidden flex-shrink-0" href={`/ourteam/${id}`}>
     <img src={`/assets/images/ourteam/${id}.${imageExtention}`} alt={name+" "+surname} className='rounded-full block flex-shrink-0'/>
   </Link>
@@ -13,8 +13,8 @@ const MemberCard = ({name, surname, title, imageExtention, id, socials}) => {
     </div>
     <div class="flex gap-2 pt-2 pl-3">
       {socials.twitter && (<Link href={socials.twitter} className="bi-twitter-x transition-transform duration-100 hover:scale-110"></Link>)}
-      {socials.email && (<Link href={socials.email} className="bi-envelope transition-transform duration-100 hover:scale-110"></Link>)}
-      {socials.phone && (<Link href={socials.phone} className="bi-whatsapp transition-transform duration-100 hover:scale-110"></Link>)}
+      {socials.email && (<Link href={`mailto:${socials.email}`} className="bi-envelope transition-transform duration-100 hover:scale-110"></Link>)}
+      {socials.phone && (<Link href={`https://wa.me/${socials.phone.substring(1)}`} className="bi-whatsapp transition-transform duration-100 hover:scale-110"></Link>)}
       {socials.phone && (<Link href={`tel:${socials.phone}`} className="bi-telephone transition-transform duration-100 hover:scale-110"></Link>)}
       {socials.linkedin && (<Link href={socials.linkedin} className="bi-linkedin transition-transform duration-100 hover:scale-110"></Link>)}
       {socials.facebook && (<Link href={socials.facebook} className="bi-facebook transition-transform duration-100 hover:scale-110"></Link>)}

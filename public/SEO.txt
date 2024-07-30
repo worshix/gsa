@@ -1,6 +1,17 @@
+// editing this file will result in devastating conflicts
+
 pages ready for SEO
 
-1. ourteam page
-2. our team nested pages
-3. toolkit
+1. toolkit
+- SEO ready
+- add some toolkits I'm sending you ku whatsapp
+
+2. our team
+- SEO ready
+- 5 members are missing for now but you don't have SEO oladem
+
+3. each members page under [member]
+- SEO pending coz of you... you need to fix us that code yekuti tione kuti ma posts emunhu ndeapi
+- I already imported the Post component... use that one mu section yandisa. yatoitwa responsive and what not...
+
 4. 

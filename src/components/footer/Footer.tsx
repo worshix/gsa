@@ -38,7 +38,7 @@ const Footer = () => {
                 <p className='text-center'>Harare, Zimbabwe</p>
             </div>
             <div className='p-2'>
-                <p className='text-center text-main2 font-bold'>© {new Date().getFullYear()} GSA</p>
+                <p className='text-center text-main2 font-bold'>© { new Date().getFullYear()} GSA</p>
             </div>
         </div>
     </footer>

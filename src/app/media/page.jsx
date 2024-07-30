@@ -1,70 +1,32 @@
-import Gallery from "./Gallery";
-import MediaItems from "./MediaItems";
-import { createClient } from '@/prismicio'
-
-const articleList = [
-  {
-      id:'',
-      title:'',
-      link:'' //link to page with the actual article
-  },
-  {
-      id:'',
-      title:'',
-      link:'' //link to page with the actual article
-  },
-]
-
-const newsletterList = [
-  {
-      id:'',
-      title:'',
-      link:'' //link to page with the actual newsletter
-  },
-  {
-      id:'',
-      title:'',
-      link:'' //link to page with the actual newsletter
-  },
-]
+//import Gallery from "./Gallery";
+import { createClient } from '@/prismicio';
+import Link from 'next/link';
 
 export const metadata = {
   title:'Media'
 }
 
-export async function AllPosts () {
-  const client = createClient();
-  const articles_arr = await client.getAllByType("article");
-
-  return ( 
-	   <section>
-		<h1>All Posts</h1>
-		<article className='flex overflow-x-scroll'>
-	  	{articles_arr.map((el) => (
-		    <Post
-			    image={el.data.story_image}
-			    title={el.data.title}
-            		    content={el.data.story}
-            		    author={el.data.author}
-            	 	    date={el.data.publishing_time}
-            	 	    link={el.url}
-		     />
-		))}
-		</article>
-	    </section>
-  	);
-}
 
 const Media = () => {
 return (
-  <main>
-    //The component above generates articles like on the home page but queries all of them.
-    //You can just call it here.
-    
-    <MediaItems props = {articleList} />
-    <MediaItems props = {newsletterList} />
-    <Gallery />
-    </main>
+  <>
+  	<h1 className="text-4xl font-bold my-4 text-center text-main-400 w-full flex-shrink-0">Media</h1>
+      {/* links to pages for events, news, articles */}
+      <section className='flex gap-2 justify-center'>
+          <Link className='btn-main' href="/media/events">Events</Link>
+          <Link className='btn-main' href="media/articles">Article</Link>
+          <Link className='btn-main' href="media/news">News</Link>
+      </section>
+      <h1 className='section-heading'>Gallery</h1>
+      
+      {/* the gallery Slide here down here */}
+      {/* <Gallery /> */}
+
+      {/* all images just poured here with lazy loading */}
+      <section>
+
+      </section>
+  </>
 )
 }
 
