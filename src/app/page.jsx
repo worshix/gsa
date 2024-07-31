@@ -8,6 +8,7 @@ import { createClient } from '@/prismicio';
 import Contact from '@/components/Contact';
 import { PrismicNextImage } from '@prismicio/next';
 import LandingGallery from '@/components/LandingGallery';
+import * as prismic from '@prismicio/client';
 
 
 // partners props
@@ -97,8 +98,9 @@ export const metadata = {
 
 export default async function Home() {
   const client = createClient();
-  const images = await client.getAllByType("image_gallery");
-  
+  const images = await client.getAllByType('image_gallery', {limit: 10});
+
+
   return (
     <main className="overflow-x-hidden">
       {/* to allow page loading */}
