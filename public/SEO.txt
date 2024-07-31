@@ -13,3 +13,5 @@ pages ready for SEO
 3. each members page under [member]
 - SEO pending coz of you... you need to fix us that code yekuti tione kuti ma posts emunhu ndeapi
 - I already imported the Post component... use that one mu section yandisa. yatoitwa responsive and what not...
+
+4. 

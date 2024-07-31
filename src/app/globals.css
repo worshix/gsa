@@ -21,7 +21,7 @@
     @apply roboto;
 }
 
-.responsive-text{
+.responsive-text {
     font-size: clamp(12px, 3vw, 18px);
 }
 
