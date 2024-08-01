@@ -3,7 +3,7 @@ import { createClient } from '@/prismicio';
 
 export default async function LatestPosts () {
   const client = createClient();
-  const articles_arr = await client.getAllByType("article", {
+  /*const articles_arr = await client.getAllByType("article", {
 	  limit: 10,
   	  orderings: [
     	  {
@@ -11,7 +11,8 @@ export default async function LatestPosts () {
       	    direction: 'desc',
     	  },
   	],
-  });
+  });*/
+  const articles_arr = await client.getAllByTag('articles');
   return ( 
 	   <section>
 	<h1 className="text-4xl font-bold my-4 text-center text-main-400 w-full flex-shrink-0">Articles</h1>

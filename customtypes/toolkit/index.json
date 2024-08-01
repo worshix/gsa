@@ -1,0 +1,54 @@
+{
+  "format": "custom",
+  "id": "toolkit",
+  "label": "ToolKit",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "author": {
+        "type": "Text",
+        "config": {
+          "label": "Author",
+          "placeholder": ""
+        }
+      },
+      "publishing_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Publishing time",
+          "placeholder": ""
+        }
+      },
+      "pdf_link": {
+        "type": "Link",
+        "config": {
+          "label": "PDF Link",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      }
+    }
+  }
+}

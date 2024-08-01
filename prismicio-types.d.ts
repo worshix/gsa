@@ -156,7 +156,86 @@ export type ImageGalleryDocument<Lang extends string = string> =
     Lang
   >;
 
-export type AllDocumentTypes = ArticleDocument | ImageGalleryDocument;
+/**
+ * Content for ToolKit documents
+ */
+interface ToolkitDocumentData {
+  /**
+   * Title field in *ToolKit*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: toolkit.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title: prismic.KeyTextField;
+
+  /**
+   * Description field in *ToolKit*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: toolkit.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+
+  /**
+   * Author field in *ToolKit*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: toolkit.author
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  author: prismic.KeyTextField;
+
+  /**
+   * Publishing time field in *ToolKit*
+   *
+   * - **Field Type**: Timestamp
+   * - **Placeholder**: *None*
+   * - **API ID Path**: toolkit.publishing_time
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#timestamp
+   */
+  publishing_time: prismic.TimestampField;
+
+  /**
+   * PDF Link field in *ToolKit*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: toolkit.pdf_link
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  pdf_link: prismic.LinkField;
+}
+
+/**
+ * ToolKit document from Prismic
+ *
+ * - **API ID**: `toolkit`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ToolkitDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ToolkitDocumentData>,
+    "toolkit",
+    Lang
+  >;
+
+export type AllDocumentTypes =
+  | ArticleDocument
+  | ImageGalleryDocument
+  | ToolkitDocument;
 
 declare module "@prismicio/client" {
   interface CreateClient {
@@ -173,6 +252,8 @@ declare module "@prismicio/client" {
       ArticleDocumentDataSlicesSlice,
       ImageGalleryDocument,
       ImageGalleryDocumentData,
+      ToolkitDocument,
+      ToolkitDocumentData,
       AllDocumentTypes,
     };
   }
