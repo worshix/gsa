@@ -8,7 +8,7 @@ export const metadata = {
 }
 
 
-async function Media {
+async function Media () {
 	const client = createClient();
 	const images = await client.getAllByType('image_gallery');
 return (
