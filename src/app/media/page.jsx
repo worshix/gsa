@@ -8,6 +8,8 @@ export const metadata = {
 
 
 const Media = () => {
+	const client = createClient();
+	const images = client.getAllByType('image_gallery');
 return (
   <>
   	<h1 className="text-4xl font-bold my-4 text-center text-main-400 w-full flex-shrink-0">Media</h1>
