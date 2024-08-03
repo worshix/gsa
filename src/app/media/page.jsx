@@ -1,6 +1,7 @@
 //import Gallery from "./Gallery";
 import { createClient } from '@/prismicio';
 import Link from 'next/link';
+import { PrismicNextImage } from '@prismicio/next';
 
 export const metadata = {
   title:'Media'
@@ -26,7 +27,9 @@ return (
 
       {/* all images just poured here with lazy loading */}
       <section>
-
+        {
+          images.map((item) => <PrismicNextImage field={item.data.image} alt={item.data.image.alt} className='rounded-md shadow-md shadow-black' />)
+        }
       </section>
   </>
 )
