@@ -2,6 +2,7 @@
 import { createClient } from '@/prismicio';
 import Link from 'next/link';
 import { PrismicNextImage } from '@prismicio/next';
+import Gallery from './Gallery';
 
 export const metadata = {
   title:'Media'
@@ -23,18 +24,9 @@ return (
       <h1 className='section-heading'>Gallery</h1>
       
       {/* the gallery Slide here down here */}
-      {/* <Gallery /> */}
-
-      {/* all images just poured here with lazy loading */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            {images.map((item) => (
-              <div className="relative overflow-hidden bg-gray-200">
-                  <PrismicNextImage field={item.data.image} className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110" />
-              </div>
-            ))}
-      </section>
+      <h1>Gallery Here</h1>
+      <Gallery images={images} />
   </>
-)
+ )
 }
-
 export default Media

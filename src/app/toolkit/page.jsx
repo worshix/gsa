@@ -1,7 +1,6 @@
 import { createClient } from '@/prismicio';
 import { PrismicNextLink } from '@prismicio/next';
 import * as prismic from '@prismicio/client';
-import BasicAnimations from '@/components/BasicAnimations';
 
 export const metadata = {
   title: 'Toolkit'
@@ -52,7 +51,6 @@ async function Toolkit() {
         </article>
       ))}
     </section>
-	{/* <BasicAnimations /> */}
 	</>
   );
 }

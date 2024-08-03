@@ -1,44 +1,23 @@
-// components/ImageSlider.js
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import PropTypes from 'prop-types';
+import { PrismicNextImage } from '@prismicio/next';
 
-const ImageSlider = ({ images }) => {
-  const sliderRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.to('.slide', {
-        xPercent: -100 * (images.length - 1),
-        ease: 'none',
-        scrollTrigger: {
-          trigger: sliderRef.current,
-          pin: true,
-          scrub: 1,
-          snap: 1 / (images.length - 1),
-          end: () => `+=${sliderRef.current.offsetWidth * images.length}`
-        }
-      });
-    }, sliderRef);
-
-    return () => ctx.revert();
-  }, [images]);
-
+const Gallery = ({ images }) => {
   return (
-    <div ref={sliderRef} className="relative w-full overflow-hidden">
-      <div className="flex">
+    <section>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {images.map((image, index) => (
-          <div key={index} className="slide min-w-full flex-shrink-0">
-            <img src={image} alt={`Slide ${index}`} className="object-cover w-full h-full" />
+          <div
+            key={index}
+            className="relative overflow-hidden bg-gray-200 cursor-pointer"
+          >
+            <PrismicNextImage
+              field={image.data.image}
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110"
+            />
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-ImageSlider.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
-
-export default ImageSlider;
+export default Gallery;
