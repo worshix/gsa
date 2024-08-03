@@ -26,10 +26,12 @@ return (
       {/* <Gallery /> */}
 
       {/* all images just poured here with lazy loading */}
-      <section>
-        {
-          images.map((item) => <PrismicNextImage field={item.data.image} alt={item.data.image.alt} className='rounded-md shadow-md shadow-black' />)
-        }
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+            {images.map((item) => (
+              <div className="relative overflow-hidden bg-gray-200">
+                  <PrismicNextImage field={item.data.image} className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-110" />
+              </div>
+            ))}
       </section>
   </>
 )
