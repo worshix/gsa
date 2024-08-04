@@ -15,9 +15,9 @@ const Programs = () => {
       </section>
       <section className="program-container">
         <h2>Engaging Youths in the Fight Against Antimicrobial Resistance: A Global X Space Discussion Series - Ongoing Activity</h2>
-        <p>Project Organizer: Generational Stewards for Antimicrobials</p>
-        <p>Project Format: Bi-weekly X Space Discussion Series </p>
-        <p>Project Focus: One Health Approach to equipping young people with knowledge about AMR and fostering collaboration between generations. </p>
+        <p><b>Project Organizer:</b> Generational Stewards for Antimicrobials</p>
+        <p><b>Project Format:</b> Bi-weekly X Space Discussion Series </p>
+        <p><b>Project Focus:</b> One Health Approach to equipping young people with knowledge about AMR and fostering collaboration between generations. </p>
         <h3>Ongoing Activity Summary: </h3>
         <p>The Generational Stewards for Antimicrobials host bi-weekly X Space discussions focusing on engaging youths in the fight against antimicrobial resistance (AMR). The series adopts a One Health approach, encompassing the interconnectedness of human, animal, and environmental health. Each session features a diverse panel of experts from various sectors and disciplines within the global health sphere, including researchers, practitioners, advocates, and policy-makers. To foster intergenerational collaboration, each X Space session includes a mix of young participants and experienced professionals. This mix encourages knowledge sharing, mentorship, and the development of innovative solutions to address AMR. </p>
         <h3>Key Activities:</h3>
