@@ -386,3 +386,48 @@
         @apply text-black font-light;
     }
 }
+
+/* Programs */
+.program-container {
+    @apply
+    sm:w-[75%]
+    sm:mx-auto
+    p-2
+    ;
+    h2 {
+        @apply
+        font-bold
+        text-3xl
+        text-main-500
+        ;
+    }
+    p {
+        @apply
+        p-2
+        font-light
+        ;
+    }
+
+    h3 {
+        @apply
+        text-xl
+        font-bold
+        p-2
+        text-gray-400
+        ;
+    }
+    h4 {
+        @apply
+            font-bold
+            text-lg
+            ;
+    }
+    ul{
+        @apply
+        list-disc
+        p-2
+        pl-6
+        font-light
+        ;
+    }
+}
