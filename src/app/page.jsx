@@ -3,15 +3,12 @@ import Link from "next/link";
 import About from "@/components/about/About";
 import Partner from "@/components/Partner";
 import LatestPosts from '@/components/latestPosts/LatestPosts';
-import HomePageAnime from '@/app/HomePageAnime';
 import { createClient } from '@/prismicio';
 import Contact from '@/components/Contact';
-import { PrismicNextImage } from '@prismicio/next';
 import LandingGallery from '@/components/LandingGallery';
-import * as prismic from '@prismicio/client';
+import dynamic from "next/dynamic";
 
-
-// partners props
+const HomePageAnime = dynamic(() => import('./HomePageAnime'), { ssr: false });
 const partners = [
   {
     name:"Zimbabwe Youth Council",
