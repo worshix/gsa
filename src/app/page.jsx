@@ -100,7 +100,7 @@ export default async function Home() {
 
   return (
     <main className="overflow-x-hidden">
-      {/* to allow page loading */}
+      {/* animation to allow page loading */}
       <section className='h-screen bg-main-300 absolute z-10 w-screen loading-cover overflow-x-hidden'>
       <svg viewBox='0 0 600 160' className="loader-svg pt-[25vh]">
         <text x="30%" y="50%" dy=".32em" textAnchor='middle' className='loader-body-g'>
@@ -126,6 +126,7 @@ export default async function Home() {
           <Link className="call-btn call-btn-left" href="/#join-us">join Us <span className="bi bi-hand-thumbs-up opacity-0"></span></Link>
           <Link className="call-btn call-btn-right" href="#">donate <span className="bi bi-emoji-sunglasses opacity-0"></span></Link>
         </div>
+        <a href="#" className="" id="about-us"></a>
         <p className="z-20 relative top-[22%] md:top-[35%] text-xs font-sans p-2 martin">
           “If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.”
           <b className="block ml-auto p-1 w-fit mr-3">Martin Luther King Jr.</b>
@@ -133,25 +134,24 @@ export default async function Home() {
       </section>
 
       {/* About Section */}
-      <section className="flex flex-col sm:flex-row flex-wrap justify-center items-center sm:items-start p-2 pt-8 gap-10 sm:gap-5 lg:h-[70vh]">
+      <section className="flex flex-col flex-wrap justify-center items-center p-2 pt-8 gap-10 sm:gap-5">
         <About {...WhoWeAre} />
-        <a href="#" className="" id="about-us"></a>
         <About {...mission} />
         <About {...vision} />
       </section>
 
       {/* values */}
       <section className="values p-2 my-6">
-        <h1 className="section-heading">Our Core Values</h1>
+        <h1 className="section-heading slide-in-top">Our Core Values</h1>
         <ul className="divide-y-2 di mt-3">
-          {values.map((item) => <li className="flex gap-2 bg-slate-100 h-12"><span className="block bi bi-capsule text-main2 bg-white w-fit p-2 px-3 rounded-lg m-2"></span><b className="block p-2">{item}</b></li>)}
+          {values.map((item) => <li className="flex gap-2 bg-slate-100 h-12 w-fit"><span className="block bi bi-capsule text-main2 bg-white w-fit p-2 px-3 rounded-lg m-2"></span><b className="block p-2">{item}</b></li>)}
         </ul>
       </section>
 
       {/* partners */}
       <section className="partners" id="partners">
-        <h1>Our Partners</h1>
-        <div className="partners-container flex flex-col gap-2">
+        <h1 className="section-heading slide-in-top">Our Partners</h1>
+        <div className="partners-container flex flex-col sm:flex-row flex-wrap gap-2">
             {partners.map((item) => <Partner {...item}/>)}
         </div>
       </section>
@@ -159,8 +159,8 @@ export default async function Home() {
       {/* join us and contact-us*/}
       <section className="my-4 contacts-section text-white p-2 space-y-2">
         <article className="contact-us bg-main-300 bg-opacity-15 backdrop-blur-sm p-2 rounded-lg" id="contact-us">
-          <h1 className="bg-transparent text-center text-main2 font-bold text-xl">Connect With Us</h1>
-          <p className="">
+          <h1 className="bg-transparent text-center text-main2 font-bold text-xl slide-in-top">Connect With Us</h1>
+          <p className="slide-in-top">
             We are always glad to engage both professionals and students in all our activities.
             We highly value individual and collective contributions that each one of us can have
             in Antimicrobial Resistance. At SAS Africa, we believe that it is the small efforts that
@@ -176,7 +176,7 @@ export default async function Home() {
         </article>
         <article className="join-us bg-main-300 bg-opacity-25 backdrop-blur-sm p-2 rounded-lg" id="join-us">
           <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Join Us</h1>
-          <p className="p-2">
+          <p className="p-2 slide-in-top">
             Donate,Your support can save lives.
             We welcome any gifts and donations, and sponsorships to support our work. We are sure that you will find interesting and important purposes to support your involvement and generosity in the work that we are doing.
             For inquiries and conversations about gifts, donations and sponsorships, please contact us at:

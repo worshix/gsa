@@ -67,7 +67,7 @@ const page = ({params}) => {
     return (
       <section className='h-screen flex items-center justify-center flex-col'>
         <i class="bi bi-exclamation-triangle text-orange-500 text-5xl block w-fit"></i>
-        <h1 className="text-4xl font-bold my-10 w-fit text-red-600 title">What organism is{params.member}?</h1>
+        <h1 className="text-4xl font-bold my-10 w-fit text-red-600 title">Fuck off {params.member}?</h1>
       </section>
     )
 

@@ -1,17 +1,55 @@
-'use client'
-import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
+'use client';
+import { useEffect } from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+
 
 const BasicAnimations = () => {
-  useGSAP(()=>{
-      //to be used onload
-      gsap.from('.slide-in-left', {
-        y:'+=30',
-        duration: .7,
-        ease:'none'
-      })
-      //to be used on scroll
-    })
-  return <></>
-    }
-export default BasicAnimations
+  useGSAP(() => {
+    // Register the ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+    const SlideInTop = document.querySelectorAll('.slide-in-top');
+    SlideInTop.forEach((slide) => {
+      gsap.fromTo(slide, 
+        { opacity: 0, y: 50 }, 
+        {
+          opacity: 1,
+          y: 0,
+          duration: .4,
+          scrollTrigger: {
+            trigger: slide,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play none none none'
+          }
+        }
+      );
+    });
+  });
+  useGSAP(() => {
+    // Register the ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+    const SlideInLeft = document.querySelectorAll('.slide-in-left');
+    SlideInLeft.forEach((slide) => {
+      gsap.fromTo(slide, 
+        { opacity: 0, y: 50 }, 
+        {
+          opacity: 1,
+          y: 0,
+          duration: .4,
+          scrollTrigger: {
+            trigger: slide,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play none none none'
+          }
+        }
+      );
+    });
+  });
+
+  return null; // This component doesn't render anything visible
+};
+
+export default BasicAnimations;

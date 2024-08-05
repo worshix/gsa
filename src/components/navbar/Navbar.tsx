@@ -43,7 +43,7 @@ const Navbar = () => {
         <nav className="flex px-2 bg-main-500 text-white font-bold navbar w-full fixed z-50 top-0">
             <Link 
                     href="/"
-                    className="block mr-auto p-1 selected Home text-xs sm:text-sm"
+                    className="block mr-auto p-1 selected Home text-xs sm:text-sm active:scale-95"
                     onClick={ () =>{
                     //to hide sidebar
                     const sidebar = document.getElementById('sidebar');

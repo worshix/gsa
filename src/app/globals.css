@@ -25,23 +25,8 @@
     font-size: clamp(12px, 3vw, 18px);
 }
 
-
-/* scroll animation */
-
-.anime {
-    animation: scroll-watcher linear forwards;
-    animation-timeline: view();
-    animation-range: end;
-}
-@keyframes scroll-watcher{
-    30%, 100%{
-        @apply scale-100 opacity-100 translate-x-0 translate-y-0;
-        }
-
-}
-
 .section-heading {
-    @apply text-main2 font-bold text-xl p-2 my-4;
+    @apply text-main2 font-bold text-xl p-2 my-4 md:text-3xl;
    }
 
 .btn-main{
@@ -179,7 +164,6 @@
     }
 }
 
-
 /* Navbar */
 .nav-ul li{
     &:nth-child(1){
@@ -315,14 +299,15 @@
    @apply active:scale-90 transition-all duration-200;
 }
 
-.about{
-    transition: all ease-in-out 2s;
+.about {
+    @apply p-2 w-80 sm:w-[60%] text-xs shadow-sm shadow-black rounded-md;
+    transition: height 0.5s cubic-bezier(1, 0.63, 0.25, 1.5);
+    height: calc-size(auto);
+    mask-image: none;
 }
-.compressed{
-    transition: all ease-in-out 2s;
-}
+
 .compressed .compressed-about {
-    @apply h-0;
+    @apply hidden;
 }
 
 /* contact us */
