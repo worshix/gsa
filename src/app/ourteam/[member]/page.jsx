@@ -30,7 +30,7 @@ const page = ({params}) => {
       
             <section className="p-4 divide-y-2 divide-main2">
               <h1 className="text-3xl font-bold mb-1 text-main-500">Socials</h1>
-              <div className="flex gap-4 p-2">
+              <div className="flex gap-4 p-2 text-2xl">
                 {socials.twitter && (
                   <Link href={socials.twitter} className="bi-twitter-x transition-transform duration-100 hover:scale-110"></Link>
                 )}

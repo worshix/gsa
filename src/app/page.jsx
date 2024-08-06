@@ -3,7 +3,6 @@ import Link from "next/link";
 import About from "@/components/about/About";
 import Partner from "@/components/Partner";
 import LatestPosts from '@/components/latestPosts/LatestPosts';
-import { createClient } from '@/prismicio';
 import Contact from '@/components/Contact';
 import LandingGallery from '@/components/LandingGallery';
 import dynamic from "next/dynamic";
@@ -154,13 +153,14 @@ export default async function Home() {
 
       {/* join us and contact-us*/}
       <section className="my-4 contacts-section text-white p-2 space-y-3 responsive-text">
-        <article className="contact-us bg-main-300 bg-opacity-15 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black" id="contact-us">
+        <article className="contact-us bg-main-300 bg-opacity-15 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black">
           <h1 className="bg-transparent text-center text-main2 font-bold text-xl">Connect With Us</h1>
           <p className="slide-in-top">
             We are always glad to engage both professionals and students in all our activities.
             We highly value individual and collective contributions that each one of us can have
             in Antimicrobial Resistance. At SAS Africa, we believe that it is the small efforts that
             each one of us undertakes which matter most.
+            <a id="contact-us"></a>
             We welcome you to our family!
           </p>          
         </article>
@@ -168,9 +168,10 @@ export default async function Home() {
         <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Contact Us</h1>
           <div className="flex flex-wrap gap-3 justify-center p-2 mt-3 slide-in-top">
             { contactDetails.map((item) => <Contact {...item}/>)}
+            <a id="join-us"></a>
           </div>
         </article>
-        <article className="join-us bg-main-300 bg-opacity-25 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black" id="join-us">
+        <article className="join-us bg-main-300 bg-opacity-25 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black">
           <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Join Us</h1>
           <p className="p-2 slide-in-top">
             Donate,Your support can save lives.

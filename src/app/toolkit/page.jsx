@@ -14,7 +14,7 @@ async function Toolkit() {
 	<h1 className="text-4xl font-bold my-4 text-center text-main-400 w-full flex-shrink-0">Toolkit</h1>
     <section className="bg-white flex flex-col items-center sm:flex-row flex-wrap sm:justify-center sm:items-start gap-2 py-2">
       {toolkits.map((el, index) => (
-        <article key={index} className="w-[320px] border-2 border-main-500 rounded-md p-2 flex-shrink-0 group anime">
+        <article key={index} className="w-[320px] border-2 border-main-500 rounded-md p-2 flex-shrink-0 group slide-in-top">
 			<div className='flex gap-2'>
           	<h1 className="text-2xl font-bold">{el.data.title}</h1>
 			<span className='text-red-600 text-xl block'><i className="bi bi-file-earmark-pdf"></i></span>

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+import LinksToSocials from './linksToSocials'
 
 export const metadata = {
     title:'Programs'
@@ -16,6 +16,7 @@ const Programs = () => {
       </section>
       <section className="program-container">
       <h2 className="">Leadership and Capacity Building</h2>
+      <LinksToSocials />
       <p>
         The Generational Stewards for Antimicrobials (GSA) is actively implementing a comprehensive Leadership
         and Capacity Building Program on Antimicrobial Resistance (AMR) in primary and secondary schools across Zimbabwe.

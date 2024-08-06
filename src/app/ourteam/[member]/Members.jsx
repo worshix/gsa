@@ -162,7 +162,7 @@ export default {
             id:'innocentnjazi',
             name:'Innocent',
             surname:'Njazi',
-            title:'Unknown',
+            title:'Member',
             imageExtention:'jpg',
             socials:{
                 twitter:'https://x.com/innocent_2802?t=emNu7Nnik2OWIZnrcYB9lg&s=09',
@@ -239,6 +239,44 @@ export default {
             },
             bio:[
                 'Nokukhanya Mabhena is the Vice Secretary General at Generational Stewards for Antimicrobials and is a final-year student in Digital Disease Surveillance and Environmental Health at the University of Zimbabwe. As a dedicated climate advocate, she brings a strong background in environmental activism and research, with a passion for the climate-health nexus. Certified as a Climate Researcher through the Climate Catalyst Research Program, she volunteers with the Oath For Sustainability Network\'s Teach Climate for Health Africa program. For her third-year she interned at the Scientific & Industrial Research and Development Center under the Environmental Science Institute and Food & Biomedical Technology Institute. Her internship research project was a study on water quality and health threats from water from  informal water vendors.',
+            ]
+        },
+        varaidzomukwekwe: {
+            id:'varaidzomukwekwe',
+            name:'Varaidzo',
+            surname:'Mukwekwe',
+            title:'Youth Engagement Officer',
+            imageExtention:'jpg',
+            socials:{
+                twitter:null,
+                email:'vjmukwekwe@gmail.com',
+                phone:'+263779575154',
+                linkedin:'https://www.linkedin.com/in/varaidzo-joyline-mukwekwe-137996134',
+                facebook:null,
+                instagram:null,
+            },
+            bio:[
+                'Varaidzo Joyline Mukwekwe (Cert HTE, BTech Hons Biotechnology, MPH) is a multi disciplined Universal Health Coverage implementation researcher with over 5 years experience working in Agriculture and Health sector, youths on social protection, designing One Health capacity building programs and simultaneously overseeing Health Systems Strengthening and food safety projects in WHO AFRO region particularly ESA . Deeply intrigued by the interplay between microorganisms, vectors, biomolecules, toxins, and sociodemographic factors. She leverages beneficial microorganisms and biomolecules for industrial applications using principles in  Biotechnology and Health Technology. Additionally, she is adept at tracking the transmission dynamics of harmful and drug-resistant pathogens to effectively support Community-Based Surveillance initiatives.  Demonstrates ability to work with cross functional teams , vulnerable population groups, dynamic organisations, churches, Tech companies, Public health foundations, Health facilities,  civic societies, sports clubs, universities, innovation hubs and startups.  Exhibits flexibility adapting across various roles including R&D, QC, Project management, M&E, SRH, WASH, IPC Vaccine Pharmacovigilance, Advocacy, Teaching and Communication. Through her dedication to a Sector Wide Approach (SWAp), she addresses pressing public health issues such as environmental pollution, antimicrobial resistance, infectious diseases, malnutrition, and the mental health crisis. Her vision is to influence a solution-driven generation of youths eager to engage in development challenges and advocate for evidence-based interventions that bridge the gap between academia and industry, contributing to sustainable development, epidemic preparedness, and climate action.',
+            ]
+        },
+        vincentnyereyemhuka: {
+            id:'vincentnyereyemhuka',
+            name:'Vincent',
+            surname:'Nyereyemhuka',
+            title:'Newsletter Editor',
+            imageExtention:'jpg',
+            socials:{
+                twitter:'https://x.com/92_vinc?t=4o-9Y_zkTzcHgZngGPWr9g&s=08',
+                email:'vnyereyemhuka@gmail.com',
+                phone:null,
+                linkedin:'https://www.linkedin.com/in/vincent-nyereyemhuka-5035a8114?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                facebook:null,
+                instagram:null,
+            },
+            bio:[
+                'Vincent Nyereyemhuka is an aspiring pharmacist,currently in his final year pursing a bachelor of pharmacy honors degree.',
+                'He holds a National Diploma in Pharmaceutical Technolgy (2017) and has more than 7 years working in both retail and wholesale pharmaceutical set up.',
+                'His proven leadership skills have allowed him to hold senior management positions in different pharmaceutical organisations. Vincent is also the founder and executive director for Healthcare Access Advocates for Disabilities, an organisation advocating for equity in healthcare access for persons living with disabilities.His interest in AMR topics also make him an ideal member who is ready to advocate for information on AMR to reach persons living with different disabilities. Currently he is also serving as the President for Zimbabwe Pharmaceutical Students Association for the year 2024-2025.',
             ]
         },
 }

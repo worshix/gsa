@@ -1,11 +1,12 @@
 import Link from "next/link"
+import LinksToSocials from "../linksToSocials"
 
 export const metadata = {
     title:'Programs'
 }
 const Programs = () => {
   return (
-    <>
+    <main>
       <h1 className="text-5xl font-bold my-10 text-center text-main-400">Programs</h1>
       <section className="flex gap-2 w-fit mx-auto p-2 mb-4">
         <Link href='/programs'  className="link-1 block w-fit font-bold bg-slate-300 text-white p-2 rounded-lg hover:bg-slate-500 active:scale-95 transition-transform duration-300 ease-linear">1</Link>
@@ -15,6 +16,7 @@ const Programs = () => {
       </section>
       <section className="program-container">
         <h2>Engaging Youths in the Fight Against Antimicrobial Resistance: A Global X Space Discussion Series - Ongoing Activity</h2>
+        <LinksToSocials />
         <p><b>Project Organizer:</b> Generational Stewards for Antimicrobials</p>
         <p><b>Project Format:</b> Bi-weekly X Space Discussion Series </p>
         <p><b>Project Focus:</b> One Health Approach to equipping young people with knowledge about AMR and fostering collaboration between generations. </p>
@@ -55,7 +57,7 @@ const Programs = () => {
         </ul>
     <p>This ongoing activity exemplifies the Generational Stewards for Antimicrobials' commitment to engaging youth in the fight against AMR, building a global community of action, and ensuring a healthier future for all.</p>
     </section>
-    </>
+    </main>
   )
 }
 

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import LinksToSocials from "../linksToSocials"
 
 export const metadata = {
     title:'Programs'
@@ -15,6 +16,7 @@ const Programs = () => {
       </section>
       <section className="program-container">
         <h2>The World Antimicrobial Resistance Awareness Week Engagement</h2>
+        <LinksToSocials />
         <p>Leading Youth Engagement in World Antimicrobial Resistance Awareness Week, Zimbabwe, The Generational Stewards for Antimicrobials (GSA) has taken a leading role in coordinating youth engagement during World Antimicrobial Resistance Awareness Week (WAAW) in Zimbabwe, successfully mobilizing young people to raise awareness and advocate for action against AMR. </p>
         <h3>2022 Activities:</h3>
         <h4>&bull; Radio Sensitization:</h4>

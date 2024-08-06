@@ -1,4 +1,5 @@
 import Link from "next/link"
+import LinksToSocials from "../linksToSocials"
 
 export const metadata = {
     title:'Programs'
@@ -15,6 +16,7 @@ const Programs = () => {
       </section>
       <section className="program-container">
       <h2> One Health Clubs: A Youth-Led Movement for Antimicrobial Resistance</h2>
+      <LinksToSocials />
       <p>
         The Generational Stewards for Antimicrobials (GSA) is spearheading a transformative
         initiative to establish One Health Clubs in schools across Zimbabwe, spanning primary, secondary,
