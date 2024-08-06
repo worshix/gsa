@@ -33,11 +33,11 @@ const BasicAnimations = () => {
     const SlideInLeft = document.querySelectorAll('.slide-in-left');
     SlideInLeft.forEach((slide) => {
       gsap.fromTo(slide, 
-        { opacity: 0, y: 50 }, 
+        { opacity: 0, x: -50 }, 
         {
           opacity: 1,
-          y: 0,
-          duration: .4,
+          x: 0,
+          duration: .6,
           scrollTrigger: {
             trigger: slide,
             start: 'top 80%',

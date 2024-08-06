@@ -88,16 +88,12 @@ const contactDetails = [
 ]
 
 export const metadata = {
-  title:'generational',
+  title:'generational stewards for antimicrobials',
   description:'focus on this and that and what what',
   //keywords:'woisawo mashoko esumbunuro pano',
 }
 
 export default async function Home() {
-  const client = createClient();
-  const images = await client.getAllByType('image_gallery', {limit: 10});
-
-
   return (
     <main className="overflow-x-hidden">
       {/* animation to allow page loading */}
@@ -142,9 +138,9 @@ export default async function Home() {
 
       {/* values */}
       <section className="values p-2 my-6">
-        <h1 className="section-heading slide-in-top">Our Core Values</h1>
-        <ul className="divide-y-2 di mt-3">
-          {values.map((item) => <li className="flex gap-2 bg-slate-100 h-12 w-fit"><span className="block bi bi-capsule text-main2 bg-white w-fit p-2 px-3 rounded-lg m-2"></span><b className="block p-2">{item}</b></li>)}
+        <h1 className="section-heading slide-in-top text-center">Our Core Values</h1>
+        <ul className="mt-3 gap-2 flex flex-col items-center sm:flex-row flex-wrap sm:justify-center sm:gap-4">
+          {values.map((item) => <li className="rounded-lg flex gap-2 bg-slate-100 w-fit slide-in-left sm:text-3xl p-2"><span className="block bi bi-capsule text-main2 bg-white w-[35px] h-[35px] rounded-lg flex-shrink-0 p-2"></span><b className="block flex-shrink-0 p-2">{item}</b></li>)}
         </ul>
       </section>
 
@@ -157,9 +153,9 @@ export default async function Home() {
       </section>
 
       {/* join us and contact-us*/}
-      <section className="my-4 contacts-section text-white p-2 space-y-2">
-        <article className="contact-us bg-main-300 bg-opacity-15 backdrop-blur-sm p-2 rounded-lg" id="contact-us">
-          <h1 className="bg-transparent text-center text-main2 font-bold text-xl slide-in-top">Connect With Us</h1>
+      <section className="my-4 contacts-section text-white p-2 space-y-3 responsive-text">
+        <article className="contact-us bg-main-300 bg-opacity-15 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black" id="contact-us">
+          <h1 className="bg-transparent text-center text-main2 font-bold text-xl">Connect With Us</h1>
           <p className="slide-in-top">
             We are always glad to engage both professionals and students in all our activities.
             We highly value individual and collective contributions that each one of us can have
@@ -168,13 +164,13 @@ export default async function Home() {
             We welcome you to our family!
           </p>          
         </article>
-        <article className="bg-main-300 bg-opacity-25 backdrop-blur-sm p-2 rounded-lg">
+        <article className="bg-main-300 bg-opacity-25 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black">
         <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Contact Us</h1>
-          <div className="flex flex-wrap gap-3 justify-center p-2 mt-3">
+          <div className="flex flex-wrap gap-3 justify-center p-2 mt-3 slide-in-top">
             { contactDetails.map((item) => <Contact {...item}/>)}
           </div>
         </article>
-        <article className="join-us bg-main-300 bg-opacity-25 backdrop-blur-sm p-2 rounded-lg" id="join-us">
+        <article className="join-us bg-main-300 bg-opacity-25 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black" id="join-us">
           <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Join Us</h1>
           <p className="p-2 slide-in-top">
             Donate,Your support can save lives.
@@ -188,24 +184,16 @@ export default async function Home() {
       </section>
 
       {/* gallery */}
-      <section className="gallery-slide h-screen bg-main-500">
+      <h1 className="section-heading slide-in-top">Check out our gallery</h1>
+      <section className="gallery-slide bg-main-500 flex overflow-hidden">
         <LandingGallery />
-        <article className="mt-auto relative top-[80vh] w-fit p-2">
-          <h1 className="font-extrabold text-white text-2xl">Check out our gallery</h1>
-          <Link href='/media' className="btn-main">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
+        <article className="w-1/3 p-2 gallery-btn mt-[30vh]">
+          <Link href='/media' className="btn-main mx-auto md:text-3xl">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
         </article>
       </section>
       {/* latest posts */}
       <LatestPosts />
       <HomePageAnime />
     </main>
-);
+  );
 }
-
-/*
-var film = this.props.data.slice(0, 5).map((item) => {
-  return <FilmItem key={item.id} film={item} />;
-});
-return film;
-
-*/

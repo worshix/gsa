@@ -12,9 +12,10 @@ export default async function LatestPosts () {
     	  },
   	],
   });
+  console.log(articles_arr)
   return ( 
 	   <section>
-			<h1 className='section-heading'>Latest Posts</h1>
+			<h1 className='section-heading slide-in-top'>Latest Posts</h1>
 			<article className='flex overflow-x-scroll p-3 flex-col gap-2 sm:flex-row flex-wrap sm:justify-center'>
 			{articles_arr.map((el) => (
 				<Post
@@ -24,9 +25,11 @@ export default async function LatestPosts () {
 					author={el.data.author}
 					date={el.data.publishing_time}
 					link={el.url}
+					type={el.type}
 				/>
 			))}
 			</article>
+			{/* for buttons */}
 	    </section>
   	);
 }
