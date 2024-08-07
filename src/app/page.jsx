@@ -123,16 +123,18 @@ export default async function Home() {
         </div>
         <a href="#" className="" id="about-us"></a>
         <p className="z-20 relative top-[22%] md:top-[35%] text-xs font-sans p-2 martin">
-          “If you can&apos;t fly then run, if you can&apos;t run then walk, if you can&apos;t walk then crawl, but whatever you do you have to keep moving forward.”
+          <blockquote>
+            If you can&apos;t fly then run, if you can&apos;t run then walk, if you can&apos;t walk then crawl, but whatever you do you have to keep moving forward.
+          </blockquote>
           <b className="block ml-auto p-1 w-fit mr-3">Martin Luther King Jr.</b>
         </p>
       </section>
 
       {/* About Section */}
       <section className="flex flex-col flex-wrap justify-center items-center p-2 pt-8 gap-10 sm:gap-5">
-        <About {...WhoWeAre} />
-        <About {...mission} />
-        <About {...vision} />
+        <About key={"about-1"} {...WhoWeAre} />
+        <About key={"about-2"} {...mission} />
+        <About key={"about-3"} {...vision} />
       </section>
 
       {/* values */}
