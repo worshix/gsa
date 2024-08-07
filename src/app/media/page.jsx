@@ -8,7 +8,6 @@ export const metadata = {
   title:'Media'
 }
 
-
 async function Media () {
 	const client = createClient();
 	const images = await client.getAllByType('image_gallery');
@@ -21,10 +20,8 @@ return (
           <Link className='btn-main' href="media/articles">Article</Link>
           <Link className='btn-main' href="media/news">News</Link>
       </section>
-      <h1 className='section-heading'>Gallery</h1>
-      
+      <h1 className='section-heading slide-in-top'>Gallery</h1>      
       {/* the gallery Slide here down here */}
-      <h1>Gallery Here</h1>
       <Gallery images={images} />
   </>
  )

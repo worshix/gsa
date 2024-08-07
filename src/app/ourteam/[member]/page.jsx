@@ -70,7 +70,6 @@ const page = ({params}) => {
         <h1 className="text-4xl font-bold my-10 w-fit text-red-600 title">Fuck off {params.member}?</h1>
       </section>
     )
-
   }
 }
 
