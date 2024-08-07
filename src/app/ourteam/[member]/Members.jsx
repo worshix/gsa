@@ -1,4 +1,4 @@
-export default {
+const Members = {
         ngonimuzondo:{
             id:'ngonimuzondo',
             name:'Ngoni',
@@ -280,3 +280,5 @@ export default {
             ]
         },
 }
+
+export default Members

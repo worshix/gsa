@@ -15,7 +15,7 @@ const page = () => {
             {keys.map((item)=>{
               let person = Members[item]
               return (
-                <MemberCard {...person}/>
+                <MemberCard key={person.id} {...person}/>
               )
             })}
     </section>

@@ -10,6 +10,7 @@ export default async function LatestPosts () {
     <article className='flex overflow-x-scroll p-3 flex-col gap-2 sm:flex-row flex-wrap sm:justify-center'>
 			{events.map((el) => (
 				<Post
+					key={`event-${index}`}
 					image={el.data.story_image}
 					title={el.data.title}
 					content={el.data.story}

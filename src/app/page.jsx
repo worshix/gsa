@@ -123,7 +123,7 @@ export default async function Home() {
         </div>
         <a href="#" className="" id="about-us"></a>
         <p className="z-20 relative top-[22%] md:top-[35%] text-xs font-sans p-2 martin">
-          “If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.”
+          “If you can&apos;t fly then run, if you can&apos;t run then walk, if you can&apos;t walk then crawl, but whatever you do you have to keep moving forward.”
           <b className="block ml-auto p-1 w-fit mr-3">Martin Luther King Jr.</b>
         </p>
       </section>

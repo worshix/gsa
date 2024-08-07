@@ -19,6 +19,7 @@ export default async function LatestPosts () {
     <article className='flex overflow-x-scroll p-3 flex-col gap-2 sm:flex-row flex-wrap sm:justify-center'>
 			{news.map((el) => (
 				<Post
+					key={`news-${index}`}
 					image={el.data.story_image}
 					title={el.data.title}
 					content={el.data.story}

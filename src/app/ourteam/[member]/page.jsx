@@ -3,7 +3,7 @@ import Link from 'next/link';
 import '@/components/latestPosts/LatestPosts';
 import MemberAnime from './MemberAnime';
 import Post from '@/components/latestPosts/Post';
-
+import Image from 'next/image';
 
 const page = ({params}) => {
 
@@ -13,7 +13,7 @@ const page = ({params}) => {
           <div className="bg-white min-h-screen">
             <section className="flex flex-col items-center gap-2 p-4 md:flex-row md:justify-center">
               <article className="w-[60%] md:w-[40%] rounded-lg overflow-hidden">
-                <img src={`/assets/images/ourteam/${id}.${imageExtention}`} alt={`${name} ${surname}`} className="rounded-lg block w-full member-image" />
+                <Image src={`/assets/images/ourteam/${id}.${imageExtention}`} alt={`${name} ${surname}`} className="rounded-lg block w-full member-image" />
               </article>
               <article className='flex flex-col items-start justify-start'>
                 <h1 className="text-2xl font-bold hero-text-1">{name} {surname}</h1>
