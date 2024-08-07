@@ -141,7 +141,7 @@ export default async function Home() {
       <section className="values p-2 my-6">
         <h1 className="section-heading slide-in-top text-center">Our Core Values</h1>
         <ul className="mt-3 gap-2 flex flex-col items-center sm:flex-row flex-wrap sm:justify-center sm:gap-4">
-          {values.map((item) => <li className="rounded-lg flex gap-2 bg-slate-100 w-fit slide-in-left sm:text-3xl p-2"><span className="block bi bi-capsule text-main2 bg-white w-[35px] h-[35px] rounded-lg flex-shrink-0 p-2"></span><b className="block flex-shrink-0 p-2">{item}</b></li>)}
+          {values.map((item, index) => <li key={'value-'+index} className="rounded-lg flex gap-2 bg-slate-100 w-fit slide-in-left sm:text-3xl p-2"><span className="block bi bi-capsule text-main2 bg-white w-[35px] h-[35px] rounded-lg flex-shrink-0 p-2"></span><b className="block flex-shrink-0 p-2">{item}</b></li>)}
         </ul>
       </section>
 
@@ -149,7 +149,7 @@ export default async function Home() {
       <section className="partners" id="partners">
         <h1 className="section-heading slide-in-top">Our Partners</h1>
         <div className="partners-container flex flex-col sm:flex-row flex-wrap gap-2">
-            {partners.map((item) => <Partner {...item}/>)}
+            {partners.map((item, index) => <Partner key={'partner-'+index} {...item}/>)}
         </div>
       </section>
 
@@ -169,7 +169,7 @@ export default async function Home() {
         <article className="bg-main-300 bg-opacity-25 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black">
         <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Contact Us</h1>
           <div className="flex flex-wrap gap-3 justify-center p-2 mt-3 slide-in-top">
-            { contactDetails.map((item) => <Contact {...item}/>)}
+            { contactDetails.map((item,index) => <Contact key={'contact-'+index} {...item} />)}
             <a id="join-us"></a>
           </div>
         </article>
