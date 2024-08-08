@@ -88,8 +88,7 @@ const contactDetails = [
 
 export const metadata = {
   title:'generational stewards for antimicrobials',
-  description:'focus on this and that and what what',
-  //keywords:'woisawo mashoko esumbunuro pano',
+  description:'Empowering the next generation to combat antimicrobial resistance (AMR) through education, innovation, and advocacy. Learn about our mission, vision, and programs fostering responsible antimicrobial use and global health solutions.',
 }
 
 export default async function Home() {

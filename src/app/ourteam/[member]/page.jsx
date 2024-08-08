@@ -4,11 +4,21 @@ import '@/components/latestPosts/LatestPosts';
 import MemberAnime from './MemberAnime';
 import Post from '@/components/latestPosts/Post';
 import Image from 'next/image';
+import { createClient } from '@/prismicio';
+import * as prismic from '@prismicio/client';
 
-const page = ({params}) => {
+
+async function page({params}) {
+  console.log(Members);
 
   if(params.member in Members){
-    const {id, imageExtention, name, surname, title, bio, socials} = Members[params.member]
+    const {id, imageExtention, name, surname, title, bio, socials} = Members[params.member];
+    const client = createClient();
+    const articles = await client.get({
+      filters: [
+      prismic.filter.at('my.articles.author', `${name} ${surname}`),
+      ],
+    });
     return (
           <div className="bg-white min-h-screen">
             <section className="flex flex-col items-center gap-2 p-4 md:flex-row md:justify-center">
@@ -67,7 +77,7 @@ const page = ({params}) => {
     return (
       <section className='h-screen flex items-center justify-center flex-col'>
         <i class="bi bi-exclamation-triangle text-orange-500 text-5xl block w-fit"></i>
-        <h1 className="text-4xl font-bold my-10 w-fit text-red-600 title">Fuck off {params.member}?</h1>
+        <h1 className="text-4xl font-bold my-10 w-fit text-red-600 title">What kind of Microbial is {params.member}?</h1>
       </section>
     )
   }
