@@ -3,6 +3,13 @@ import Link from "next/link"
 import Members from "./[member]/Members"
 import MemberCard from '@/app/ourteam/MemberCard'
 
+const metadata = {
+  title: "Meet the GSA Team: Dedicated to Combating Antimicrobial Resistance",
+  description: "Get to know the passionate team behind Generational Stewards for Antimicrobials (GSA). Learn about our members' expertise and commitment to addressing antimicrobial resistance.",
+  keywords: ["GSA team", "antimicrobial resistance experts", "health advocacy team", "stewardship leaders"],
+  author: "Generational Stewards for Antimicrobials (GSA)"
+}
+
 const page = () => {
   //collecting keys to use in the mapping function
   let keys = []

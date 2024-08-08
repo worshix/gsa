@@ -1,6 +1,13 @@
 import Post from '@/components/latestPosts/Post';
 import { createClient } from '@/prismicio';
 
+const metadata = {
+  title: "GSA Articles: Insights on Antimicrobial Resistance",
+  description: "Stay informed about antimicrobial resistance with articles from Generational Stewards for Antimicrobials (GSA). Read expert insights, news, and stories on our mission to combat AMR.",
+  keywords: ["antimicrobial resistance", "GSA articles", "AMR insights", "health advocacy", "stewardship"],
+  author: "Generational Stewards for Antimicrobials (GSA)"
+}
+
 export default async function LatestPosts () {
   const client = createClient();
   const articles_arr = await client.getAllByTag('articles');

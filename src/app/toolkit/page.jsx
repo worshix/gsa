@@ -3,8 +3,13 @@ import { PrismicNextLink } from '@prismicio/next';
 import * as prismic from '@prismicio/client';
 
 export const metadata = {
-  title: 'Toolkit'
-};
+  title: "GSA Toolkit: Resources to Combat Antimicrobial Resistance",
+  description: "Download expert-authored PDFs and resources from Generational Stewards for Antimicrobials (GSA) to help address antimicrobial resistance.",
+  url: "/toolkit",
+  image: "/assets/images/gsa-toolkit.jpg",
+  keywords: ["GSA toolkit", "antimicrobial resistance resources", "AMR PDFs", "health advocacy tools", "stewardship guides"],
+  author: "Generational Stewards for Antimicrobials (GSA)"
+}
 
 async function Toolkit() {
   const client = createClient();

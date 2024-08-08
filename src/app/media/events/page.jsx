@@ -1,6 +1,13 @@
 import Post from '@/components/latestPosts/Post';
 import { createClient } from '@/prismicio';
 
+const metadata = {
+  title: "GSA Events: Join the Fight Against Antimicrobial Resistance",
+  description: "Find upcoming events, conferences, and workshops hosted by Generational Stewards for Antimicrobials (GSA). Join our efforts to combat antimicrobial resistance and stay updated on our latest activities.",
+  keywords: ["antimicrobial resistance events", "GSA conferences", "AMR workshops", "health advocacy events", "stewardship meetings"],
+  author: "Generational Stewards for Antimicrobials (GSA)"
+}
+
 export default async function LatestPosts () {
   const client = createClient();
   const events = await client.getAllByTag('events');

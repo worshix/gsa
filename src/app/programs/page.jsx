@@ -1,9 +1,15 @@
 import Link from "next/link"
 import LinksToSocials from './linksToSocials'
 
-export const metadata = {
-    title:'Programs'
+
+const metadata = {
+  title: "GSA Programs: Combating Antimicrobial Resistance",
+  description: "Learn about Generational Stewards for Antimicrobials (GSA) programs and initiatives aimed at addressing antimicrobial resistance.",
+  keywords: ["GSA programs", "antimicrobial resistance initiatives", "health advocacy programs", "stewardship initiatives"],
+  author: "Generational Stewards for Antimicrobials (GSA)"
 }
+
+
 const Programs = () => {
   return (
     <>

@@ -4,7 +4,7 @@ import { PrismicNextImage } from '@prismicio/next';
 
 const LandingGallery = async () => {
     const client = createClient();
-    const images = await client.getAllByType("image_gallery");  
+    const images = await client.getAllByType("image_gallery", {limit: 10});  
     var randomNumbers = [];
     var count = 0;
     while(count<5){
@@ -23,7 +23,7 @@ const LandingGallery = async () => {
             count++
             return(
                 <div key={"div-"+index} className='slide duration-200 max-w-[500px] mx-auto'>
-                    <PrismicNextImage field={images[index].data.image} key={`landing-image-${index}`} alt={images[index].data.image.alt} className={`rounded-md shadow-md shadow-black gallery-image-${count-1}`} />               
+                    <PrismicNextImage field={images[index].data.image} key={`landing-image-${index}`} className={`rounded-md shadow-md shadow-black gallery-image-${count-1}`} />               
                 </div>      
             )}
     )}
