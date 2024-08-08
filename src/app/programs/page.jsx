@@ -24,12 +24,12 @@ const Programs = () => {
         launched at two prominent educational institutions: Alexander College and Kingdom Knowledge College.
       </p> 
       <p>
-        The program's core objective is to equip students with the knowledge, skills, and confidence to become
+        The program&apos;s core objective is to equip students with the knowledge, skills, and confidence to become
         active agents of change in their communities. It leverages interactive workshops, engaging activities,
         and mentorship opportunities to foster a deep understanding of AMR and its implications.
       </p>
       <p>
-        Engaging Young Minds: A Multifaceted Approach The program's curriculum is designed to be interactive and engaging, tailored to the age and learning styles of primary and secondary school students. Key elements of the program include: 
+        Engaging Young Minds: A Multifaceted Approach The program&apos;s curriculum is designed to be interactive and engaging, tailored to the age and learning styles of primary and secondary school students. Key elements of the program include: 
         Interactive Workshops:
       </p>
       <h3>Students participate in workshops covering a range of topics related to AMR, including: </h3>
@@ -53,8 +53,8 @@ const Programs = () => {
       <p>Experienced mentors from the GSA and other relevant organizations provide guidance and support to students,
          fostering a sense of community and encouraging their ongoing commitment to AMR awareness and action.
       </p>
-      <h3>Building a Foundation for Future Leaders By empowering students with knowledge and skills, the GSA's program aims to:</h3>
-      <p>The successful launch of the program at Alexander College and Kingdom Knowledge College marks a significant milestone in the GSA's commitment to empowering youth in the fight against AMR. These schools serve as model examples of how the program can be implemented effectively, engaging students, fostering a sense of responsibility, and building a foundation for a healthier future. The GSA's Leadership and Capacity Building Program on AMR is a testament to the power of youth engagement in tackling global health challenges. By empowering young people with knowledge and skills, the program is laying the groundwork for a healthier and more sustainable future for all.</p>
+      <h3>Building a Foundation for Future Leaders By empowering students with knowledge and skills, the GSA&apos;s program aims to:</h3>
+      <p>The successful launch of the program at Alexander College and Kingdom Knowledge College marks a significant milestone in the GSA&apos;s commitment to empowering youth in the fight against AMR. These schools serve as model examples of how the program can be implemented effectively, engaging students, fostering a sense of responsibility, and building a foundation for a healthier future. The GSA&apos;s Leadership and Capacity Building Program on AMR is a testament to the power of youth engagement in tackling global health challenges. By empowering young people with knowledge and skills, the program is laying the groundwork for a healthier and more sustainable future for all.</p>
   </section>
     </>
   )

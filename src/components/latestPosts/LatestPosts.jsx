@@ -17,7 +17,7 @@ export default async function LatestPosts () {
 	   <section>
 			<h1 className='section-heading slide-in-top'>Latest Posts</h1>
 			<article className='flex overflow-x-scroll p-3 flex-col gap-2 sm:flex-row flex-wrap sm:justify-center'>
-			{articles_arr.map((el) => (
+			{articles_arr.map((el, index) => (
 				<Post
 					image={el.data.story_image}
 					title={el.data.title}
@@ -26,10 +26,10 @@ export default async function LatestPosts () {
 					date={el.data.publishing_time}
 					link={el.url}
 					type={el.type}
+					key={"post-latest-"+index}
 				/>
 			))}
 			</article>
-			{/* for buttons */}
 	    </section>
   	);
 }

@@ -55,7 +55,7 @@ const Programs = () => {
             <li>Creating mentorship programs to support young leaders working on AMR.</li>
             <li>Collaborating with other organizations to amplify the impact of the project.</li>
         </ul>
-    <p>This ongoing activity exemplifies the Generational Stewards for Antimicrobials' commitment to engaging youth in the fight against AMR, building a global community of action, and ensuring a healthier future for all.</p>
+    <p>This ongoing activity exemplifies the Generational Stewards for Antimicrobials&apos; commitment to engaging youth in the fight against AMR, building a global community of action, and ensuring a healthier future for all.</p>
     </section>
     </main>
   )

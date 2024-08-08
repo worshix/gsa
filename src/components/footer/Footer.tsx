@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import ContactForm from './ContactForm';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
     <footer className='bg-main-700 text-white overflow-hidden flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center justify-center'>
-        <img src="/assets/images/logo.jpg" className='sm:block m-2 w-[95%] rounded-md block sm:w-[300px]'/>
+        <Image src="/assets/images/logo.jpg" className='sm:block m-2 w-[95%] rounded-md block sm:w-[300px]' alt="logo for generational stewards for antimicrobials" />
         <ContactForm />
         <div className='footer-container-2 divide-y-2 block sm:divide-y-0 md:w-[350px] lg:flex lg:flex-wrap lg:justify-center md:divide-y-2 flex-grow lg:flex-col p-2'>
             <div className='p-2'>

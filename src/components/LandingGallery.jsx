@@ -22,7 +22,7 @@ const LandingGallery = async () => {
         randomNumbers.map((index) => {
             count++
             return(
-                <div className='slide duration-200 max-w-[500px] mx-auto'>
+                <div key={"div-"+index} className='slide duration-200 max-w-[500px] mx-auto'>
                     <PrismicNextImage field={images[index].data.image} key={`landing-image-${index}`} alt={images[index].data.image.alt} className={`rounded-md shadow-md shadow-black gallery-image-${count-1}`} />               
                 </div>      
             )}
