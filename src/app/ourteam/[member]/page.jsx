@@ -33,14 +33,13 @@ async function page({params}) {
           <div className="bg-white min-h-screen">
             <section className="flex flex-col items-center gap-2 p-4 md:flex-row md:justify-center">
               <article className="w-[60%] md:w-[40%] rounded-lg overflow-hidden">
-                <Image src={`/assets/images/ourteam/${id}.${imageExtention}`} alt={`${name} ${surname}`} className="rounded-lg block w-full member-image" />
+                <Image src={`/assets/images/ourteam/${id}.${imageExtention}`} alt={`${name} ${surname}`} className="rounded-lg block w-full member-image" width={1000} height={1000}/>
               </article>
               <article className='flex flex-col items-start justify-start'>
                 <h1 className="text-2xl font-bold hero-text-1">{name} {surname}</h1>
                 <h1 className="text-lg font-semibold text-gray-600 hero-text-2">{title}</h1>
               </article>
             </section>
-      
             <h1 className="text-3xl font-bold mt-6 mb-2 ml-4 text-main-500 md:w-[70%] md:mx-auto hero-text-3">About {name}</h1>
             <section className="p-4 md:w-[70%] md:mx-auto">
               {bio.map((item, index) => (
@@ -75,9 +74,20 @@ async function page({params}) {
               </div>
             </section>
             <h1 className="text-3xl font-bold mt-6 mb-4 ml-4 text-main-500">My Posts</h1>
-            
             <section className='flex overflow-x-scroll p-3 flex-col gap-2 sm:flex-row flex-wrap sm:justify-center'>
             { /* For their posts mujaya. use the Post component*/}
+            {articles.map((el, index) => (
+              <Post
+                image={el.data.story_image}
+                title={el.data.title}
+                content={el.data.story}
+                author={el.data.author}
+                date={el.data.publishing_time}
+                link={el.url}
+                type={el.type}
+                key={"personal-articles-"+index}
+              />
+            ))}
             </section>
             <MemberAnime />
           </div>
