@@ -187,11 +187,11 @@ export default async function Home() {
 
       {/* gallery */}
       <h1 className="section-heading slide-in-top">Check out our gallery</h1>
-      <section className="gallery-slide bg-main-500 flex overflow-hidden">
-        <LandingGallery />
-        <article className="w-1/3 p-2 gallery-btn mt-[30vh]">
-          <Link href='/media' className="btn-main mx-auto md:text-3xl">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
+      <section className="gallery-slide bg-main-500 overflow-hidden">
+        <article className="p-2 gallery-btn">
+          <Link href='/media' className="btn-main ml-6 md:text-3xl">Gallery<span className="bi-camera pl-2 text-white"></span></Link>
         </article>
+        <LandingGallery />
       </section>
       {/* latest posts */}
       <LatestPosts />

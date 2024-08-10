@@ -23,16 +23,6 @@ const HomePageAnime = () => {
     .from('.martin',    { y:-20, duration:1, opacity:0 })
   })
 
-  useGSAP(()=>{
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({
-      trigger:'#images-container',
-      start: 'top top',
-      end: 'bottom bottom',
-      pin:'.gallery-btn'
-    });
-  })
-
 // Create a GSAP animation for the heading
 }
 
