@@ -279,6 +279,24 @@ const Members = {
                 'His proven leadership skills have allowed him to hold senior management positions in different pharmaceutical organisations. Vincent is also the founder and executive director for Healthcare Access Advocates for Disabilities, an organisation advocating for equity in healthcare access for persons living with disabilities.His interest in AMR topics also make him an ideal member who is ready to advocate for information on AMR to reach persons living with different disabilities. Currently he is also serving as the President for Zimbabwe Pharmaceutical Students Association for the year 2024-2025.',
             ]
         },
+        michelleheiden: {
+            id:'michelleheiden',
+            name:'Michelle Van Der',
+            surname:'Heiden',
+            title:'Secretary General',
+            imageExtention:'jpg',
+            socials:{
+                twitter:'https://x.com/MichelleVanDH?t=NsMt59ycnayaeUhyfdmrfw&s=09',
+                email:null,
+                phone:null,
+                linkedin:'https://www.linkedin.com/in/michelle-van-der-heiden-2878ab14b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                facebook:'https://www.facebook.com/michellevanderh?mibextid=ZbWKwL',
+                instagram:null,
+            },
+            bio:[
+                'Michelle van der Heiden, Secretary General at GSA, is a driven and accomplished individual with a passion for healthcare. Currently pursuing her studies at the University of Zimbabwe, she has developed expertise in advocacy, antimicrobial stewardship, and public health issues through her involvement in medical students\' associations. As Secretary General, she excels in report writing, strategic initiatives, and partnerships, and has even spoken at GSA\'s bi-weekly Twitter space discussions. Her leadership and advocacy efforts have inspired numerous young people to get involved in advocacy, making a significant impact on the healthcare landscape. Michelle\'s dedication to community service and volunteer work has also had a lasting impact on local communities. Outside of her professional pursuits, she enjoys traveling, painting, and writing, and values time spent with friends and family.'
+            ]
+            },
 }
 
 export default Members
