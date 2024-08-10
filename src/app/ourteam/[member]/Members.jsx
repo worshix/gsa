@@ -130,8 +130,8 @@ const Members = {
         munyaradzitagara:{
             id:'munyaradzitagara',
             name:'Munyaradzi',
-            surname:'tagara',
-            title:'Someone',
+            surname:'Tagara',
+            title:'Member',
             imageExtention:'jpg',
             socials:{
                 twitter:'https://x.com/innocent_2802?t=emNu7Nnik2OWIZnrcYB9lg&s=09',
