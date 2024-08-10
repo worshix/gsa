@@ -6,18 +6,16 @@ import Post from '@/components/latestPosts/Post';
 import Image from 'next/image';
 import { createClient } from '@/prismicio';
 import * as prismic from '@prismicio/client';
-//SEO (generateMetadata) pending explanations of customizations and accessing each member variables
-/**
- * const metadata = {
-  title: `${name} ${surname} | GSA Team`,
-  description: `${title} at Generational Stewards for Antimicrobials (GSA). Read their bio and articles.`,
-  url: `/our-team/${params.member}`,
-  image: `/images/members/${id}.${imageExtension}`,
-  keywords: [name, surname, title, "GSA team", "antimicrobial resistance experts"],
-  author: `${name} ${surname}`,
-};
-*/
 
+//SEO (generateMetadata) pending explanations of customizations and accessing each member variables
+// const metadata = {
+//   title: `${name} ${surname} | GSA Team`,
+//   description: `${title} at Generational Stewards for Antimicrobials (GSA). Read their bio and articles.`,
+//   url: `/our-team/${params.member}`,
+//   image: `/images/members/${id}.${imageExtention}`,
+//   keywords: [name, surname, title, "GSA team", "antimicrobial resistance experts"],
+//   author: `${name} ${surname}`,
+// };
 async function page({params}) {
   console.log(Members);
 
@@ -29,6 +27,8 @@ async function page({params}) {
       prismic.filter.at('my.article.author', `${name} ${surname}`),
       ],
     });
+
+
     return (
           <div className="bg-white min-h-screen">
             <section className="flex flex-col items-center gap-2 p-4 md:flex-row md:justify-center">
