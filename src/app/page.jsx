@@ -118,7 +118,7 @@ export default async function Home() {
         </div>
         <div className="z-20 action-btn-group flex gap-4 md:gap-6 relative top-[22%] md:top-[25%]">
           <Link className="call-btn call-btn-left" href="/#join-us">join Us <span className="bi bi-hand-thumbs-up opacity-0"></span></Link>
-          <Link className="call-btn call-btn-right" href="#">donate <span className="bi bi-emoji-sunglasses opacity-0"></span></Link>
+          <Link className="call-btn call-btn-right" href="mailto:Info@gsa.co.zw">donate <span className="bi bi-emoji-sunglasses opacity-0"></span></Link>
         </div>
         <a href="#" className="" id="about-us"></a>
         <p className="z-20 relative top-[22%] md:top-[35%] text-xs font-sans p-2 martin">
