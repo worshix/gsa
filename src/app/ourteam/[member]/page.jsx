@@ -76,7 +76,7 @@ async function page({params}) {
             <h1 className="text-3xl font-bold mt-6 mb-4 ml-4 text-main-500">My Posts</h1>
             <section className='flex overflow-x-scroll p-3 flex-col gap-2 sm:flex-row flex-wrap sm:justify-center'>
             { /* For their posts mujaya. use the Post component*/}
-            {articles.map((el, index) => (
+            {articles[0] && articles.map((el, index) => (
               <Post
                 image={el.data.story_image}
                 title={el.data.title}
