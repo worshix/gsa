@@ -26,7 +26,7 @@ async function page({params}) {
     const client = createClient();
     const articles = await client.get({
       filters: [
-      prismic.filter.at('my.articles.author', `${name} ${surname}`),
+      prismic.filter.at('my.article.author', `${name} ${surname}`),
       ],
     });
     return (
