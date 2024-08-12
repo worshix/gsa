@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 
 const Footer = () => {
   return (
-    <footer className='bg-main-700 text-white flex flex-col gap-6 p-6 sm:flex-row sm:items-start justify-center'>
+    <footer className='bg-main-700 text-white flex flex-col gap-6 p-6 sm:flex-row sm:flex-wrap justify-center'>
       <div className='flex justify-center sm:justify-start w-full sm:w-auto md:w-2/5'>
         <div className='relative w-[80%] sm:w-auto sm:h-auto'>
           <img 
@@ -51,13 +51,14 @@ const Footer = () => {
           <p>Harare, Zimbabwe</p>
         </div>
 
-        <div>
-          <h4 className='text-main2 font-bold mb-2'>Made By</h4>
-          <a href="https://wa.me/263771975597">PixelCrafte</a>
-        </div>
 
-        <div>
+      </div>
+      <div className='w-full flex-shrink-0 flex justify-center gap-2'>
+        <div className='inline-block'>
           <p className='text-main2 font-bold'>© { new Date().getFullYear()} GSA. All rights reserved</p>
+        </div>
+        <div className='inline-block'>
+          <p className='text-white font-bold mb-2'>Made By <a href="https://wa.me/263771975597" className='text-main2 underline'>PixelCrafte</a></p>
         </div>
       </div>
     </footer>
