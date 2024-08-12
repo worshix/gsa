@@ -1,16 +1,14 @@
 import AboutButton from './AboutButton';
 
 const About = ({ title, about, id }) => {
-  const contentArray = about.split(/\s+/);
-  const summary = contentArray.slice(0, 20).join(" ");
-  const fullContent = contentArray.slice(20).join(" ");
+  const [summary, fullContent] = about.split(/(?<=\.)\s(.+)/s);
 
   return (
     <article className='about compressed bg-white shadow-md rounded-md overflow-hidden transition-all duration-300 ease-in-out' id={id}>
       <div className="bg-gradient-to-r from-main-300 to-main-500 text-white font-bold p-4 rounded-t-md">
         <h1 className='text-center uppercase text-base sm:text-lg font-bold'>{title}</h1>
         <p className='text-sm sm:text-base font-light mt-2'>
-          {summary}...
+          {summary}
         </p>
       </div>
       <div className="p-4">
