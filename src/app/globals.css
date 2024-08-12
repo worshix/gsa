@@ -342,18 +342,25 @@
 
 /* articles */
 .article-body{
-    @apply p-2;
+    @apply
+    p-2
+    ;
     h1{
-        @apply text-main2 font-bold text-xl;
+        @apply text-main2 font-bold text-2xl;
+    }
+    h3 {
+        @apply
+        text-lg
+        font-bold
+        p-2
+        text-black
+        ;
     }
     h2{
-        @apply text-lg text-main2;
-    }
-    h3{
-        @apply text-sm text-main2 font-bold;
+        @apply text-xl text-gray-400 font-bold;
     }
     p{
-        @apply text-black font-light;
+        @apply text-black font-light p-2;
     }
 }
 

@@ -16,11 +16,11 @@ export default async function Page({ params }: { params: Params }) {
     .getByUID("article", params.uid)
     .catch(() => notFound());
   const date = page.data.publishing_time;
-
+  const dateMain = date?.slice(0,10)
   //return <SliceZone slices={page.data.slices} components={components} />;
   return (
-	<section className="article">
-    <article className="articles-socials flex gap-2 text-white p-2 text-xs">
+	<main className="article">
+    <section className="articles-socials flex gap-2 text-white p-2 text-xs">
       <Link href="https://twitter.com/Preservefutures"className="flex ml-auto rounded-md bg-gray-700">
         <span className="mr-1 block p-2">Twitter</span>
         <span className="bi-twitter-x twitter-x block p-2 rounded-r-md"></span>
@@ -29,18 +29,18 @@ export default async function Page({ params }: { params: Params }) {
         <span className="mr-1 block p-2">LinkedIn</span>
         <span className="bi-linkedin block p-2 bg-[#24a3e2] rounded-r-md"></span>
       </Link>
-    </article>
-    <div className="w-[50vw] h-[320px] overflow-hidden mx-auto my-2">
+    </section>
+    <article className="w-[50vw] h-[320px] overflow-hidden mx-auto my-2">
      <PrismicNextImage field={page.data.story_image} className="transition-transform duration-300 hover:scale-110 ease-linear"/>
-    </div>
-    <article className="flex justify-center flex-col p-2 gap-2">
-      <h1 className="text-bold text-main-500 text-lg font-bold">{page.data.title}</h1>
-      <p className="font-light text-slate-500 text-sm"><span className="font-bold">Published on:</span> <time>{date}</time></p>
     </article>
-    <article className="article-body">
+    <article className="flex justify-center flex-col p-2 gap-2">
+      <h1 className="text-bold text-main-500 text-3xl font-bold sm:text-center slide-in-top">{page.data.title}</h1>
+      <p className="font-light text-slate-500 text-lg sm:text-center"><span className="font-bold">{page.data.author} |</span> <time>{dateMain}</time></p>
+    </article>
+    <article className="article-body sm:w-[80%] sm:mx-auto">
 		  <PrismicRichText field={page.data.story} />
     </article>
-	</section>
+	</main>
   );
 }
 
@@ -60,7 +60,7 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(){
   const client = createClient();
   const pages = await client.getAllByType("article");
   return pages.map((page) => {
