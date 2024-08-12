@@ -12,17 +12,20 @@ const partners = [
   {
     name:"Zimbabwe Youth Council",
     icon:'linkedin',
-    link:"https://www.linkedin.com/company/zim-youth-council/"
+    link:"https://www.linkedin.com/company/zim-youth-council/",
+    image:'zyc.jpg'
   },
   {
     name:"African Youth Antimicrobial Resistance Alliance Taskforce",
     icon:'linkedin',
-    link:"https://www.linkedin.com/company/ayara-tf/"
+    link:"https://www.linkedin.com/company/ayara-tf/",
+    image:'ayr.jpg'
   },
   {
     name:"Stop superbugs Network",
     icon:'twitter-x',
-    link:"https://x.com/theurgentneed?s=11"
+    link:"https://x.com/theurgentneed?s=11",
+    image:'stop.jpg'
   }
 ]
 
@@ -147,7 +150,7 @@ export default async function Home() {
       {/* partners */}
       <section className="partners" id="partners">
         <h1 className="section-heading slide-in-top">Our Partners</h1>
-        <div className="partners-container flex flex-col sm:flex-row flex-wrap gap-2">
+        <div className="partners-container flex flex-col sm:flex-row flex-wrap gap-2 justify-center">
             {partners.map((item, index) => <Partner key={'partner-'+index} {...item}/>)}
         </div>
       </section>

@@ -306,10 +306,6 @@
     mask-image: none;
 }
 
-.compressed .compressed-about {
-    @apply hidden;
-}
-
 /* contact us */
 .contacts-section{
     background-image: url('/assets/images/bg-1.jpeg');
