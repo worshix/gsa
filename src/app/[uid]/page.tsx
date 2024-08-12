@@ -6,6 +6,7 @@ import { components } from "@/slices";
 import { PrismicRichText } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
 import Link from "next/link";
+import * as prismic from '@prismicio/client';
 
 type Params = { uid: string };
 

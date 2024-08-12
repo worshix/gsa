@@ -53,7 +53,7 @@ const Footer = () => {
 
 
       </div>
-      <div className='w-full flex-shrink-0 flex justify-center gap-2'>
+      <div className='w-full flex-shrink-0 flex justify-center gap-2 text-sm'>
         <div className='inline-block'>
           <p className='text-main2 font-bold'>© { new Date().getFullYear()} GSA. All rights reserved</p>
         </div>
