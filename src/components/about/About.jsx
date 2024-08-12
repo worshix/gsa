@@ -4,7 +4,7 @@ const About = ({ title, about, id }) => {
   const [summary, fullContent] = about.split(/(?<=\.)\s(.+)/s);
 
   return (
-    <article className='about compressed bg-white shadow-md rounded-md overflow-hidden transition-all duration-300 ease-in-out' id={id}>
+    <article className='about compressed bg-white shadow-md rounded-md overflow-hidden transition-all duration-300 ease-in-out slide-in-left' id={id}>
       <div className="bg-gradient-to-r from-main-300 to-main-500 text-white font-bold p-4 rounded-t-md">
         <h1 className='text-center uppercase text-base sm:text-lg font-bold'>{title}</h1>
         <p className='text-sm sm:text-base font-light mt-2'>

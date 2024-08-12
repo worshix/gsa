@@ -62,28 +62,6 @@ const Members = {
                 ' his commitment to improving health outcomes for all.'
             ]
         },
-        kupakwashenkomo:{
-            id:'kupakwashenkomo',
-            name:'Kupakwashe',
-            surname:'Nkomo',
-            title:'Monitoring and Evaluation Officer',
-            imageExtention:'jpg',
-            socials: {
-                twitter:'https://x.com/KupakwasheLesl3?t=QC-EpAX3QpfduX-6Ipd0vg&s=09',
-                email:'kupakwasheleslie@gmail.com',
-                phone:null,
-                linkedin:'https://www.linkedin.com/in/kupakwashe-leslie-nkomo-9b385324a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-                facebook:'https://www.facebook.com/kupakwashe.leslie',
-                instagram:null,
-            },
-            bio:[
-                ' I am a Biotechnologist and in GSA I’m the Monitoring and Evaluation Officer. As the Monitoring'+
-                ' and Evaluation (M&E) Officer im focused on ensuring the efficacy and efficiency of antimicrobial'+
-                ' programs and interventions. As antimicrobial resistance continues to pose a significant threat to'+
-                ' global health, my responsibilities of an M&E Officer become increasingly critical in the fight'+
-                ' against this challenge.'
-            ]
-        },
         brandonjaka:{
             id:'brandonjaka',
             name:'Brandon',
