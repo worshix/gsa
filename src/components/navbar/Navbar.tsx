@@ -5,32 +5,28 @@ import Link from "next/link";
 //for navbar routes and on page links
 const links = [
     {
-        name:"About Us",
-        link:'/#about-us'
-    },
-    {
-        name:"Media",
-        link:'/media'
+        name:"Home",
+        link:'/'
     },
     {
         name:"Programs",
         link:'/programs'
     },
     {
+        name:"Media",
+        link:'/media'
+    },
+    {
         name:"Toolkit",
         link:'/toolkit'
     },
     {
-        name:"Join US",
-        link:'/#join-us'
+        name:"Our Team",
+        link:'/ourteam'
     },
     {
         name:"Contact Us",
         link:'/#contact-us'
-    },
-    {
-        name:"Our Team",
-        link:'/ourteam'
     },
 ]
 
