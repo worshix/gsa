@@ -1,17 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
 import ContactForm from './ContactForm';
-import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className='bg-main-700 text-white overflow-hidden flex flex-col gap-6 p-6 sm:flex-row sm:flex-wrap sm:items-start justify-center'>
-      <div className='flex justify-center sm:justify-start w-full sm:w-auto'>
-        <img 
-          src="/assets/images/logo.jpg"
-          className='w-[80%] sm:w-[200px] md:w-[250px] lg:w-[300px] rounded-md'
-          alt="logo for generational stewards for antimicrobials"
-        />
+    <footer className='bg-main-700 text-white flex flex-col gap-6 p-6 sm:flex-row sm:items-start justify-center'>
+      <div className='flex justify-center sm:justify-start w-full sm:w-auto md:w-2/5'>
+        <div className='relative w-[80%] sm:w-auto sm:h-auto'>
+          <img 
+            src="/assets/images/logo.jpg"
+            className='w-full h-full object-cover rounded-md'
+            alt="logo for generational stewards for antimicrobials"
+          />
+        </div>
       </div>
       
       <div className='w-full sm:w-auto sm:ml-6'>
