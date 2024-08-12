@@ -4,8 +4,8 @@ import ContactForm from './ContactForm';
 
 const Footer = () => {
   return (
-    <footer className='bg-main-700 text-white flex flex-col gap-6 p-6 sm:flex-row sm:flex-wrap justify-center'>
-      <div className='flex justify-center sm:justify-start w-full sm:w-auto md:w-2/5'>
+    <footer className='bg-main-700 text-white flex flex-col gap-6 p-6 sm:flex-row sm:flex-wrap justify-center  items-stretch'>
+      <div className='flex justify-center sm:justify-start w-full sm:w-auto md:w-1/4'>
         <div className='relative w-[80%] sm:w-auto sm:h-auto'>
           <img 
             src="/assets/images/logo.jpg"
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className='w-full sm:w-auto sm:ml-6'>
+      <div className='w-full sm:w-auto md:w-1/4 sm:ml-6 h-auto'>
         <ContactForm />
       </div>
 

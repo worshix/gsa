@@ -33,7 +33,7 @@ const ContactForm = () => {
     <form
       onSubmit={handleSubmit}
       id="footer-form"
-      className='flex flex-col gap-4 bg-white bg-opacity-10 p-6 rounded-md w-full max-w-[400px]'
+      className='flex flex-col gap-4 bg-white bg-opacity-10 p-6 rounded-md w-full h-auto'
     >
       <h1 className='text-center font-bold text-main2 mb-4'>Subscribe to our Newsletter</h1>
       <input
