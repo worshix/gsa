@@ -1,28 +1,37 @@
 'use client'
-import Link from "next/link"
+import React, { useState } from 'react';
 
-const AboutButton = (id) => {
+const AboutButton = ({ id }) => {
+  const [expanded, setExpanded] = useState(false);
+
   const handleClick = () => {
-    const container = document.getElementById(id.id);
-    console.log(container)
-    if(container.classList.contains('compressed')){
-        container.classList.remove('compressed')
+    const container = document.getElementById(id);
+    container.classList.toggle('compressed');
+    const aboutText = container.querySelector('.compressed-about');
+    
+    if (expanded) {
+      aboutText.style.maxHeight = '0';
+    } else {
+      aboutText.style.maxHeight = aboutText.scrollHeight + 'px';
     }
-    else{
-      container.classList.add('compressed');
-    }
-}
+    
+    setExpanded(!expanded);
+  };
+
   return (
-    <button type="button" className="flex text-black gap-[2px] services-link my-2 ml-auto h-fit p-2"
-      onClick={ handleClick }
+    <button 
+      type="button" 
+      className="mt-4 flex items-center text-main-500 font-bold transition-transform duration-300 hover:scale-105"
+      onClick={handleClick}
     >
-      <div className="block bg-slate-200 p-2 rounded-lg text-black font-bold">read more</div>
-      <div className="bg-slate-200 p-2 rounded-lg flex w-[30px] overflow-hidden flex-shrink-0 h-[32px] arrow-container">
-          <i className="arrow-right-1 text-black bi bi-arrow-right block absolute duration-500 -translate-x-full transition-all opacity-0"></i>
-          <i className="arrow-right-2 text-black bi bi-arrow-right block absolute duration-500 transition-all"></i>
+      <span className="mr-2">
+        {expanded ? 'Show less' : 'Read more'}
+      </span>
+      <div className="bg-slate-200 p-2 rounded-full flex items-center justify-center w-8 h-8 transition-transform duration-300 transform rotate-0">
+        <i className={`bi bi-chevron-${expanded ? 'up' : 'down'} text-black`}></i>
       </div>
     </button>
-  )
-}
+  );
+};
 
-export default AboutButton
+export default AboutButton;
