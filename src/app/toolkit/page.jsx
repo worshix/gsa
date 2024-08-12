@@ -15,8 +15,11 @@ async function Toolkit() {
   const client = createClient();
   const toolkits = await client.getAllByType('toolkit');
   return (
-	<>
+	<main>
 	<h1 className="text-4xl font-bold my-4 text-center text-main-400 w-full flex-shrink-0">Toolkit</h1>
+  <p className='p-2 text-sm font-light sm:text-center sm:text-lg'>
+  This toolkit is designed for educators and professionals committed to advancing knowledge on antimicrobials. It offers comprehensive resources in the form of downloadable PDF files, enabling you to effectively share and utilize the materials as needed.
+</p>
     <section className="bg-white flex flex-col items-center sm:flex-row flex-wrap sm:justify-center sm:items-start gap-2 py-2">
       {toolkits.map((el, index) => (
         <article key={index} className="w-[320px] border-2 border-main-500 rounded-md p-2 flex-shrink-0 group slide-in-top">
@@ -56,7 +59,7 @@ async function Toolkit() {
         </article>
       ))}
     </section>
-	</>
+	</main>
   );
 }
 
