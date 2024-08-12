@@ -33,14 +33,14 @@ const ContactForm = () => {
     <form
       onSubmit={handleSubmit}
       id="footer-form"
-      className='flex flex-col gap-4 bg-white bg-opacity-10 m-4 p-4 rounded-md w-full max-w-[350px] sm:flex-shrink-0'
+      className='flex flex-col gap-4 bg-white bg-opacity-10 p-6 rounded-md w-full max-w-[350px]'
     >
       <h1 className='text-center font-bold text-main2 mb-4'>Subscribe to our Newsletter</h1>
       <input
         type="text"
         required
         placeholder='Name'
-        className='bg-white bg-opacity-15 p-3 rounded-sm focus:outline-none focus:ring-2 focus:ring-main3'
+        className='bg-white bg-opacity-15 p-3 rounded-sm focus:outline-none focus:ring-2 focus:ring-slate-300'
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
@@ -49,13 +49,13 @@ const ContactForm = () => {
         type="email"
         required
         placeholder='Email'
-        className='bg-white bg-opacity-15 p-3 rounded-sm focus:outline-none focus:ring-2 focus:ring-main3'
+        className='bg-white bg-opacity-15 p-3 rounded-sm focus:outline-none focus:ring-2 focus:ring-slate-300'
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <button
         type="submit"
-        className='w-full p-3 bg-white rounded-md text-black bg-opacity-75 font-bold hover:scale-95 transition-all duration-300 shadow-md active:scale-90 active:shadow-sm'
+        className='w-full p-3 bg-slate-300 rounded-md text-white font-bold hover:bg-main2 transition-all duration-300'
       >
         Subscribe
       </button>

@@ -50,16 +50,18 @@ const Footer = () => {
           <h4 className='text-main2 font-bold mb-2'>Location</h4>
           <p>Harare, Zimbabwe</p>
         </div>
+
         <div>
           <h4 className='text-main2 font-bold mb-2'>Made By</h4>
-          <a href="https://wa.me/263771975597">pixelCrafte</a>
+          <a href="https://wa.me/263771975597">PixelCrafte</a>
         </div>
+
         <div>
           <p className='text-main2 font-bold'>© { new Date().getFullYear()} GSA. All rights reserved</p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
 export default Footer;
