@@ -27,7 +27,6 @@ const Footer = () => {
             <li><a href="tel:+263778473160" className='bi bi-telephone'> Cell</a></li>
           </ul>
         </div>
-
         <div>
           <h4 className='text-main2 font-bold mb-2'>Mail</h4>
           <ul className='flex gap-4 flex-wrap justify-center sm:justify-start'>
