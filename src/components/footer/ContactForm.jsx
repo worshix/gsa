@@ -23,20 +23,24 @@ const ContactForm = () => {
         setMessage('Subscribed!');
       }
     } catch (error) {
-      console.error('Form submission error:', error.response.data);
+      console.error('Form submission error:', error.response?.data);
       setStatus('error');
-      setMessage(error.response.data.error || 'An error occurred. Please try again.');
+      setMessage(error.response?.data?.error || 'An error occurred. Please try again.');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} id="footer-form" className='flex flex-col gap-2 bg-white bg-opacity-10 m-2 rounded-md sm:w-[300px] lg:w-[350px] sm:flex-shrink-0'>
-      <h1 className='text-center font-bold text-main2 p-2'>Subscribe to our Newsletter</h1>
+    <form
+      onSubmit={handleSubmit}
+      id="footer-form"
+      className='flex flex-col gap-4 bg-white bg-opacity-10 m-4 p-4 rounded-md w-full max-w-[350px] sm:flex-shrink-0'
+    >
+      <h1 className='text-center font-bold text-main2 mb-4'>Subscribe to our Newsletter</h1>
       <input
         type="text"
         required
         placeholder='Name'
-        className='m-2 bg-white bg-opacity-15 p-2 rounded-sm focus:outline-none'
+        className='bg-white bg-opacity-15 p-3 rounded-sm focus:outline-none focus:ring-2 focus:ring-main3'
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
@@ -45,22 +49,21 @@ const ContactForm = () => {
         type="email"
         required
         placeholder='Email'
-        className='m-2 bg-white bg-opacity-15 p-2 rounded-sm focus:outline-none'
+        className='bg-white bg-opacity-15 p-3 rounded-sm focus:outline-none focus:ring-2 focus:ring-main3'
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <button
         type="submit"
-        className='w-fit p-2 bg-main3 rounded-md text-white font-bold m-2 ml-auto hover:scale-95 transition-all duration-300 shadow-md shadow-black active:scale-90 active:shadow-sm'
+        className='w-full p-3 bg-white rounded-md text-black bg-opacity-75 font-bold hover:scale-95 transition-all duration-300 shadow-md active:scale-90 active:shadow-sm'
       >
         Subscribe
       </button>
-      {status === 'sending' && <div>Sending...</div>}
-      {status === 'error' && <div>{message}</div>}
-      {status === 'success' && <div>{message}</div>}
+      {status === 'sending' && <div className='text-center text-main3'>Sending...</div>}
+      {status === 'error' && <div className='text-center text-red-500'>{message}</div>}
+      {status === 'success' && <div className='text-center text-green-500'>{message}</div>}
     </form>
   );
 };
 
 export default ContactForm;
-

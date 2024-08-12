@@ -175,7 +175,7 @@ export default async function Home() {
         <article className="join-us bg-main-300 bg-opacity-25 backdrop-blur-md p-2 rounded-lg sm:w-2/3 mx-auto shadow-md shadow-black">
           <h1 className="bg-transparent text-center text-main2 text-xl font-bold">Join Us</h1>
           <p className="p-2 slide-in-top">
-            Donate,Your support can save lives.
+            Donate!!! Your support can save lives.
             We welcome any gifts and donations, and sponsorships to support our work. We are sure that you will find interesting and important purposes to support your involvement and generosity in the work that we are doing.
             For inquiries and conversations about gifts, donations and sponsorships, please contact us at:
             <br />
