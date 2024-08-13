@@ -147,20 +147,20 @@ export default async function Home() {
       </section>
 
       {/* values */}
-      <section className="values p-2 py-4 my-4 bg-black text-white flex flex-col md:flex-row md:items-center md:justify-around">
+      <section className="values p-2 py-4 my-4 bg-white text-black flex flex-col md:flex-row md:items-center md:justify-around">
       <article className="flex justify-center items-center w-[320px] flex-grow-0 flex-shrink-0 h-[250px] md:w-2/3 md:h-full md:order-2 overflow-hidden slide-in-top mx-auto md:mx-0">
-  <Image
-    src="/assets/images/bg-1.jpeg"
-    width={700}
-    height={600}
-    className="block rounded-md object-cover max-w-full max-h-full hover:scale-110 transition-transform ease-linear duration-200"
-    alt="gsa members gathered at harare institute of technology (HIT)"
-  />
-</article>
+        <Image
+          src="/assets/images/bg-1.jpeg"
+          width={700}
+          height={600}
+          className="block rounded-md object-cover max-w-full max-h-full hover:scale-110 transition-transform ease-linear duration-200"
+          alt="gsa members gathered at harare institute of technology (HIT)"
+        />
+      </article>
         <article className="">
           <h1 className="slide-in-top text-2xl font-bold my-5 md:text-4xl">Our Core Values</h1>
           <ul className=" flex flex-col gap-3 justify-center items-center">
-            {values.map((item, index) => <li key={'value-'+index} className="border slide-in-left border-main2 p-2 rounded-md w-[200px] flex flex-row md:text-lg md:w-[260px] md:py-4"><span className="block bi bi-capsule w-fit flex-grow-0"></span><span className="block font-semibold text-center flex-grow">{item}</span></li>)}
+            {values.map((item, index) => <li key={'value-'+index} className="border-2 slide-in-left border-main-400 p-2 rounded-xl w-[200px] flex flex-row md:text-lg md:w-[260px] md:py-4"><span className="block bi bi-capsule w-fit flex-grow-0 text-main-400"></span><span className="block font-semibold text-center flex-grow">{item}</span></li>)}
           </ul>
         </article>
       </section>
