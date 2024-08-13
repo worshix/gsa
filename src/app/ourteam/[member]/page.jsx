@@ -17,7 +17,6 @@ import * as prismic from '@prismicio/client';
 //   author: `${name} ${surname}`,
 // };
 async function page({params}) {
-  console.log(Members);
 
   if(params.member in Members){
     const {id, imageExtention, name, surname, title, bio, socials} = Members[params.member];
@@ -27,6 +26,8 @@ async function page({params}) {
       prismic.filter.at('my.article.author', `${name} ${surname}`),
       ],
     });
+    console.log("Here are my articles");
+    console.log(articles);
 
 
     return (
