@@ -148,11 +148,11 @@ export default async function Home() {
 
       {/* values */}
       <section className="values p-2 py-4 my-4 bg-black text-white flex flex-col md:flex-row md:items-center md:justify-around">
-      <article className="flex justify-center items-center w-[320px] md:w-[400px] lg:w-[550px] lg:h-[400px] md:h-[300px] flex-grow-0 flex-shrink-0 h-[250px] md:order-2 overflow-hidden slide-in-top mx-auto md:mx-0">
+      <article className="flex justify-center items-center w-[320px] flex-grow-0 flex-shrink-0 h-[250px] md:w-2/3 md:h-full md:order-2 overflow-hidden slide-in-top mx-auto md:mx-0">
   <Image
     src="/assets/images/bg-1.jpeg"
-    width={550}
-    height={400}
+    width={700}
+    height={600}
     className="block rounded-md object-cover max-w-full max-h-full hover:scale-110 transition-transform ease-linear duration-200"
     alt="gsa members gathered at harare institute of technology (HIT)"
   />
