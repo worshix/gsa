@@ -12,7 +12,6 @@ export default async function LatestPosts () {
     	  },
   	],
   });
-  console.log(articles_arr)
   return ( 
 	   <section>
 			<h1 className='section-heading slide-in-top'>Latest Posts</h1>

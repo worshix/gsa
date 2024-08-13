@@ -28,7 +28,6 @@ const Post = ({image, title, content, author, date, link, type}) => {
       <div className={`${bgCol} w-[30px] h-[30px] p-1 text-white rounded-md text-center font-bold absolute`}>
             {txt}
         </div>
-        {/* this div will be used to show whether it is a newsletter/artce or whatever */}
         <PrismicNextImage field={image} className="post-card-image rounded-md" />
       </div>
       <div className="post-card-body p-2">
