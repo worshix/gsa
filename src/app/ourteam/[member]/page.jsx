@@ -6,16 +6,17 @@ import Post from '@/components/latestPosts/Post';
 import Image from 'next/image';
 import { createClient } from '@/prismicio';
 import * as prismic from '@prismicio/client';
+/*
+const metadata = {
+   title: 'Team Member | GSA Team',
+   description: `${ti} at Generational Stewards for Antimicrobials (GSA). Read their bio and articles.`,
+   url: `/our-team/${params.member}`,
+   image: `/images/members/${id}.${imageExtention}`,
+   keywords: [name, surname, title, "GSA team", "antimicrobial resistance experts"],
+   author: `${name} ${surname}`,
+};
+*/
 
-//SEO (generateMetadata) pending explanations of customizations and accessing each member variables
-// const metadata = {
-//   title: `${name} ${surname} | GSA Team`,
-//   description: `${title} at Generational Stewards for Antimicrobials (GSA). Read their bio and articles.`,
-//   url: `/our-team/${params.member}`,
-//   image: `/images/members/${id}.${imageExtention}`,
-//   keywords: [name, surname, title, "GSA team", "antimicrobial resistance experts"],
-//   author: `${name} ${surname}`,
-// };
 async function page({params}) {
 
   if(params.member in Members){
@@ -27,20 +28,6 @@ async function page({params}) {
       ],
     });
     const articles = article.results;
-    console.log("Here are my articles");
-    console.log(articles);
-    /*
-    let memberPosts = []
-    if(articles[0]){
-      memberPosts = [...articles]
-      console.log("member posts article from array")
-    }
-    else{
-      memberPosts.push(articles)
-      console.log("member posts article from array")
-    }
-    console.log(memberPosts)
-    */
     return (
           <div className="bg-white min-h-screen">
             <section className="flex flex-col items-center gap-2 p-4 md:flex-row md:justify-center">
