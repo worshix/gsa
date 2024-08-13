@@ -6,6 +6,7 @@ import LatestPosts from '@/components/latestPosts/LatestPosts';
 import Contact from '@/components/Contact';
 import LandingGallery from '@/components/LandingGallery';
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const HomePageAnime = dynamic(() => import('./HomePageAnime'), { ssr: false });
 const partners = [
@@ -146,11 +147,22 @@ export default async function Home() {
       </section>
 
       {/* values */}
-      <section className="values p-2 my-6">
-        <h1 className="section-heading slide-in-top text-center">Our Core Values</h1>
-        <ul className="mt-3 gap-2 flex flex-col items-center sm:flex-row flex-wrap sm:justify-center sm:gap-4">
-          {values.map((item, index) => <li key={'value-'+index} className="rounded-lg flex gap-2 bg-slate-100 w-fit slide-in-left sm:text-3xl p-2"><span className="block bi bi-capsule text-main2 bg-white w-[35px] h-[35px] rounded-lg flex-shrink-0 p-2"></span><b className="block flex-shrink-0 p-2">{item}</b></li>)}
-        </ul>
+      <section className="values p-2 py-4 my-4 bg-black text-white flex flex-col md:flex-row md:items-center md:justify-around">
+      <article className="flex justify-center items-center w-[320px] md:w-[400px] lg:w-[550px] lg:h-[400px] md:h-[300px] flex-grow-0 flex-shrink-0 h-[250px] md:order-2 overflow-hidden slide-in-top mx-auto md:mx-0">
+  <Image
+    src="/assets/images/bg-1.jpeg"
+    width={550}
+    height={400}
+    className="block rounded-md object-cover max-w-full max-h-full hover:scale-110 transition-transform ease-linear duration-200"
+    alt="gsa members gathered at harare institute of technology (HIT)"
+  />
+</article>
+        <article className="">
+          <h1 className="slide-in-top text-2xl font-bold my-5 md:text-4xl">Our Core Values</h1>
+          <ul className=" flex flex-col gap-3 justify-center items-center">
+            {values.map((item, index) => <li key={'value-'+index} className="border slide-in-left border-main2 p-2 rounded-md w-[200px] flex flex-row md:text-lg md:w-[260px] md:py-4"><span className="block bi bi-capsule w-fit flex-grow-0"></span><span className="block font-semibold text-center flex-grow">{item}</span></li>)}
+          </ul>
+        </article>
       </section>
 
       {/* partners */}
