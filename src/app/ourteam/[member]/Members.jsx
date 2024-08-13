@@ -136,9 +136,9 @@ const Members = {
                 ' nature and strong work ethic make him a valuable asset to any organization he is a part of.'
             ]
         },
-        innocentnjazi:{
-            id:'innocentnjazi',
-            name:'Innocent',
+        paradzainjazi:{
+            id:'paradzainjazi',
+            name:'Paradzai',
             surname:'Njazi',
             title:'Member',
             imageExtention:'jpg',
@@ -201,9 +201,9 @@ const Members = {
                 'His key personal attributes include strong critical thinking abilities, a collaborative mindset, an unwavering work ethic, conscientiousness towards time management, and exceptional communication skills. His fields of interest are Public Health Research, Epidemiology, Healthcare Management and Health Policy and Advocacy. He enjoys traveling, novel experiences and cricket!',
             ]
         },
-        nokkanymabhena: {
-            id:'nokkanymabhena',
-            name:'Nokkhany',
+        nokukhanyamabhena: {
+            id:'nokukhanyamabhena',
+            name:'Nokukhanya',
             surname:'Mabhena',
             title:'Vice Secretary General',
             imageExtention:'jpg',
@@ -260,7 +260,7 @@ const Members = {
         michelleheiden: {
             id:'michelleheiden',
             name:'Michelle',
-            surname:'Heiden Van Der',
+            surname:'Van Der Heiden',
             title:'Secretary General',
             imageExtention:'jpg',
             socials:{
@@ -275,6 +275,27 @@ const Members = {
                 'Michelle van der Heiden, Secretary General at GSA, is a driven and accomplished individual with a passion for healthcare. Currently pursuing her studies at the University of Zimbabwe, she has developed expertise in advocacy, antimicrobial stewardship, and public health issues through her involvement in medical students\' associations. As Secretary General, she excels in report writing, strategic initiatives, and partnerships, and has even spoken at GSA\'s bi-weekly Twitter space discussions. Her leadership and advocacy efforts have inspired numerous young people to get involved in advocacy, making a significant impact on the healthcare landscape. Michelle\'s dedication to community service and volunteer work has also had a lasting impact on local communities. Outside of her professional pursuits, she enjoys traveling, painting, and writing, and values time spent with friends and family.'
             ]
             },
-}
+            shawnchikuku: {
+                id:'shawnchikuku',
+                name:'Shawn',
+                surname:'Chikuku',
+                title:'Monitoring and Evaluation officer',
+                imageExtention:'jpg',
+                socials:{
+                    twitter:null,
+                    email:null,
+                    phone:'+263785811965',
+                    linkedin:null,
+                    facebook:null,
+                    instagram:null,
+                },
+                bio:[
+                    'Local Chairperson, Zimbabwe Pharmaceutical Students Association (ZPSA) at HIT Active participation in various pharmaceutical conferences and workshops. Recognition for academic excellence in pharmacy coursework. Affiliated to Healthcare Access Advocates for Disabilities (HAAD)',
+                    'Strong interest in pharmacogenomics and its implications for personalized medicine. Dedication to understanding and addressing the challenges of antimicrobial resistance (AMR). Passionate about improving patient outcomes through evidence-based practices and innovative healthcare solutions',
+                    'Writing a research paper focused on the prevalence of resistant hypertension in Zimbabwe, yet to be published. Currently investigating genetic variants associated with resistant hypertension. Participation in collaborative projects aimed at promoting awareness and education regarding AMR within the local community',
+                    'Aspiring to contribute to the development of strategies for controlling antimicrobial resistance through research and advocacy. Interested in collaborating with healthcare professionals and organizations to implement effective antimicrobial stewardship programs. Committed to educating peers and the community about the importance of responsible antibiotic use and the impact of AMR on public health'
+                ]
+                },
+        }
 
 export default Members

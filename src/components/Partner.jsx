@@ -10,7 +10,7 @@ const Partner = ({name, icon, link, image}) => {
     <div className="w-[300px]"><Image src={'/assets/images/'+image} width={300} height={300} alt={name}/></div>
     <h1 className="text-xl font-medium w-[300px] text-main-400">{name}</h1>
     <span className="animate-bounce self-end text-xl"><span className={`bi bi-${icon}`}></span></span>
-  <Link href={link} className="btn-main items-baseline">Visit<span className="bi bi-arrow-right group-hover:translate-x-2 transition-transform duration-100 ease-linear"></span></Link>
+  <Link href={link} target="_blank" className="btn-main items-baseline">Visit<span className="bi bi-arrow-right group-hover:translate-x-2 transition-transform duration-100 ease-linear"></span></Link>
 </div>
   )
 }

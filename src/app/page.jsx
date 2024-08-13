@@ -26,6 +26,12 @@ const partners = [
     icon:'twitter-x',
     link:"https://x.com/theurgentneed?s=11",
     image:'stop.jpg'
+  },
+  {
+    name:'ReAct Africa',
+    icon:'box-arrow-up-right',
+    link:'https://www.reactgroup.org/about-us/a-global-network/react-africa/',
+    image:'react.png'
   }
 ]
 
@@ -162,7 +168,7 @@ export default async function Home() {
           <p className="slide-in-top">
             We are always glad to engage both professionals and students in all our activities.
             We highly value individual and collective contributions that each one of us can have
-            in Antimicrobial Resistance. At SAS Africa, we believe that it is the small efforts that
+            in Antimicrobial Resistance. At GSA, we believe that it is the small efforts that
             each one of us undertakes which matter most.
             <a id="contact-us"></a>
             We welcome you to our family!
