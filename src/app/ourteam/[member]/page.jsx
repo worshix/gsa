@@ -6,16 +6,13 @@ import Post from '@/components/latestPosts/Post';
 import Image from 'next/image';
 import { createClient } from '@/prismicio';
 import * as prismic from '@prismicio/client';
-/*
+
 const metadata = {
    title: 'Team Member | GSA Team',
-   description: `${ti} at Generational Stewards for Antimicrobials (GSA). Read their bio and articles.`,
-   url: `/our-team/${params.member}`,
-   image: `/images/members/${id}.${imageExtention}`,
-   keywords: [name, surname, title, "GSA team", "antimicrobial resistance experts"],
-   author: `${name} ${surname}`,
+   description: `A member at Generational Stewards for Antimicrobials (GSA). Read their bio and articles.`,
+   keywords: ["GSA Member", "GSA team", "antimicrobial resistance experts"],
+   author: `Generational Stewards for Antimicrobials (GSA)`,
 };
-*/
 
 async function page({params}) {
 
