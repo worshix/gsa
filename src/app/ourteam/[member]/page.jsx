@@ -21,13 +21,15 @@ async function page({params}) {
   if(params.member in Members){
     const {id, imageExtention, name, surname, title, bio, socials} = Members[params.member];
     const client = createClient();
-    const articles = await client.get({
+    const article = await client.get({
       filters: [
       prismic.filter.at('my.article.author', `${name} ${surname}`),
       ],
     });
+    const articles = article.results;
     console.log("Here are my articles");
     console.log(articles);
+    /*
     let memberPosts = []
     if(articles[0]){
       memberPosts = [...articles]
@@ -38,6 +40,7 @@ async function page({params}) {
       console.log("member posts article from array")
     }
     console.log(memberPosts)
+    */
     return (
           <div className="bg-white min-h-screen">
             <section className="flex flex-col items-center gap-2 p-4 md:flex-row md:justify-center">
@@ -85,7 +88,7 @@ async function page({params}) {
             <h1 className="text-3xl font-bold mt-6 mb-4 ml-4 text-main-500">My Posts</h1>
             <section className='flex overflow-x-scroll p-3 flex-col gap-2 sm:flex-row flex-wrap sm:justify-center'>
             { /* For their posts mujaya. use the Post component*/}
-            {memberPosts.map((el, index) => (
+            {articles.map((el, index) => (
               <Post
                 image={el.data.story_image}
                 title={el.data.title}
