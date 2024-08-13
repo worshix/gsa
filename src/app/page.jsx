@@ -136,11 +136,11 @@ export default async function Home() {
     </section>
       {/* hero section */}
       <section className="hero flex items-center flex-col text-white gap-y-8 h-screen roboto tracking-wide leading-relaxed isolate w-full" id="hero">
-        <div className="text-center hero-text-container mt-8 relative top-[17%] space-y-4 z-20">
-          <h1 className="mx-auto text-3xl md:text-4xl font-bold hero-text-1 hero-text w-fit">Generational Stewards</h1>
-          <h1 className="mx-auto text-2xl font-bold hero-text-2 hero-text w-fit">for</h1>
-          <h1 className="mx-auto uppercase text-4xl md:text-5xl font-extrabold text-main2 hero-text-3 hero-text w-fit">Antimicrobials</h1>
-        </div>
+        <h1 className="text-center hero-text-container mt-8 relative top-[17%] space-y-4 z-20">
+          <div className="mx-auto text-3xl md:text-4xl font-bold hero-text-1 hero-text w-fit">Generational Stewards</div>
+          <div className="mx-auto text-2xl font-bold hero-text-2 hero-text w-fit">for</div>
+          <div className="mx-auto uppercase text-4xl md:text-5xl font-extrabold text-main2 hero-text-3 hero-text w-fit">Antimicrobials</div>
+        </h1>
         <div className="z-20 action-btn-group flex gap-4 md:gap-6 relative top-[22%] md:top-[25%]">
           <Link className="call-btn call-btn-left" href="/#join-us">join Us <span className="bi bi-hand-thumbs-up opacity-0"></span></Link>
           <Link className="call-btn call-btn-right" href="mailto:Info@gsa.co.zw">donate <span className="bi bi-emoji-sunglasses opacity-0"></span></Link>
