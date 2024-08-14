@@ -1,5 +1,3 @@
-'use client'
-import Link from "next/link"
 import Members from "./[member]/Members"
 import MemberCard from '@/app/ourteam/MemberCard'
 
@@ -11,7 +9,6 @@ const metadata = {
 }
 
 const page = () => {
-  //collecting keys to use in the mapping function
   let keys = []
   for(let key in Members){
     keys.push(key)
