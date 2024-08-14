@@ -35,7 +35,8 @@ const ContactUs = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md space-y-6">
+    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md shadow-black space-y-6 my-4">
+      <h1 className='font-bold text-main-400 text-xl underline'>Mail us directly</h1>
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
           Name
