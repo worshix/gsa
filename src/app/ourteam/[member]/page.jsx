@@ -59,7 +59,7 @@ async function page({params}) {
               ))}
             </section>
       
-            <section className="p-4 divide-y-2 divide-main2">
+            <section className="p-4 divide-y-8 divide-main2">
               <h1 className="text-3xl font-bold mb-1 text-main-500">Socials</h1>
               <div className="flex gap-4 p-2 text-2xl">
                 {socials.twitter && (

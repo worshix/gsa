@@ -12,7 +12,7 @@ const metadata = {
 
 const Programs = () => {
   return (
-    <>
+    <main>
       <h1 className="text-5xl font-bold my-10 text-center text-main-400">Programs</h1>
       <section className="flex gap-2 w-fit mx-auto p-2 mb-4">
         <Link href='/programs'  className="link-1 block w-fit font-bold bg-slate-500 text-white p-2 rounded-lg hover:bg-slate-500 active:scale-95 transition-transform duration-300 ease-linear">1</Link>
@@ -62,7 +62,7 @@ const Programs = () => {
       <h3>Building a Foundation for Future Leaders By empowering students with knowledge and skills, the GSA&apos;s program aims to:</h3>
       <p>The successful launch of the program at Alexander College and Kingdom Knowledge College marks a significant milestone in the GSA&apos;s commitment to empowering youth in the fight against AMR. These schools serve as model examples of how the program can be implemented effectively, engaging students, fostering a sense of responsibility, and building a foundation for a healthier future. The GSA&apos;s Leadership and Capacity Building Program on AMR is a testament to the power of youth engagement in tackling global health challenges. By empowering young people with knowledge and skills, the program is laying the groundwork for a healthier and more sustainable future for all.</p>
   </section>
-    </>
+    </main>
   )
 }
 
