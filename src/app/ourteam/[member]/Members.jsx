@@ -295,29 +295,7 @@ const Members = {
                     'Writing a research paper focused on the prevalence of resistant hypertension in Zimbabwe, yet to be published. Currently investigating genetic variants associated with resistant hypertension. Participation in collaborative projects aimed at promoting awareness and education regarding AMR within the local community',
                     'Aspiring to contribute to the development of strategies for controlling antimicrobial resistance through research and advocacy. Interested in collaborating with healthcare professionals and organizations to implement effective antimicrobial stewardship programs. Committed to educating peers and the community about the importance of responsible antibiotic use and the impact of AMR on public health'
                 ]
-                },
-                tanatswagendere: {
-                    id:'tanatswagendere',
-                    name:'Tanatswa',
-                    surname:'Gendere',
-                    title:'Monitoring and Evaluation officer',
-                    imageExtention:'jpg',
-                    socials:{
-                        twitter:null,
-                        email:null,
-                        phone:'+263785811965',
-                        linkedin:null,
-                        facebook:null,
-                        instagram:null,
-                    },
-                    bio:[
-                        'Local Chairperson, Zimbabwe Pharmaceutical Students Association (ZPSA) at HIT Active participation in various pharmaceutical conferences and workshops. Recognition for academic excellence in pharmacy coursework. Affiliated to Healthcare Access Advocates for Disabilities (HAAD)',
-                        'Strong interest in pharmacogenomics and its implications for personalized medicine. Dedication to understanding and addressing the challenges of antimicrobial resistance (AMR). Passionate about improving patient outcomes through evidence-based practices and innovative healthcare solutions',
-                        'Writing a research paper focused on the prevalence of resistant hypertension in Zimbabwe, yet to be published. Currently investigating genetic variants associated with resistant hypertension. Participation in collaborative projects aimed at promoting awareness and education regarding AMR within the local community',
-                        'Aspiring to contribute to the development of strategies for controlling antimicrobial resistance through research and advocacy. Interested in collaborating with healthcare professionals and organizations to implement effective antimicrobial stewardship programs. Committed to educating peers and the community about the importance of responsible antibiotic use and the impact of AMR on public health'
-                    ]
-                    },
-    
+                },    
         }
 
 export default Members

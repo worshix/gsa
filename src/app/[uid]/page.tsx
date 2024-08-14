@@ -1,12 +1,9 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { SliceZone } from "@prismicio/react";
 import { createClient } from "@/prismicio";
-import { components } from "@/slices";
 import { PrismicRichText } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
 import Link from "next/link";
-import * as prismic from '@prismicio/client';
 
 type Params = { uid: string };
 
@@ -17,7 +14,6 @@ export default async function Page({ params }: { params: Params }) {
     .catch(() => notFound());
   const date = page.data.publishing_time;
   const dateMain = date?.slice(0,10)
-  //return <SliceZone slices={page.data.slices} components={components} />;
   return (
 	<main className="article">
     <section className="articles-socials flex gap-2 text-white p-2 text-xs">
