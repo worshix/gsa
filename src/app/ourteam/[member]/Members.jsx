@@ -40,7 +40,7 @@ const Members = {
             name:'Munyaradzi',
             surname:'Chisora',
             title:'Co-founder/ Events Planning Officer',
-            imageExtention:'jpg',
+            imageExtention:'JPG',
             socials:{
                 twitter:null,
                 email:'munya.sachis@gmail.com',
@@ -277,7 +277,7 @@ const Members = {
             },
             shawnchikuku: {
                 id:'shawnchikuku',
-                name:'Shawn',
+                name:'Shawn Tapiwa',
                 surname:'Chikuku',
                 title:'Monitoring and Evaluation officer',
                 imageExtention:'jpg',
