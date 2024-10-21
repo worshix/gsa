@@ -7,6 +7,7 @@ import Contact from '@/components/Contact';
 import LandingGallery from '@/components/LandingGallery';
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { revalidateTag } from "next/cache":
 
 const HomePageAnime = dynamic(() => import('./HomePageAnime'), { ssr: false });
 const partners = [
@@ -117,6 +118,7 @@ export const metadata = {
   copyright: '2024 Generational Stewards for Antimicrobials. All rights reserved.',
 }
 export default async function Home() {
+  revalidateTag("prismic");
   return (
     <main className="overflow-x-hidden">
       {/* animation to allow page loading */}

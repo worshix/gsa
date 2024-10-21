@@ -1,6 +1,7 @@
 import { createClient } from '@/prismicio';
 import { PrismicNextLink } from '@prismicio/next';
 import * as prismic from '@prismicio/client';
+import { revalidateTag } from "next/cache";
 
 export const metadata = {
   title: "GSA Toolkit: Resources to Combat Antimicrobial Resistance",
@@ -14,6 +15,7 @@ export const metadata = {
 async function Toolkit() {
   const client = createClient();
   const toolkits = await client.getAllByType('toolkit');
+  revalidateTag("prismic");
   return (
 	<main>
 	<h1 className="text-4xl font-bold my-4 text-center text-main-400 w-full flex-shrink-0">Toolkit</h1>
