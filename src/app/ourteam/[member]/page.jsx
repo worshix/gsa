@@ -6,6 +6,7 @@ import Post from '@/components/latestPosts/Post';
 import Image from 'next/image';
 import { createClient } from '@/prismicio';
 import * as prismic from '@prismicio/client';
+import { revalidateTag } from "next/cache";
 
 const metadata = {
    title: 'Team Member | GSA Team',
@@ -25,6 +26,7 @@ async function page({params}) {
       ],
     });
     const articles = article.results;
+    revaidateTag("prismic");
     return (
           <div className="bg-white min-h-screen">
             <section className="flex flex-col items-center gap-2 p-4 md:flex-row md:justify-center">
