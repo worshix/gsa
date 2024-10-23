@@ -7,7 +7,7 @@ import Contact from '@/components/Contact';
 import LandingGallery from '@/components/LandingGallery';
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { revalidateTag } from "next/cache":
+import { revalidateTag } from "next/cache";
 
 const HomePageAnime = dynamic(() => import('./HomePageAnime'), { ssr: false });
 const partners = [
